@@ -1,0 +1,419 @@
+2025-05-05 13:29:57,840 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:1 : Please specify a file
+2025-05-05 14:11:10,475 : ERROR : ServerSpace Update Timer :  : UpdateManager :  :  : Server elenotti@api.hub.knime.com cache update failed - logging out.
+org.knime.core.util.exception.RuntimeResourceAccessException: 500 An error occurred while fetching the current account's identity: An internal error occurred. (Error ID: 'error_c553df75-1f92-4476-83e7-727acb22763e')
+
+	at org.knime.core.util.exception.RuntimeResourceAccessException.from(RuntimeResourceAccessException.java:84)
+	at org.knime.core.util.exception.HttpExceptionUtils.returnWithRuntimeException(HttpExceptionUtils.java:116)
+	at com.knime.enterprise.client.rest.RestServerContent.refreshFetchers(RestServerContent.java:747)
+	at com.knime.enterprise.client.rest.RestServerContent.updateContentCache(RestServerContent.java:689)
+	at com.knime.enterprise.client.rest.RestServerContent.updateCacheOnNewContent(RestServerContent.java:1022)
+	at com.knime.explorer.server.internal.UpdateManager$1.run(UpdateManager.java:116)
+	at java.base/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base/java.util.TimerThread.run(Unknown Source)
+Caused by: org.knime.core.util.exception.ServerErrorAccessException: 500 An error occurred while fetching the current account's identity: An internal error occurred. (Error ID: 'error_c553df75-1f92-4476-83e7-727acb22763e')
+
+	at org.knime.core.util.exception.HttpExceptionUtils.wrapException(HttpExceptionUtils.java:90)
+	at com.knime.enterprise.client.rest.HubContent.getCurrentAccountIdentity(HubContent.java:667)
+	at com.knime.enterprise.client.rest.HubContent.getRepositoryRootEndpoints(HubContent.java:451)
+	at org.knime.core.util.exception.HttpExceptionUtils.returnWithRuntimeException(HttpExceptionUtils.java:114)
+	... 6 more
+2025-05-05 14:11:10,648 : ERROR : ForkJoinPool.commonPool-worker-3 :  : HubSpaceProviders$HubSpaceProvider :  :  : Problem fetching hub spaces for 'My-KNIME-Hub'
+org.knime.core.util.exception.ClientErrorAccessException: 404 An error occurred while accessing item '/knime/rest/v4/repository/Users/elenotti': No item found at path '/Users/account:user:7191d937-4c26-4b0c-905f-c66adc57e33a'.
+	at org.knime.core.util.exception.HttpExceptionUtils.wrapException(HttpExceptionUtils.java:85)
+	at com.knime.explorer.server.internal.APRestFacade.fetchRepositoryItem(APRestFacade.java:213)
+	at com.knime.explorer.server.internal.APRestFacade.fetchRepositoryItem(APRestFacade.java:193)
+	at com.knime.explorer.server.internal.APHubFacade.listGroups(APHubFacade.java:111)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider$HubSpaceProviderConnection.fetchGroupsFromHub(HubSpaceProviders.java:282)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider$HubSpaceProviderConnection.updateSpaceMap(HubSpaceProviders.java:238)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider.lambda$5(HubSpaceProviders.java:132)
+	at java.base/java.util.Optional.map(Unknown Source)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider.toEntity(HubSpaceProviders.java:132)
+	at org.knime.gateway.impl.util.NetworkExceptions.lambda$0(NetworkExceptions.java:148)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025-05-05 16:22:42,308 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 4:1 : Please specify a file
+2025-05-05 16:22:44,084 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 4:2 : Please specify a file
+2025-05-05 16:22:46,364 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 4:3 : Please specify a file
+2025-05-05 16:22:48,545 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 4:4 : Please specify a file
+2025-05-05 16:31:49,984 : WARN  : comm-pool-thread-1 :  : Node : Repository File Chooser Configuration : 4:1 : No file item present
+2025-05-05 16:32:53,460 : WARN  : comm-pool-thread-1 :  : Node : Excel Reader : 4:2 : Please specify a file
+2025-05-05 16:34:11,832 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-05 16:34:11,833 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-05 16:34:11,936 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-05 16:35:00,251 : WARN  : comm-pool-thread-6 :  : Node : Excel Reader : 3:1 : Please specify a file
+2025-05-05 21:38:08,694 : WARN  : ModalContext :  : Node : Excel Reader : 4:2 : Please specify a file
+2025-05-05 21:38:08,700 : WARN  : ModalContext :  : Node : Excel Reader : 4:2 : Please specify a file
+2025-05-05 21:39:13,986 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-05 21:39:14,103 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-05 21:39:14,104 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-05 21:39:14,105 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-05 21:39:14,203 : WARN  : Aqua L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2025-05-06 12:15:44,712 : WARN  : comm-pool-thread-6 :  : Node : Excel Reader : 4:3 : Please specify a file
+2025-05-06 12:15:46,462 : WARN  : comm-pool-thread-6 :  : Node : Excel Reader : 4:4 : Please specify a file
+2025-05-06 12:15:48,233 : WARN  : comm-pool-thread-6 :  : Node : Excel Reader : 4:5 : Please specify a file
+2025-05-06 12:17:08,754 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:1 valid [] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 12:17:08,756 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 12:17:08,756 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:1 valid [] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 45)
+2025-05-06 12:17:29,667 : WARN  : main :  : Node : Excel Reader : 4:3 : The node configuration changed and the table spec will be recalculated during execution.
+2025-05-06 13:47:14,964 : WARN  : ModalContext :  : Node : Excel Reader : 3:2 : Please specify a file
+2025-05-06 13:47:14,971 : WARN  : ModalContext :  : Node : Excel Reader : 3:2 : Please specify a file
+2025-05-06 13:47:25,231 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:1 : Please specify a file
+2025-05-06 13:47:54,636 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:2 : Please specify a file
+2025-05-06 13:47:56,286 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:3 : Please specify a file
+2025-05-06 13:47:59,232 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:4 : Please specify a file
+2025-05-06 13:51:13,156 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:5 : Please specify a file
+2025-05-06 14:24:58,078 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:8 : Please specify a file
+2025-05-06 14:27:16,689 : ERROR : main :  : CEFNodeView :  :  : ResizeObserver loop completed with undelivered notifications. (source: http://org.knime.js.pagebuilder/apWrapper.html; line: 0)
+2025-05-06 14:54:44,361 : WARN  : ModalContext :  : Node : Excel Reader : 4:2 : Please specify a file
+2025-05-06 14:54:44,362 : WARN  : ModalContext :  : Node : Excel Reader : 4:2 : Please specify a file
+2025-05-06 14:57:10,714 : WARN  : ModalContext :  : Node : Excel Reader : 4:2 : Please specify a file
+2025-05-06 14:57:10,715 : WARN  : ModalContext :  : Node : Excel Reader : 4:2 : Please specify a file
+2025-05-06 15:02:15,539 : ERROR : main :  : CEFNodeView :  :  : ResizeObserver loop completed with undelivered notifications. (source: http://org.knime.js.pagebuilder/apWrapper.html; line: 0)
+2025-05-06 15:06:30,216 : ERROR : main :  : CEFNodeView :  :  : ResizeObserver loop completed with undelivered notifications. (source: http://org.knime.js.pagebuilder/apWrapper.html; line: 0)
+2025-05-06 15:14:38,126 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 15:14:38,126 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 15:14:38,126 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:4, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 45)
+2025-05-06 15:17:48,572 : ERROR : main :  : OpenProject :  :  : Failed to open project
+org.knime.ui.java.api.OpenProject$OpenProjectException: The project could not be loaded.
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:190)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-06 15:17:48,590 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Desktop API:: Error response 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 15:17:48,590 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not open selected workflow: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      The project could not be loaded. (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 15:18:48,524 : ERROR : main :  : OpenProject :  :  : Failed to open project
+org.knime.ui.java.api.OpenProject$OpenProjectException: The project could not be loaded.
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:190)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-06 15:18:48,535 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Desktop API:: Error response 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 15:18:48,536 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Could not open selected workflow: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      The project could not be loaded. (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 15:47:52,904 : WARN  : comm-pool-thread-16 :  : Node : CSV Reader : 3:25 : Please specify a file
+2025-05-06 15:48:55,672 : ERROR : main :  : CEFNodeView :  :  : ResizeObserver loop completed with undelivered notifications. (source: http://org.knime.js.pagebuilder/apWrapper.html; line: 0)
+2025-05-06 15:50:27,192 : WARN  : comm-pool-thread-16 :  : Node : Column Renamer : 3:27 : The column 'Confidentiality status (flag)' is configured but no longer exists.
+2025-05-06 15:56:06,481 : WARN  : comm-pool-thread-16 :  : Node : CSV Reader : 3:28 : Please specify a file
+2025-05-06 16:20:13,647 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 16:20:13,648 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of null (reading 'rowCount') (source: http://org.knime.core.ui.port/uiext/tableview/TableView.js; line: 15187)
+2025-05-06 17:18:01,230 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 17:18:01,231 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of null (reading 'rowCount') (source: http://org.knime.core.ui.port/uiext/tableview/TableView.js; line: 15187)
+2025-05-06 21:38:59,180 : WARN  : comm-pool-thread-22 :  : Node : Joiner : 4:24 : The join column names [year] do not exist in the target table, which only specifies the column names [geo, TIME_PERIOD, density]
+2025-05-06 21:46:54,898 : WARN  : comm-pool-thread-22 :  : Node : Joiner : 4:24 : The join column names [year] do not exist in the target table, which only specifies the column names [geo, TIME_PERIOD, density]
+2025-05-06 21:51:15,614 : WARN  : KNIME-Worker-62-Joiner 4:31 :  : Node : Joiner : 4:31 : Node created an empty data table.
+2025-05-06 21:52:45,071 : WARN  : KNIME-Worker-65-Joiner 4:32 :  : Node : Joiner : 4:32 : Node created an empty data table.
+2025-05-06 21:52:53,389 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 4:32 valid [4:1, 4:2, 4:3, 4:4, 4:5, 4:6, 4:7, 4:8, 4:9, 4:10, 4:11, 4:12, 4:13, 4:14, 4:15, 4:16, 4:17, 4:18, 4:19, 4:20, 4:21, 4:22, 4:23, 4:24, 4:25, 4:26, 4:27, 4:28, 4:29, 4:30, 4:31] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 21:52:53,391 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 87)
+2025-05-06 21:52:53,391 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 4:32 valid [4:1, 4:2, 4:3, 4:4, 4:5, 4:6, 4:7, 4:8, 4:9, 4:10, 4:11, 4:12, 4:13, 4:14, 4:15, 4:16, 4:17, 4:18, 4:19, 4:20, 4:21, 4:22, 4:23, 4:24, 4:25, 4:26, 4:27, 4:28, 4:29, 4:30, 4:31] (source: http://org.knime.ui.java/assets/index-L_Vmx7rg.js; line: 45)
+2025-05-07 12:22:02,781 : WARN  : KNIME-Worker-67-Joiner 4:31 :  : Node : Joiner : 4:31 : Node created an empty data table.
+2025-05-07 12:24:57,484 : WARN  : KNIME-Worker-69-Joiner 4:32 :  : Node : Joiner : 4:32 : Node created an empty data table.
+2025-05-07 12:29:38,583 : WARN  : comm-pool-thread-22 :  : Node : CSV Writer : 4:33 : Please specify a file
+2025-05-07 12:30:15,655 : WARN  : main :  : Node : CSV Writer : 4:33 : Please specify a file
+2025-05-07 13:32:13,942 : WARN  : comm-pool-thread-22 :  : Node : Joiner : 4:24 : The join column names [geo] do not exist in the target table, which only specifies the column names [nuts2 code, year, fertility]
+2025-05-07 13:32:27,113 : WARN  : comm-pool-thread-22 :  : Node : Joiner : 4:24 : The join column names [geo] do not exist in the target table, which only specifies the column names [nuts2 code, year, fertility]
+2025-05-07 13:33:21,906 : WARN  : KNIME-Worker-76-Column Renamer 4:14 :  : Node : Joiner : 4:24 : The join column names [geo] do not exist in the target table, which only specifies the column names [nuts2 code, year, fertility]
+2025-05-07 13:33:21,909 : WARN  : KNIME-Worker-77-Column Renamer 4:27 :  : Node : Joiner : 4:24 : The join column names [geo] do not exist in the target table, which only specifies the column names [nuts2 code, year, fertility]
+2025-05-07 13:33:29,179 : WARN  : comm-pool-thread-22 :  : Node : Joiner : 4:31 : The join column names [geo] do not exist in the target table, which only specifies the column names [nuts2 code, year, fertility, density]
+2025-05-07 13:33:35,450 : WARN  : comm-pool-thread-22 :  : Node : Joiner : 4:32 : The join column names [geo] do not exist in the target table, which only specifies the column names [nuts2 code, year, fertility, density, poverty]
+2025-05-07 14:15:39,026 : ERROR : KNIME-Worker-83-CSV Writer 4:33 :  : Node : CSV Writer : 4:33 : Execute failed: Output file '/Users/elenabinotti/Dropbox/LM-43 DHDK/Palmirani, Open Access and Digital Ethics/open-access-fertility/fertility eu/mashup2_output.csv' exists and must not be overwritten due to user settings.
+java.io.IOException: Output file '/Users/elenabinotti/Dropbox/LM-43 DHDK/Palmirani, Open Access and Digital Ethics/open-access-fertility/fertility eu/mashup2_output.csv' exists and must not be overwritten due to user settings.
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:217)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.writeToFile(CSVWriter2NodeModel.java:167)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:147)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: /Users/elenabinotti/Dropbox/LM-43 DHDK/Palmirani, Open Access and Digital Ethics/open-access-fertility/fertility eu/mashup2_output.csv
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystemProvider.newByteChannel(LocalFileSystemProvider.java:148)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:146)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:214)
+	... 16 more
+2025-05-07 14:16:09,288 : ERROR : SwingWorker-pool-7-thread-9 :  : StatusSwingWorker : CSV Writer : 4:33 : Error while updating status message: The path must be relative.
+org.knime.core.node.InvalidSettingsException: The path must be relative.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.filehandling.core.defaultnodesettings.ValidationUtils.validateKnimeFSPath(ValidationUtils.java:146)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getPathFromConvenienceFs(AbstractFileChooserPathAccessor.java:208)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getOutputPath(AbstractFileChooserPathAccessor.java:195)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-07 14:16:18,062 : ERROR : KNIME-Worker-84-CSV Writer 4:33 :  : Node : CSV Writer : 4:33 : Execute failed: Output file '/Users/elenabinotti/Dropbox/LM-43 DHDK/Palmirani, Open Access and Digital Ethics/open-access-fertility/fertility eu/mashup2_output.csv' exists and must not be overwritten due to user settings.
+java.io.IOException: Output file '/Users/elenabinotti/Dropbox/LM-43 DHDK/Palmirani, Open Access and Digital Ethics/open-access-fertility/fertility eu/mashup2_output.csv' exists and must not be overwritten due to user settings.
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:217)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.writeToFile(CSVWriter2NodeModel.java:167)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:147)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: /Users/elenabinotti/Dropbox/LM-43 DHDK/Palmirani, Open Access and Digital Ethics/open-access-fertility/fertility eu/mashup2_output.csv
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystemProvider.newByteChannel(LocalFileSystemProvider.java:148)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:146)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:214)
+	... 16 more
+2025-05-08 18:27:25,612 : WARN  : ModalContext :  : Node : GroupBy : 3:37 : Skipped group(s): tfr cause: "Group contains too many values"; family exp cause: "Group contains too many values"
+2025-05-08 18:33:44,174 : WARN  : KNIME-Worker-2-Joiner 3:39 :  : Node : Joiner : 3:39 : Node created an empty data table.
+2025-05-08 18:33:44,271 : WARN  : KNIME-Worker-3-Joiner 3:40 :  : Node : Joiner : 3:40 : Node created an empty data table.
+2025-05-08 18:33:44,506 : WARN  : KNIME-Worker-2-Joiner 3:41 :  : Node : Joiner : 3:41 : Node created an empty data table.
+2025-05-08 18:34:50,681 : ERROR : comm-pool-thread-4 :  : DefaultNodeService :  :  : Invalid node settings: Please define at least one joining column pair.
+java.io.IOException: Invalid node settings: Please define at least one joining column pair.
+	at org.knime.core.webui.node.dialog.ApplyData.applyData(ApplyData.java:116)
+	at org.knime.core.webui.data.ApplyDataService.applyDataWithContext(ApplyDataService.java:144)
+	at org.knime.core.webui.data.ApplyDataService.applyData(ApplyDataService.java:133)
+	at org.knime.core.webui.node.DataServiceManager.callApplyDataService(DataServiceManager.java:191)
+	at org.knime.core.wizard.rpc.DefaultNodeService.callNodeDataService(DefaultNodeService.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.core.webui.data.rpc.json.impl.JsonRpcServer.handleRequest(JsonRpcServer.java:150)
+	at org.knime.core.wizard.rpc.JsonRpcFunction.call(JsonRpcFunction.java:195)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.knime.core.node.InvalidSettingsException: Please define at least one joining column pair.
+	at org.knime.base.node.preproc.joiner3.JoinSpecificationCreator.validateSettings(JoinSpecificationCreator.java:92)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeModel.validateSettings(Joiner3NodeModel.java:239)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeModel.validateSettings(Joiner3NodeModel.java:1)
+	at org.knime.core.webui.node.impl.WebUINodeModel.validateSettings(WebUINodeModel.java:214)
+	at org.knime.core.node.Node.validateSettings(Node.java:713)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:685)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1202)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1173)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2244)
+	at org.knime.core.webui.node.dialog.ApplyData.applyChange(ApplyData.java:206)
+	at org.knime.core.webui.node.dialog.ApplyData.applyDataOrThrow(ApplyData.java:138)
+	at org.knime.core.webui.node.dialog.ApplyData.applyData(ApplyData.java:114)
+	... 22 more
+2025-05-08 18:35:41,907 : WARN  : comm-pool-thread-4 :  : Node : Joiner : 3:41 : The join column names [geo: Geopolitical entity (reporting)] do not exist in the target table, which only specifies the column names [age: Age class, geo, year, live_births]
+2025-05-08 18:35:51,080 : WARN  : KNIME-Worker-5-Joiner 3:40 :  : Node : Joiner : 3:40 : Node created an empty data table.
+2025-05-08 18:35:51,148 : WARN  : KNIME-Worker-2-Joiner 3:41 :  : Node : Joiner : 3:41 : Node created an empty data table.
+2025-05-08 18:39:01,771 : WARN  : comm-pool-thread-4 :  : Node : GroupBy : 3:37 : No grouping column included. Aggregate complete table.
+2025-05-08 18:39:02,353 : WARN  : comm-pool-thread-4 :  : Node : GroupBy : 3:37 : No grouping column included. Aggregate complete table.
+2025-05-08 18:39:02,368 : WARN  : comm-pool-thread-4 :  : Node : GroupBy : 3:37 : No grouping column included. Aggregate complete table.
+2025-05-08 18:39:06,992 : WARN  : KNIME-Worker-12-Joiner 3:40 :  : Node : Joiner : 3:40 : Node created an empty data table.
+2025-05-08 18:39:07,136 : WARN  : KNIME-Worker-7-Joiner 3:41 :  : Node : Joiner : 3:41 : Node created an empty data table.
+2025-05-08 18:39:33,533 : WARN  : comm-pool-thread-4 :  : Node : CSV Writer : 3:42 : Please specify a file
+2025-05-08 18:39:37,482 : WARN  : main :  : Node : CSV Writer : 3:42 : Please specify a file
+2025-05-08 19:49:12,184 : WARN  : comm-pool-thread-6 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-08 19:49:12,196 : WARN  : comm-pool-thread-6 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-08 19:49:36,802 : WARN  : KNIME-Worker-13-CSV Reader 4:43 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-08 19:49:36,810 : WARN  : KNIME-Worker-18-CSV Reader 4:44 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-08 19:49:36,972 : WARN  : KNIME-Worker-17-CSV Reader 4:31 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-08 19:49:37,003 : WARN  : KNIME-Worker-14-Joiner 4:51 :  : Node : Joiner : 4:51 : Node created an empty data table.
+2025-05-08 19:49:37,008 : WARN  : KNIME-Worker-14-Joiner 4:51 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-08 19:49:37,226 : WARN  : KNIME-Worker-16-CSV Reader 4:35 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-08 19:49:37,361 : WARN  : KNIME-Worker-21-Joiner 4:52 :  : Node : Joiner : 4:52 : Node created an empty data table.
+2025-05-08 19:49:37,362 : WARN  : KNIME-Worker-21-Joiner 4:52 :  : Node : CSV Writer : 4:54 : Please specify a file
+2025-05-09 17:14:03,747 : WARN  : ModalContext :  : Node : Joiner : 3:51 : Node created an empty data table.
+2025-05-09 17:14:03,756 : WARN  : ModalContext :  : Node : Joiner : 3:52 : Node created an empty data table.
+2025-05-09 17:14:03,757 : WARN  : ModalContext :  : Node : CSV Writer : 3:54 : Please specify a file
+2025-05-09 17:14:03,758 : WARN  : ModalContext :  : Node : CSV Writer : 3:54 : Please specify a file
+2025-05-09 17:14:21,058 : WARN  : ModalContext :  : Node : Joiner : 4:40 : Node created an empty data table.
+2025-05-09 17:14:21,059 : WARN  : ModalContext :  : Node : Joiner : 4:41 : Node created an empty data table.
+2025-05-09 17:14:21,060 : WARN  : ModalContext :  : Node : CSV Writer : 4:42 : Please specify a file
+2025-05-09 17:14:21,060 : WARN  : ModalContext :  : Node : CSV Writer : 4:42 : Please specify a file
+2025-05-09 17:32:06,480 : WARN  : comm-pool-thread-8 :  : Node : CSV Writer : 4:42 : Please specify a file
+2025-05-09 17:32:29,246 : WARN  : comm-pool-thread-9 :  : Node : CSV Writer : 4:42 : Please specify a file
+2025-05-09 17:32:32,686 : WARN  : KNIME-Worker-3-Joiner 4:39 :  : Node : CSV Writer : 4:42 : Please specify a file
+2025-05-09 17:34:18,399 : ERROR : KNIME-Worker-3-CSV Writer 4:42 :  : Node : CSV Writer : 4:42 : Execute failed: Output file 'mashup2.csv' exists and must not be overwritten due to user settings.
+java.io.IOException: Output file 'mashup2.csv' exists and must not be overwritten due to user settings.
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:217)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.writeToFile(CSVWriter2NodeModel.java:167)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:147)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: mashup2.csv
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.newOutputStream(BaseFileSystemProvider.java:494)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:146)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:214)
+	... 16 more
+2025-05-09 17:34:41,198 : ERROR : KNIME-Worker-1-CSV Writer 4:42 :  : Node : CSV Writer : 4:42 : Execute failed: Output file 'mashup2.csv' exists and must not be overwritten due to user settings.
+java.io.IOException: Output file 'mashup2.csv' exists and must not be overwritten due to user settings.
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:217)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.writeToFile(CSVWriter2NodeModel.java:167)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:147)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: mashup2.csv
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.newOutputStream(BaseFileSystemProvider.java:494)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:146)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:214)
+	... 16 more
+2025-05-09 17:34:57,014 : ERROR : KNIME-Worker-2-CSV Writer 4:42 :  : Node : CSV Writer : 4:42 : Execute failed: Output file 'mashup2.csv' exists and must not be overwritten due to user settings.
+java.io.IOException: Output file 'mashup2.csv' exists and must not be overwritten due to user settings.
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:217)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.writeToFile(CSVWriter2NodeModel.java:167)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:147)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: mashup2.csv
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.newOutputStream(BaseFileSystemProvider.java:494)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:146)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:214)
+	... 16 more

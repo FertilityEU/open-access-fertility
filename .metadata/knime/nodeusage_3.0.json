@@ -1,0 +1,163 @@
+{
+    "version": "5.4.3.v202503031608",
+    "created": "2025-05-05 11:27",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
+                "nodename": "CSV Reader",
+                "nrexecs": 39,
+                "nrfails": 0,
+                "exectime": 8824,
+                "nrcreated": 13,
+                "nrsettingsChanged": 11,
+                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "successornodename": "Column Filter"
+            },
+            {
+                "id": "org.knime.js.base.node.configuration.input.filechooser.FileChooserDialogNodeFactory",
+                "nodename": "Repository File Chooser Configuration",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeFactory",
+                "nodename": "Excel Reader",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 117,
+                "nrcreated": 5,
+                "nrsettingsChanged": 3,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "nodename": "Column Filter",
+                "nrexecs": 41,
+                "nrfails": 0,
+                "exectime": 136,
+                "nrcreated": 8,
+                "nrsettingsChanged": 10,
+                "successor": "org.knime.base.node.preproc.column.renamer.ColumnRenamerNodeFactory",
+                "successornodename": "Column Renamer"
+            },
+            {
+                "id": "org.knime.base.node.preproc.column.renamer.ColumnRenamerNodeFactory",
+                "nodename": "Column Renamer",
+                "nrexecs": 49,
+                "nrfails": 0,
+                "exectime": 102,
+                "nrcreated": 8,
+                "nrsettingsChanged": 21,
+                "successor": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
+                "successornodename": "Joiner"
+            },
+            {
+                "id": "org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory",
+                "nodename": "String to Number",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory",
+                "nodename": "Joiner",
+                "nrexecs": 42,
+                "nrfails": 0,
+                "exectime": 1696,
+                "nrcreated": 9,
+                "nrsettingsChanged": 26,
+                "successor": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+                "successornodename": "CSV Writer"
+            },
+            {
+                "id": "org.knime.base.views.node.barchart.BarChartNodeFactory",
+                "nodename": "Bar Chart",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 50,
+                "nrcreated": 2,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.views.node.lineplot.LinePlotNodeFactory",
+                "nodename": "Line Plot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 6,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.smote.SmoteNodeFactory",
+                "nodename": "SMOTE",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.views.node.scatterplot.ScatterPlotNodeFactory",
+                "nodename": "Scatter Plot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 1,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+                "nodename": "CSV Writer",
+                "nrexecs": 5,
+                "nrfails": 5,
+                "exectime": 2632,
+                "nrcreated": 2,
+                "nrsettingsChanged": 9,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        },
+        "createdVia": {
+            "WEB_UI": 52
+        }
+    },
+    "uptime": 45981108,
+    "workflowsOpened": 16,
+    "remoteWorkflowsOpened": 15,
+    "workflowsCreated": 2,
+    "remoteWorkflowsCreated": 1,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "javaUIPerspectiveSwitches": 0,
+    "lastUsedPerspective": "none",
+    "launches": 4,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 1355340,
+    "crashes": 0,
+    "properlyShutDown": true
+}

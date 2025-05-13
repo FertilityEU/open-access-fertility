@@ -1,0 +1,10 @@
+mashup2.csv
+/Users/elenabinotti/Dropbox/LM-43 DHDK/Palmirani, Open Access and Digital Ethics/open-access-fertility/fertility eu/mashup2_output.csv
+/Users/elenabinotti/mashup2_output.csv
+/Users/elenabinotti/mashup2_output.csv .csv
+/Users/elenabinotti/Downloads/ds3_edgar.csv
+/Users/elenabinotti/Downloads/ds2_population_density.csv
+/Users/elenabinotti/Downloads/ds9_natality_rate.csv
+/Users/elenabinotti/Downloads/ds8_expenditure.csv
+/Users/elenabinotti/Downloads/ds7_education.csv
+/Users/elenabinotti/Downloads/ds6_income.csv
