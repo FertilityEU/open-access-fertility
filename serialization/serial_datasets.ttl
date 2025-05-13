@@ -1,0 +1,200 @@
+@prefix FERTILITYEU: <https://reproduce-for-whom.github.io/OADE_FertilityEurope/> .
+@prefix dcat3: <https://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+FERTILITYEU:DS1 a dcat3:Dataset ;
+    dct:creator "Eurostat" ;
+    dct:description "Mean number of children that a woman could have during her childbearing age, by region."@en ;
+    dct:identifier "DS1" ;
+    dct:issued "2025-04-01"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "Eurostat" ;
+    dct:rightsHolder "Eurostat" ;
+    dct:subject "Fertility"@en ;
+    dct:title "Total fertility rate by NUTS 2 region"@en ;
+    dcat3:distribution ".csv, .tsv, .xlsx, SDMX (.xml, .json)" ;
+    dcat3:theme "Population and social conditions ; General and regional statistics"@en ;
+    dcat3:title "Total fertility rate by NUTS 2 region"@en .
+
+FERTILITYEU:DS2 a dcat3:Dataset ;
+    dct:creator "Eurostat" ;
+    dct:description "Number of inhabitants per km² in each NUTS 2 region."@en ;
+    dct:identifier "DS2" ;
+    dct:issued "2025-04-02"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "Eurostat" ;
+    dct:rightsHolder "Eurostat" ;
+    dct:subject "Demographics"@en ;
+    dct:title "Population density by NUTS 2 region"@en ;
+    dcat3:distribution ".csv, .tsv, .xlsx, SDMX (.xml, .json)" ;
+    dcat3:theme "Population and social conditions; Regional statistics"@en ;
+    dcat3:title "Population density by NUTS 2 region"@en .
+
+FERTILITYEU:DS3 a dcat3:Dataset ;
+    dct:creator "EEA + EDGAR" ;
+    dct:description "EDGAR GHG emission gridmaps supporting territorial climate policy analysis."@en ;
+    dct:identifier "DS3" ;
+    dct:issued "2025-04-02"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "EEA" ;
+    dct:rightsHolder "EEA + EDGAR" ;
+    dct:subject "Pollution"@en ;
+    dct:title "Greenhouse Gas Emissions at sub-national level"@en ;
+    dcat3:distribution ".csv, .xlsx" ;
+    dcat3:theme "Environment"@en ;
+    dcat3:title "Greenhouse Gas Emissions at sub-national level"@en .
+
+FERTILITYEU:DS4 a dcat3:Dataset ;
+    dct:creator "EEA" ;
+    dct:description "Information on burden of disease of air pollution calculated for countries and NUTS regions."@en ;
+    dct:identifier "DS4" ;
+    dct:issued "2025-04-03"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "EEA" ;
+    dct:rightsHolder "EEA" ;
+    dct:subject "Air Quality"@en ;
+    dct:title "Burden of disease of air pollution"@en ;
+    dcat3:distribution ".csv, .tsv, .json, .geojson" ;
+    dcat3:theme "Environment"@en ;
+    dcat3:title "Burden of disease of air pollution"@en .
+
+FERTILITYEU:DS5 a dcat3:Dataset ;
+    dct:creator "Eurostat" ;
+    dct:description "Annual classification of land use patterns by region."@en ;
+    dct:identifier "DS5" ;
+    dct:issued "2022-07-18"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "Eurostat" ;
+    dct:rightsHolder "Eurostat" ;
+    dct:subject "Land Use"@en ;
+    dct:title "Land cover overview by NUTS 2 region"@en ;
+    dcat3:distribution ".csv, .tsv, .xlsx, SDMX (.xml, .json)" ;
+    dcat3:theme "General and regional statistics ; Cross cutting topics"@en ;
+    dcat3:title "Land cover overview by NUTS 2 region"@en .
+
+FERTILITYEU:DS6 a dcat3:Dataset ;
+    dct:creator "Eurostat" ;
+    dct:description "Income inequality by NUTS 2 region, measured via GINI coefficient."@en ;
+    dct:identifier "DS6" ;
+    dct:issued "2025-04-30"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "Eurostat" ;
+    dct:rightsHolder "Eurostat" ;
+    dct:subject "Income Distribution"@en ;
+    dct:title "Mean and median income by age and sex"@en ;
+    dcat3:distribution ".csv, .tsv, .xlsx, SDMX (.xml, .json)" ;
+    dcat3:theme "Population and social conditions ; Cross cutting topics"@en ;
+    dcat3:title "Mean and median income by age and sex"@en .
+
+FERTILITYEU:DS7 a dcat3:Dataset ;
+    dct:creator "Eurostat" ;
+    dct:description "Number of graduates by educational level, age, and region."@en ;
+    dct:identifier "DS7" ;
+    dct:issued "2025-05-07"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "Eurostat" ;
+    dct:rightsHolder "Eurostat" ;
+    dct:subject "Education"@en ;
+    dct:title "Graduates by education level, programme orientation, sex and field of education"@en ;
+    dcat3:distribution ".csv, .tsv, .xlsx, SDMX (.xml, .json)" ;
+    dcat3:theme "Population and social conditions"@en ;
+    dcat3:title "Graduates by education level, programme orientation, sex and field of education"@en .
+
+FERTILITYEU:DS8 a dcat3:Dataset ;
+    dct:creator "Eurostat" ;
+    dct:description "Social protection expenditure by function (e.g., health, family, old age). National level."@en ;
+    dct:identifier "DS8" ;
+    dct:issued "2025-04-28"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "Eurostat" ;
+    dct:rightsHolder "Eurostat" ;
+    dct:subject "Social Expenditure"@en ;
+    dct:title "Expenditure on family/children function by type of benefit and means-testing"@en ;
+    dcat3:distribution ".csv, .tsv, .xlsx, SDMX (.xml, .json)" ;
+    dcat3:theme "Population and social conditions"@en ;
+    dcat3:title "Expenditure on family/children function by type of benefit and means-testing"@en .
+
+FERTILITYEU:DS9 a dcat3:Dataset ;
+    dct:creator "Eurostat" ;
+    dct:description "Age-specific fertility rates and number of live births per year and region."@en ;
+    dct:identifier "DS9" ;
+    dct:issued "2025-04-01"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "Eurostat" ;
+    dct:rightsHolder "Eurostat" ;
+    dct:subject "Natality"@en ;
+    dct:title "Fertility rates by age and NUTS 2 region"@en ;
+    dcat3:distribution ".csv, .tsv, .xlsx, SDMX (.xml, .json)" ;
+    dcat3:theme "Population and social conditions ; General and regional statistics"@en ;
+    dcat3:title "Fertility rates by age and NUTS 2 region"@en .
+
+FERTILITYEU:ms1 a dcat3:Dataset ;
+    dct:creator "Virginia D’Antonio" ;
+    dct:description "Mashup exploring correlation between pollution (emissions, PM₂.₅, NO₂) and fertility. Includes contextual variables."@en ;
+    dct:identifier "ms1" ;
+    dct:issued "2025-05-05"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "FertilityEU" ;
+    dct:rightsHolder "FertilityEU" ;
+    dct:subject "Fertility"@en ;
+    dct:title "Interconnection between Fertility and Environment"@en ;
+    dcat3:distribution ".csv" ;
+    dcat3:theme "Population and society; Environment"@en ;
+    dcat3:title "Interconnection between Fertility and Environment"@en .
+
+FERTILITYEU:ms2 a dcat3:Dataset ;
+    dct:creator "Elena Binotti" ;
+    dct:description "Mashup relating fertility with income, education, and poverty risk. Includes population density as a control."@en ;
+    dct:identifier "ms2" ;
+    dct:issued "2025-05-05"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "FertilityEU" ;
+    dct:rightsHolder "FertilityEU" ;
+    dct:subject "Socioeconomics"@en ;
+    dct:title "Interconnection between Fertility and Socioeconomic Conditions"@en ;
+    dcat3:distribution ".csv" ;
+    dcat3:theme "Population and society; Economy and finance"@en ;
+    dcat3:title "Interconnection between Fertility and Socioeconomic Conditions"@en .
+
+FERTILITYEU:ms3 a dcat3:Dataset ;
+    dct:creator "Elvira Kushlak" ;
+    dct:description "Mashup comparing fertility and poverty at regional level vs national-level family expenditure."@en ;
+    dct:identifier "ms3" ;
+    dct:issued "2025-05-05"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "FertilityEU" ;
+    dct:rightsHolder "FertilityEU" ;
+    dct:subject "Welfare"@en ;
+    dct:title "Interconnection between Regional and National Welfare Mismatch"@en ;
+    dcat3:distribution ".csv" ;
+    dcat3:theme "Population and society; Government and public sector"@en ;
+    dcat3:title "Interconnection between Regional and National Welfare Mismatch"@en .
+
+FERTILITYEU:ms4 a dcat3:Dataset ;
+    dct:creator "Elvira Kushlak" ;
+    dct:description "Mashup integrating fertility, pollution, income, and education to rank EU regions by reproductive equity."@en ;
+    dct:identifier "ms4" ;
+    dct:issued "2025-05-05"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:publisher "FertilityEU" ;
+    dct:rightsHolder "FertilityEU" ;
+    dct:subject "Equity Index"@en ;
+    dct:title "Interconnection between Regional Clusters and Equity Index"@en ;
+    dcat3:distribution ".csv" ;
+    dcat3:theme "Population and society; Regions and cities"@en ;
+    dcat3:title "Interconnection between Regional Clusters and Equity Index"@en .
+

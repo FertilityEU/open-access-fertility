@@ -1,0 +1,42 @@
+@prefix FERTILITYEU: <https://reproduce-for-whom.github.io/OADE_FertilityEurope/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat1: <https://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/FertilityEU/open-access-fertility> dcat1:Dataset "DS1",
+        "DS2",
+        "DS3",
+        "DS4",
+        "DS5",
+        "DS6",
+        "DS7",
+        "DS8",
+        "DS9",
+        "ms1",
+        "ms2",
+        "ms3",
+        "ms4" .
+
+FERTILITYEU:catalog a dcat1:Catalog ;
+    dct:description "This catalog contains datasets about how environment, wealth and welfare shape birth in Europe"@en ;
+    dct:identifier "FertilityEU-Catalog"^^xsd:string,
+        "GenerationZeroCatalog" ;
+    dct:issued "2025-05-01"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2025-05-10"^^xsd:date ;
+    dct:publisher "FertilityEU" ;
+    dct:spatial "Europe" ;
+    dct:title "Generation Zero Project - Datasets Catalog"@en .
+
+<https://creativecommons.org/licenses/by/4.0/> a cc:License ;
+    rdfs:label "Creative Commons CC-BY 4.0"@en ;
+    cc:legalcode <http://creativecommons.org/licenses/by/4.0/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice .
+
