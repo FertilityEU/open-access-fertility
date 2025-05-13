@@ -179,6 +179,34 @@
       </div>
     </section><!-- End About Us Section -->
 
+   <!-- ======= Scenario – Generation Zero ======= -->
+<section id="scenario" class="about">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Scenario</h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+        <p>Between 2017 and 2019, fertility rates across Europe continued their steady decline, with many countries falling below replacement level. While social debates often frame birth rate drops as matters of personal preference or “generational values,” the data suggest deeper systemic factors at play.</p>
+        <p>In cities with high air pollution, rural regions with low access to care, and countries with limited public investment in health and family support, reproductive choices appear constrained. Economic uncertainty, environmental exposure, and unequal healthcare coverage intersect to shape if, when, and how people decide to start families.</p>
+        <p><b>Generation Zero</b> uses comparative open data to surface these intersections and challenge simplistic explanations. It asks whether Europe's demographic shift is the result of free choice—or the consequence of environments and systems that make choosing parenthood increasingly difficult.</p>
+      </div>
+
+      <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+        <p><span class="underlined underlined--offset"><b>RESEARCH QUESTIONS</b></span></p>
+        <ul>
+          <li><i class="ri-check-double-line"></i> Where in Europe is reproduction environmentally discouraged?</li>
+          <li><i class="ri-check-double-line"></i> Is fertility still a privilege of poverty?</li>
+          <li><i class="ri-check-double-line"></i> How does urbanisation shape fertility in Europe?</li>
+          <li><i class="ri-check-double-line"></i> Is there a mismatch between where fertility is highest and where public family investment is focused?</li>
+          <li><i class="ri-check-double-line"></i> What are the spatial conditions of reproductive freedom?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section><!-- End Generation Zero Scenario Section -->
+
     
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
@@ -239,6 +267,304 @@
 
       </div>
     </section><!-- End Counts Section -->
+
+
+
+    <!-- ======= Datasets Section ======= -->
+    <section id="datasets" class="portfolio datasets">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Source and mashup datasets</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              This project uses a <b>comparative, multi-variable approach</b> to investigate the structural conditions shaping fertility across Europe between 2017 and 2019. Drawing exclusively from <b>open access datasets</b>, the study combines demographic indicators with environmental, economic, and healthcare-related variables to map potential correlations and disparities.
+            </p>
+            <p>
+              The analysis is conducted at the <b>NUTS2 regional level</b>, allowing for detailed spatial comparison within and across EU member states. All datasets were selected based on their <b>completeness, open licensing, and temporal consistency</b>. 
+            </p>
+            <p>
+              Once collected, all datasets were:
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Cleaned and filtered to ensure reliability</li>
+              <li><i class="ri-check-double-line"></i> Harmonised by year to match the selected temporal window (2017–2019)</li>
+              <li><i class="ri-check-double-line"></i> Joined using standard geographic codes (NUTS2 for regional data, NUTS0 when aggregating with national-level indicators)</li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              The variables were then grouped into <b>thematic mashup datasets</b>, each addressing a specific research question. These mashups were created through <b>structured join operations</b> and further processed with <b>KNIME workflows</b> and <b>Python notebooks</b>. 
+            </p>
+            <p>
+              The goal was not only to observe correlations, but also to highlight <b>disparities</b> and patterns of <b>structural vulnerability</b> that may affect reproductive behaviour.
+            </p>
+            <p>
+              This <b>integrative and reproducible method</b> allows us to combine demographic, environmental, socioeconomic, and policy-related variables into a unified analytical framework — turning fragmented open data into <b>interpretable insight</b>.
+            </p>
+            <p>
+              Each mashup dataset is directly aligned with a specific research question, serving as the analytical foundation for both <b>statistical modelling</b> and <b>visual storytelling</b>. By structuring the data around thematic hypotheses, we enable <b>targeted, multidimensional insights</b> into the drivers of fertility decline.
+            </p>
+            <p>
+              Full processing documentation and reproducible workflows — including data cleaning, integration, and transformation steps — are available in the project’s
+              <a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">GitHub repository</a>, ensuring transparency and methodological traceability.
+            </p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".source-dataset">Source datasets</li>
+              <li data-filter=".mashup-dataset">Mashup datasets</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+          <!-- Source Datasets -->
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS1 - Fertility Rates</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS1<br>
+                <b>Provenience</b>: National Statistics Office<br>
+                <b>Format</b>: .csv, .xlsx<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">FertilityData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS2 - Population Density</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS2<br>
+                <b>Provenience</b>: National Statistics Office<br>
+                <b>Format</b>: .csv, .xlsx<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">DensityData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS3 - Industrial Emissions</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS3<br>
+                <b>Provenience</b>: Environmental Agency<br>
+                <b>Format</b>: .csv, .json<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">EmissionsData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS4 - Air Quality</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS4<br>
+                <b>Provenience</b>: Environmental Agency<br>
+                <b>Format</b>: .csv, .json<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">AirQualityData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS5 - Land Cover</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS5<br>
+                <b>Provenience</b>: Environmental Agency<br>
+                <b>Format</b>: .geojson, .shp<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">LandCoverData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS6 - Income & Poverty</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS6<br>
+                <b>Provenience</b>: National Statistics Office<br>
+                <b>Format</b>: .csv, .xlsx<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">IncomeData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS7 - Education</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS7<br>
+                <b>Provenience</b>: Education Ministry<br>
+                <b>Format</b>: .csv, .xlsx<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">EducationData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>DS8 - Family Expenditure</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: DS8<br>
+                <b>Provenience</b>: Social Affairs Ministry<br>
+                <b>Format</b>: .csv, .xlsx<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="#" target="_blank">FamilyPolicyData</a><br>
+                <b>License</b>: CC BY 4.0<br>
+              </p>
+            </div>
+          </div>
+        
+          <!-- Mashup Datasets -->
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD1 - Fertility + Environment</h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD1<br>
+                <b>Creation date</b>: [Date]<br>
+                <b>Format</b>: .csv<br>
+                <b>Integration</b>: Joined on geo + year<br>
+                <b>Components</b>: DS1, DS3, DS4, DS2 (control), DS5 (optional)<br>
+                <b>Purpose</b>: Test environmental stress vs fertility correlation<br>
+                <b>URI</b>: <a href="#" target="_blank">MD1_Data</a><br>
+                <b>License</b>: CC BY 4.0<br>
+                <b>Download</b>: <a href="#" download>MD1.csv</a>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD2 - Fertility + Socioeconomics</h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD2<br>
+                <b>Creation date</b>: [Date]<br>
+                <b>Format</b>: .csv<br>
+                <b>Integration</b>: Joined on geo + year<br>
+                <b>Components</b>: DS1, DS6, DS7, DS2 (control)<br>
+                <b>Purpose</b>: Explore fertility links with income/education<br>
+                <b>URI</b>: <a href="#" target="_blank">MD2_Data</a><br>
+                <b>License</b>: CC BY 4.0<br>
+                <b>Download</b>: <a href="#" download>MD2.csv</a>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD3 - Regional vs National Welfare</h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD3<br>
+                <b>Creation date</b>: [Date]<br>
+                <b>Format</b>: .csv<br>
+                <b>Integration</b>: Regional DS1 mapped to country + DS8<br>
+                <b>Components</b>: DS1, DS6, DS8<br>
+                <b>Purpose</b>: Compare regional fertility with national policy<br>
+                <b>URI</b>: <a href="#" target="_blank">MD3_Data</a><br>
+                <b>License</b>: CC BY 4.0<br>
+                <b>Download</b>: <a href="#" download>MD3.csv</a>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD4 - Regional Clusters</h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD4<br>
+                <b>Creation date</b>: [Date]<br>
+                <b>Format</b>: .csv<br>
+                <b>Integration</b>: Joined on geo<br>
+                <b>Components</b>: DS1, DS3, DS4, DS6, DS7<br>
+                <b>Purpose</b>: Score regions on risk/reproductive outcomes<br>
+                <b>URI</b>: <a href="#" target="_blank">MD4_Data</a><br>
+                <b>License</b>: CC BY 4.0<br>
+                <b>Download</b>: <a href="#" download>MD4.csv</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row content">
+          <div class="" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              <a href="documentation/CLEAN.ipynb" target="_blank" style="vertical-align: middle;">
+                <span class="material-symbols-outlined">download</span>
+              </a>
+              Download the Jupyter Notebook on the clean up phase<br>
+              <a href="documentation/MASHUP.ipynb" target="_blank" style="vertical-align: middle;">
+                <span class="material-symbols-outlined">download</span>
+              </a>
+              Download the Jupyter Notebook on the mashup phase<br>
+              <a href="documentation/KNIME_WORKFLOWS.zip" target="_blank" style="vertical-align: middle;">
+                <span class="material-symbols-outlined">download</span>
+              </a>
+              Download KNIME workflows for dataset integration
+            </p>
+          </div>
+        </div>
+    </section><!-- End Datasets Section -->
 
     <!-- ======= Results Section ======= -->
     <section id="results" class="about">
@@ -523,303 +849,6 @@
         </div>
 
     </section><!-- End Results Section -->
-
-    <!-- ======= Datasets Section ======= -->
-    <section id="datasets" class="portfolio datasets">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Source and mashup datasets</h2>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              As mentioned, our project comprises the use of <b>16 different datasets</b>, between source ones and
-              mashup ones.
-            </p>
-            <p>
-              The <b>7 source datasets</b> have been downloaded in .csv
-              format from different databases belonging to Istat, the
-              Italian National Institute of Statistics. Specifically, we have used three different databases:
-            <ul>
-              <li><i class="ri-check-double-line"></i><b><a href="https://demo.istat.it/?l=en" target="_blank">demo:
-                    demographics in
-                    figures</a></b>: on resident population in the Italian municipalities and information on main
-                demographic phenomena</li>
-              <li><i class="ri-check-double-line"></i><b><a href="http://dati.istat.it/?lang=en"
-                    target="_blank">I.Stat</a></b>: a
-                datawarehouse organised by theme, presented in multidimensional tables and with a wide range of standard
-                metadata</li>
-              <li><i class="ri-check-double-line"></i><b><a href="https://esploradati.istat.it/databrowser/#/en"
-                    target="_blank">IstatData</a></b>: the new database into which
-                all
-                I.Stat content will be gradually migrated</li>
-            </ul>
-            To make our project as accessible as possible even in the future, we have preferred
-            IstatData over I.Stat when doable.
-            </p>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              During the <span class="underlined underlined--offset"><b>download phase</b></span>, we have manually
-              filtered out everything that was not of interest for our
-              research, keeping only the data strictly related to our research question (we have, for example, discarded
-              any information related to marital status in the datasets regarding population).
-            </p>
-            <p>
-              Still, the source datasets went through an additional <span class="underlined underlined--offset"><b>clean
-                  up phase</b></span> in which we discarded duplicate (e.g.,
-              columns with different names and values but referring to the same information) and irrelevant data and,
-              when
-              necessary, added missing "coded data" to allow for an easier management of the datasets.
-            </p>
-            <p>
-              Finally, we proceeded with the <span class="underlined underlined--offset"><b>mashup phase</b></span>,
-              creating the final three main mashup datasets used to answer our
-              research question. As with source and clean datasets, we distinguished between the
-              three years of our time span of interest: in this way, we ended up with <b>9 final mashup datasets</b>
-              (three for
-              each
-              factor of interest).<br>
-            </p>
-            <p>
-              The code for the clean up and mashup phases can be found in the appropriate documentation, freely
-              downloadable.
-            </p>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".source-dataset">Source datasets</li>
-              <li data-filter=".mashup-dataset">Mashup datasets</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Here the datasets -->
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
-                <h3>D1 - Population 2017</h3>
-              </div>
-              <p style="border-top: #557c70 solid 1px;">
-                <b>ID</b>: D1<br>
-                <b>Provenience</b>: <a href="https://demo.istat.it/?l=en" target="_blank">demo</a><br>
-                <b>Format</b>: .csv, .xlsx, .pdf<br>
-                <b>Metadata</b>: Not provided<br>
-                <b>URI</b>: <a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">2017Population</a><br>
-                <b>License</b>: CC BY 3.0<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
-                <h3>D2 - Population 2018, 2019</h3>
-              </div>
-              <p style="border-top: #557c70 solid 1px;">
-                <b>ID</b>: D2<br>
-                <b>Provenience</b>: <a href="https://demo.istat.it/?l=en" target="_blank">demo</a><br>
-                <b>Format</b>: .csv, .xlsx, .pdf<br>
-                <b>Metadata</b>: Not provided<br>
-                <b>URI</b>: <a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">201819Population</a><br>
-                <b>License</b>: CC BY 3.0<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
-                <h3>D3 - Religious observance</h3>
-              </div>
-              <p style="border-top: #557c70 solid 1px;">
-                <b>ID</b>: D3<br>
-                <b>Provenience</b>: <a href="http://dati.istat.it/?lang=en" target="_blank">I.Stat</a><br>
-                <b>Format</b>: .csv, .xlsx, .px, .xml <br>
-                <b>Metadata</b>: <a href="https://siqual.istat.it/SIQual/sintesi.do?id=0058000"
-                  target="_blank">Provided</a><br>
-                <b>URI</b>: <a href="http://dati.istat.it/index.aspx?queryid=24349"
-                  target="_blank">ReligiousObservance</a><br>
-                <b>License</b>: CC BY 3.0<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
-                <h3>D4 - Live births</h3>
-              </div>
-              <p style="border-top: #557c70 solid 1px;">
-                <b>ID</b>: D4<br>
-                <b>Provenience</b>: <a href="https://esploradati.istat.it/databrowser/#/"
-                  target="_blank">IstatData</a><br>
-                <b>Format</b>: .json, .xml, .xlsx, .csv<br>
-                <b>Metadata</b>: Provided<br>
-                <b>URI</b>: <a
-                  href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
-                  target="_blank">LiveBirths</a><br>
-                <b>License</b>: CC BY 3.0<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
-                <h3>D5 - Spontaneous abortions</h3>
-              </div>
-              <p style="border-top: #557c70 solid 1px;">
-                <b>ID</b>: D5<br>
-                <b>Provenience</b>: <a href="http://dati.istat.it/?lang=en" target="_blank">I.Stat</a><br>
-                <b>Format</b>: .csv, .xlsx, .px, .xml <br>
-                <b>Metadata</b>: <a href="https://siqual.istat.it/SIQual/sintesi.do?id=5000132"
-                  target="_blank">Provided</a><br>
-                <b>URI</b>: <a href="http://dati.istat.it/index.aspx?queryid=29218"
-                  target="_blank">SpontAbortions</a><br>
-                <b>License</b>: CC BY 3.0<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
-                <h3>D6 - Induced abortions</h3>
-              </div>
-              <p style="border-top: #557c70 solid 1px;">
-                <b>ID</b>: D6<br>
-                <b>Provenience</b>: <a href="http://dati.istat.it/?lang=en" target="_blank">I.Stat</a><br>
-                <b>Format</b>: .csv, .xlsx, .px, .xml <br>
-                <b>Metadata</b>: <a href="https://siqual.istat.it/SIQual/visualizza.do?id=0038900"
-                  target="_blank">Provided</a><br>
-                <b>URI</b>: <a href="http://dati.istat.it/index.aspx?queryid=7098"
-                  target="_blank">InducedAbortions</a><br>
-                <b>License</b>: CC BY 3.0<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
-                <h3>D7 - Early leavers from education</h3>
-              </div>
-              <p style="border-top: #557c70 solid 1px;">
-                <b>ID</b>: D7<br>
-                <b>Provenience</b>: <a href="http://dati.istat.it/?lang=en" target="_blank">I.Stat</a><br>
-                <b>Format</b>: .csv, .xlsx, .px, .xml <br>
-                <b>Metadata</b>: <a
-                  href="https://siqual.istat.it/SIQual/visualizza.do?id=5000098&refresh=true&language=EN"
-                  target="_blank">Provided</a><br>
-                <b>URI</b>: <a href="http://dati.istat.it/Index.aspx?DataSetCode=DCCV_ESL_UNT2020"
-                  target="_blank">EarlyLeavers</a><br>
-                <b>License</b>: CC BY 3.0<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-database" style="color: #b74d3a;"></i>
-                <h3>MD1 - General religious observance in each region</h3>
-              </div>
-              <p style="border-top: #b74d3a solid 1px;">
-                <b>ID</b>: MD1<br>
-                <b>Creation date</b>: 15 January 2023<br>
-                <b>Format</b>: .csv<br>
-                <b>Metadata</b>: Provided<br>
-                <b>URI</b>: <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD1_17.csv"
-                  target="_blank">MD1_17</a>,
-                <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD1_18.csv"
-                  target="_blank">MD1_18</a>,
-                <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD1_19.csv"
-                  target="_blank">MD1_19</a><br>
-                <b>License</b>: CC BY 4.O<br>
-                <b>Download</b>:
-                <a href="data/mashupDS/MD1_17.csv" download>MD1_17</a>,
-                <a href="data/mashupDS/MD1_18.csv" download>MD1_18</a>,
-                <a href="data/mashupDS/MD1_19.csv" download>MD1_19</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-database" style="color: #b74d3a;"></i>
-                <h3>MD2 - Pregnancy rates in young women</h3>
-              </div>
-              <p style="border-top: #b74d3a solid 1px;">
-                <b>ID</b>: MD2<br>
-                <b>Creation date</b>: 16 January 2023<br>
-                <b>Format</b>: .csv<br>
-                <b>Metadata</b>: Provided<br>
-                <b>URI</b>: <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD2_17.csv"
-                  target="_blank">MD2_17</a>,
-                <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD2_18.csv"
-                  target="_blank">MD2_18</a>,
-                <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD2_19.csv"
-                  target="_blank">MD2_19</a><br>
-                <b>License</b>: CC BY 4.0<br>
-                <b>Download:</b>
-                <a href="data/mashupDS/MD2_17.csv" download>MD2_17</a>,
-                <a href="data/mashupDS/MD2_18.csv" download>MD2_18</a>,
-                <a href="data/mashupDS/MD2_19.csv" download>MD2_19</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
-            <div class="icon-box">
-              <div class="dataset-title">
-                <i class="bi bi-database" style="color: #b74d3a;"></i>
-                <h3>MD3 - Education leavers' rates in young women</h3>
-              </div>
-              <p style="border-top: #b74d3a solid 1px;">
-                <b>ID</b>: MD3<br>
-                <b>Creation date</b>: 15 January 2023<br>
-                <b>Format</b>: .csv<br>
-                <b>Metadata</b>: Provided<br>
-                <b>URI</b>: <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD3_17.csv"
-                  target="_blank">MD3_17</a>,
-                <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD3_18.csv"
-                  target="_blank">MD3_18</a>,
-                <a href="https://github.com/OrsolaMBorrini/blessedfruit/blob/main/data/mashupDS/MD3_19.csv"
-                  target="_blank">MD3_19</a><br>
-                <b>License</b>: CC BY 4.0<br>
-                <b>Download:</b>
-                <a href="data/mashupDS/MD3_17.csv" download>MD3_17</a>,
-                <a href="data/mashupDS/MD3_18.csv" download>MD3_18</a>,
-                <a href="data/mashupDS/MD3_19.csv" download>MD3_19</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row content">
-          <div class="" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              <a href="documentation/CLEAN.ipynb"
-                target="_blank" style="vertical-align: middle;"><span
-                  class="material-symbols-outlined">download</span></a>
-              Download the Jupyter Noteboook on the clean up phase<br>
-              <a href="documentation/MASHUP.ipynb"
-                target="_blank" style="vertical-align: middle;"><span
-                  class="material-symbols-outlined">download</span></a>
-              Download the Jupyter Noteboook on the mashup phase
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Datasets Section -->
 
     <!-- ======= Analyses Section ======= -->
     <section id="analyses" class="services">
