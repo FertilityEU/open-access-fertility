@@ -884,7 +884,7 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Analyses</h2>
-          <p>The 7 source datasets have been analysed for four aspects.</p>
+          <p>The 8(?) source datasets have been analysed for four aspects.</p>
         </div>
 
         <div class="row">
@@ -894,8 +894,8 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-patch-check"></i></div>
               <h4 class="title"><a>Quality analysis</a></h4>
-              <p class="description">Following the National Guidelines for the Improvement of Public Information Assets
-                and its four factors: accuracy, completeness, coherence and promptness.</p>
+              <p class="description">Following EU Open Data Maturity Report and Italian AgID guidelines with four dimensions: 
+                accuracy, completeness, coherence and timeliness.</p>
             </div>
           </div>
 
@@ -905,9 +905,8 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bi bi-shield-shaded"></i></div>
               <h4 class="title"><a href="">Legal Analysis</a></h4>
-              <p class="description">To assess possible imbalances and risks regarding the long-term viability of the
-                data generation and dissemination regarding the topics of: privacy, intellectual property, release
-                license, limitation on public access, economical conditions, and other temporary aspects.</p>
+              <p class="description">To evaluate potential risks and imbalances related to the long-term sustainability of data generation and dissemination, focusing on areas such as privacy, intellectual property rights, licensing for release, restrictions on public access, economic factors, and other temporal considerations.
+              </p>
             </div>
           </div>
 
@@ -940,105 +939,220 @@
       </div>
 
       <!-- Quality box -->
-      <div class="container collapse analysis-card" id="target1" data-bs-parent="#analyses">
-        <div class="align-items-stretch mb-5 mb-lg-0">
-          <div class="analysis-box">
-            <div class="analysis-box-title">
-              <i class="bi bi-patch-check"></i>
-              <h2 class="analysis-title">Quality analysis</h2>
+      
+
+  <!-- Quality box -->
+  <div class="container collapse analysis-card" id="target1" data-bs-parent="#analyses">
+    <div class="align-items-stretch mb-5 mb-lg-0">
+      <div class="analysis-box">
+        <div class="analysis-box-title">
+          <i class="bi bi-patch-check"></i>
+          <h2 class="analysis-title">Quality analysis</h2>
+        </div>
+        <p class="analysis-text">
+          This assessment evaluates the quality of the datasets based on four core dimensions drawn from the 
+          <a href="https://data.europa.eu/sites/default/files/edp_2022_open_data_maturity_report.pdf" target="_blank">
+            <b>EU Open Data Maturity Report</b>
+          </a> and Italian AgID guidelines. All core datasets (DS1-DS9) were selected for their high-level official 
+          provenance (Eurostat, EEA, EDGAR, WHO), open licensing (CC BY 4.0), and availability in machine-readable formats.
+        </p>
+        
+        <h4 class="mt-4 mb-3">3.1 Summary Table</h4>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Dataset ID</th>
+                <th scope="col">Accuracy</th>
+                <th scope="col">Completeness</th>
+                <th scope="col">Timeliness</th>
+                <th scope="col">Coherence</th>
+                <th scope="col">Quality Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">DS1: Fertility (TFR, Eurostat)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> High (official source)</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Full 2000-2023</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Updated in 2024</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Consistent NUTS2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">DS2: Population Density (Eurostat)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> High</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> 2000-2023</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Yearly updates</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Matches NUTS2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">DS3: Emissions (EDGAR/E-PRTR)</th>
+                <td><i class="bi bi-exclamation-triangle" style="color: orange; font-size: 24px;"></i> Mixed methods</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Annual totals</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> EDGAR up to 2024</td>
+                <td><i class="bi bi-exclamation-triangle" style="color: orange; font-size: 24px;"></i> Source inconsistencies</td>
+                <td>3.5-4</td>
+              </tr>
+              <tr>
+                <th scope="row">DS4: Air Quality (EEA)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Aligned with WHO</td>
+                <td><i class="bi bi-exclamation-triangle" style="color: orange; font-size: 24px;"></i> Modelled means since 2020</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Until 2022</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Clean NUTS2 mapping</td>
+                <td>3.5-4</td>
+              </tr>
+              <tr>
+                <th scope="row">DS5: Land Cover (Eurostat)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Geostat-validated</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> 2009-2018</td>
+                <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i> Not updated after 2018</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Harmonised geo-codes</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">DS6: Income & Poverty (Eurostat)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Statistically robust</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> 2015-2024</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Updated in 2024</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Same scale as DS1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">DS7: Education (Eurostat)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Standardised methodology</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Annual NUTS2 data</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Up to 2024</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Fully coherent</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">DS8: Welfare Expenditure (Eurostat)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> High-level official stats</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> National aggregates</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Covers 2000-2023</td>
+                <td><i class="bi bi-exclamation-triangle" style="color: orange; font-size: 24px;"></i> Resolution mismatch</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">DS9: Natality by age (Eurostat)</th>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Based on vital records</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Covers 2000-2023</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> Updated and detailed</td>
+                <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i> NUTS2 alignment</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="mt-5 mb-3">3.2 Key Observations by Quality Dimension</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-header bg-light">
+                <h5 class="mb-0">Accuracy</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Most datasets are produced by Eurostat, EEA, or EDGAR, ensuring statistical validity</li>
+                  <li>DS3 includes modelled emissions (EDGAR) which may introduce methodological variation</li>
+                  <li>Harmonised NUTS2 aggregations mitigate potential accuracy issues</li>
+                </ul>
+              </div>
             </div>
-            <p class="analysis-text">
-              Following the Italian <a
-                href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/aspettiorg.html#qualita-dei-dati"
-                target="_blank"><b>National
-                  Guidelines</b></a> ("Linee guida nazionali per la valorizzazione del patrimonio informativo
-              pubblico"), developed in the context of the Data & Analytics
-              Framework project by AgID and the Digital Transformation Team, we have performed a quality analysis of our
-              source datasets to ensure their <span class="underlined--bg underlined--offset--bg"><b>good
-                  condition</b></span> and their <span
-                class="underlined--bg underlined--offset--bg"><b>suitability</b></span> for the intended use.<br>
-              Specifically, there are four main factors to look for when analysing data quality:
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><b>Accuracy (syntactic and semantic)</b>: the data and its attributes
-                correctly represent the real value of the concept or event they refer to</li>
-              <li class="list-group-item"><b>Coherence</b>: the data and its attributes do not present any
-                contradictions with respect to other data in the context of use by the administration owner</li>
-              <li class="list-group-item"><b>Completeness</b>: the data are exhaustive for what concerns every expected
-                value and with respect to the related entities (sources) that contribute to the definition of the
-                procedure</li>
-              <li class="list-group-item"><b>Timeliness (or promptness of updating)</b>: the data and its attributes
-                refer to the "correct time" (up to date) with respect to the procedure they refer to</li>
-            </ul>
-            The following table showcases the quality of each of the source datasets and highlights possible flaws.
-            </p>
-            <!-- Table for quality analysis -->
-            <div class="table-responsive">
-              <table class="table table-hover align-middle">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">ID Dataset</th>
-                    <th scope="col">Accuracy</th>
-                    <th scope="col">Coherence</th>
-                    <th scope="col">Completeness</th>
-                    <th scope="col">Timeliness</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">D1 - Population 2017</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D2 - Population 2018, 2019</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D3 - Religious observance</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D4 - Live births</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D5 - Spontaneous abortions</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D6 - Induced abortions</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D7 - Early leavers from education</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                </tbody>
-              </table>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-header bg-light">
+                <h5 class="mb-0">Completeness</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Datasets span multiple decades (2000-2023) with full temporal coverage</li>
+                  <li>DS5 (land cover) ends in 2018 - requires contextual justification if used</li>
+                  <li>NUTS2 geographic coverage is comprehensive across all regional datasets</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-header bg-light">
+                <h5 class="mb-0">Timeliness</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Fertility, income, education updated as of 2024</li>
+                  <li>Environmental datasets (DS4, DS5) have slight lags but acceptable for analysis</li>
+                  <li>All updates clearly timestamped in metadata</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <div class="card-header bg-light">
+                <h5 class="mb-0">Coherence</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>All regional datasets use NUTS2 geo-codes for seamless integration</li>
+                  <li>Country-level variables (DS8) treated as context indicators</li>
+                  <li>No direct merging of different resolution data at row level</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+
+        <h4 class="mt-5 mb-3">3.3 Licensing and Format</h4>
+        <div class="alert alert-success">
+          <i class="bi bi-check-circle-fill"></i> All datasets comply with <strong>CC BY 4.0</strong>, aligning with EU Directive 2019/1024 on Open Data.
+          <br>
+          <i class="bi bi-check-circle-fill"></i> Data provided in machine-readable formats: <strong>CSV, RDF, XML, SDMX</strong>.
+          <br>
+          <i class="bi bi-check-circle-fill"></i> Documentation offers unified FAIR-compliant summary.
+        </div>
+
+        <h4 class="mt-5 mb-3">3.4 Final Evaluation</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>Dimension</th>
+                <th>Evaluation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Accuracy</td>
+                <td>High (validated official sources)</td>
+              </tr>
+              <tr>
+                <td>Completeness</td>
+                <td>High for most datasets; minor limitations acknowledged</td>
+              </tr>
+              <tr>
+                <td>Timeliness</td>
+                <td>Generally current (2022-2024), some environmental lags</td>
+              </tr>
+              <tr>
+                <td>Coherence</td>
+                <td>Excellent alignment via NUTS2 geo-keys and harmonised formats</td>
+              </tr>
+              <tr class="table-success">
+                <td><strong>Overall Level</strong></td>
+                <td><strong>≥ 3.5/4 (High-quality open data, ready for ethical reuse and RDF conversion)</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+    </div>
+  </div>
+               
 
       <!-- Legal box -->
       <div class="container collapse analysis-card" id="target2" data-bs-parent="#analyses">
@@ -1083,6 +1197,7 @@
                           <th scope="col">D5</th>
                           <th scope="col">D6</th>
                           <th scope="col">D7</th>
+                          <th scope="col">D8</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1097,11 +1212,13 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">Is the dataset free of any indirect personal data that could be
                             used for identifying the natural person?
                           </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
