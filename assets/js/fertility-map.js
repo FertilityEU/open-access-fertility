@@ -5,8 +5,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 Promise.all([
-  fetch('assets/data/mashup/mashup2.csv').then(res => res.text()),
-  fetch('assets/data/nuts2.geojson').then(res => res.json())
+  fetch('/assets/data/mashup/mashup2.csv').then(res => res.text()),
+  fetch('/assets/data/nuts2.geojson').then(res => res.json())
 ]).then(([csvText, geojson]) => {
   const csv = Papa.parse(csvText, { header: true }).data;
   const data = Object.fromEntries(csv
