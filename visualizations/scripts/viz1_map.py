@@ -8,10 +8,10 @@ data = pd.read_csv("datasets/mashup/mashup1.csv", sep=",")
 print(data.columns.tolist())
 
 # Filtra anno 2018
-data_2018 = data[data["year"] == 2018]
+data_2017 = data[data["year"] == 2017]
 
 # Trasforma in formato largo (una riga per inquinante)
-pivoted = data_2018.pivot_table(
+pivoted = data_2017.pivot_table(
     index=["nuts2_code", "fertility"],
     columns="air_pollutant",
     values="pollutant_av",
@@ -99,5 +99,5 @@ fig.update_layout(
 )
 
 # Salva e mostra
-fig.write_html("visualizations/viz1_map_NO2.html")
+fig.write_html("visualizations/viz1_map_NO2_2017.html")
 fig.show()
