@@ -8,10 +8,10 @@ data = pd.read_csv("datasets/mashup/mashup1.csv", sep=",")
 print(data.columns.tolist())
 
 # Filtra anno 2018
-data_2018 = data[data["year"] == 2018]
+data_2019 = data[data["year"] == 2019]
 
 # Trasforma in formato largo (una riga per inquinante)
-pivoted = data_2018.pivot_table(
+pivoted = data_2019.pivot_table(
     index=["nuts2_code", "fertility"],
     columns="air_pollutant",
     values="pollutant_av",
@@ -93,11 +93,11 @@ fig.update_geos(
 
 # Layout finale
 fig.update_layout(
-    title_text='NO₂ & Reproductive Indicators in Europe (2018)',
+    title_text='NO₂ & Reproductive Indicators in Europe (2019)',
     margin={"r": 0, "t": 40, "l": 0, "b": 0},
     coloraxis_colorbar=dict(title="NO₂ (µg/m³)", thickness=15, len=0.75)
 )
 
 # Salva e mostra
-fig.write_html("visualizations/viz1_map_NO2.html")
+fig.write_html("visualizations/viz1_map_NO2_2019.html")
 fig.show()
