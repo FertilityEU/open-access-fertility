@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Mismatch categories — bar + pie</title>
+
+<!-- d3 for CSV parsing -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- Plotly -->
+<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+
+<style>
+ body{font-family:sans-serif;margin:26px;background:#fafafa}
+ #wrap{display:flex;flex-wrap:wrap;gap:40px}
+ .plot{flex:1 1 420px;height:420px}
+</style>
+</head>
+<body>
+
+<h1>How EU regions fall into the four mismatch types</h1>
+<div id="wrap">
+  <div id="bar"  class="plot"></div>
+  <div id="pie"  class="plot"></div>
+</div>
+
+<script>
+const CSV_FILE = "datasets/mashup/mashup3_for_viz.csv";     // adjust path if you move it
+const COLORS   = {
+  "High Fert / Low Spend"          : "#FFBF46",
+  "Balanced Investment"            : "#8acb88",
+  "Low Priority Region"            : "#575761",
+  "High Investment, Low Fertility" : "#648381"
+};
+
+d3.csv(CSV_FILE).then(rows =>{
+  /* count rows per category */
+  const counts = d3.rollup(rows, v=>v.length, d=>d.Mismatch);
+  const labels = Object.keys(COLORS);
+  const values = labels.map(l => counts.get(l) || 0);
+
+  /* ----- bar chart ----- */
+  Plotly.newPlot("bar", [{
+      x: values,
+      y: labels,
+      type:"bar",
+      orientation:"h",
+      marker:{color: labels.map(l=>COLORS[l])}
+    }],{
+      title:"Number of NUTS-2 regions",
+      margin:{l:160,r:40,t:60,b:40},
+      xaxis:{title:"regions"},
+      yaxis:{automargin:true},
+      plot_bgcolor:'#fafafa'
+    },{responsive:true});
+
+  /* ----- pie chart ----- */
+  Plotly.newPlot("pie", [{
+      labels,
+      values,
+      type:"pie",
+      marker:{colors:labels.map(l=>COLORS[l])},
+      textinfo:"label+percent",
+      hovertemplate:"%{label}<br>%{value} regions<extra></extra>"
+    }],{
+      title:"Share of regions by mismatch type",
+      margin:{t:60,b:40,l:20,r:20},
+      plot_bgcolor:'#fafafa',
+      showlegend:false
+    },{responsive:true});
+})
+.catch(err=>{
+  console.error("CSV load error", err);
+  document.body.innerHTML = "<p style='color:red'>Cannot load CSV – see console.</p>";
+});
+</script>
+
+</body>
+</html>
