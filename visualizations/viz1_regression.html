@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pollution and Fertility Correlations</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 950px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .plot-container {
+            margin-bottom: 30px;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Is There a Relationship Between Pollutants and Fertility?</h1>
+<div class="subtitle">
+    This chart explores which pollutant has the strongest estimated impact on fertility (2017–2019).
+</div>
+
+<div class="plot-container">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>                <div id="c0b0fcc5-a1dd-43aa-9c01-ac7ff5bab1b7" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c0b0fcc5-a1dd-43aa-9c01-ac7ff5bab1b7")) {                    Plotly.newPlot(                        "c0b0fcc5-a1dd-43aa-9c01-ac7ff5bab1b7",                        [{"hovertemplate":"Significance=Significant (p \u003c 0.05)\u003cbr\u003ePollutant=%{x}\u003cbr\u003eRegression Coefficient=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Significant (p \u003c 0.05)","marker":{"color":"crimson","pattern":{"shape":""}},"name":"Significant (p \u003c 0.05)","orientation":"v","showlegend":true,"text":{"dtype":"f8","bdata":"SxNrE25Ie79xIATFrD4Bvw=="},"textposition":"outside","x":["NO\u2082","O\u2083"],"xaxis":"x","y":{"dtype":"f8","bdata":"SxNrE25Ie79xIATFrD4Bvw=="},"yaxis":"y","type":"bar","texttemplate":"%{text:.4f}"},{"hovertemplate":"Significance=Not significant\u003cbr\u003ePollutant=%{x}\u003cbr\u003eRegression Coefficient=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Not significant","marker":{"color":"lightgray","pattern":{"shape":""}},"name":"Not significant","orientation":"v","showlegend":true,"text":{"dtype":"f8","bdata":"S6pIArciRL8="},"textposition":"outside","x":["PM2.5"],"xaxis":"x","y":{"dtype":"f8","bdata":"S6pIArciRL8="},"yaxis":"y","type":"bar","texttemplate":"%{text:.4f}"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Pollutant"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Regression Coefficient"},"zeroline":true,"zerolinecolor":"black"},"legend":{"title":{"text":"Significance"},"tracegroupgap":0},"title":{"text":"Estimated Impact of Air Pollutants on Fertility (Linear Regression Coefficients)"},"barmode":"relative","uniformtext":{"minsize":8,"mode":"hide"}},                        {"responsive": true}                    )                };            </script>        </div>
+</div>
+
+<h2>Multiple linear regression. What Does it Mean?</h2>
+<p>
+When you use linear regression (e.g. KNIME Linear Regression Learner), you are building a model:
+<br>
+fertility = Intercept + (a × NO₂) + (b × O₃) + (c × PM2.5) + (d × density)</p>
+<p>This model:
+</p>
+<ul>
+  <li>Takes all variables together (controls for confounding effects).</li>
+  <li>Estimates which variable best predicts fertility, all else being equal.</li>
+  <li>Tells which variable has the greatest impact in a multivariate realistic model.</li>
+</ul>
+
+<h2>The Results</h2>
+<ul>
+  <li>📉 More pollution → lower fertility</li>
+  <li>NO2: strongly negative -0.0067, is the pollutant with the strongest and most significant impact on fertility in your model.</li>
+  <li>O3: negative, also negatively correlated and significant.</li>
+  <li>PM2.5: negative but not significant: although the hypothesis seemed plausible, the data do not support it in this model.</li>
+</ul>
+<p>
+While ozone (O₃) shows the strongest negative correlation with fertility when considered alone (r = –0.301), the regression model reveals that nitrogen dioxide (NO₂) has the greatest negative impact on fertility when controlling for other variables, including density and other pollutants. This suggests that NO₂ may play a more dominant role in driving fertility decline in polluted areas.
+</p>
+
+<h2>What Are NO₂, O₃, and PM2.5?</h2>
+<ul>
+  <li><strong>NO₂ – Nitrogen Dioxide:</strong> A gas mainly from cars and industry. It irritates the lungs and may affect fertility.</li>
+  <li><strong>O₃ – Ground-Level Ozone:</strong> Formed when sunlight reacts with other pollutants. It harms the respiratory and cardiovascular systems.</li>
+  <li><strong>PM2.5 – Fine Particulate Matter:</strong> Tiny particles from combustion and chemical reactions. They enter the lungs and blood, causing serious health risks and possibly reducing fertility.</li>
+</ul>
+
+</body>
+</html>
