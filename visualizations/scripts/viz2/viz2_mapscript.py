@@ -84,5 +84,5 @@ fig.update_layout(
     coloraxis_colorbar=dict(title="Fertility", thickness=15, len=0.75)
 )
 
-fig.write_html("visualizations/viz2_map2018.html")
+fig.write_html("visualizations/viz2/viz2_map2018.html")
 fig.show()
