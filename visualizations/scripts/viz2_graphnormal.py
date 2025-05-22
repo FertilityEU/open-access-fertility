@@ -47,5 +47,5 @@ fig = px.bar(
     height=600
 )
 
-fig.write_html("visualizations/viz2/viz2_grafico_normalizzato_per_paese.html")
+fig.write_html("visualizations/viz2_grafico_normalizzato_per_paese.html")
 fig.show()

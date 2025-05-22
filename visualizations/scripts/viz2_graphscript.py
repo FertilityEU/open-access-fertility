@@ -35,5 +35,5 @@ fig = px.bar(
     height=600
 )
 
-fig.write_html("visualizations/viz2/viz2_grafico_media_per_paese_2017.html")
+fig.write_html("visualizations/viz2_grafico_media_per_paese_2017.html")
 fig.show()

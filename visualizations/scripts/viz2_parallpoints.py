@@ -25,5 +25,5 @@ fig = px.parallel_coordinates(
 )
 
 fig.update_layout(title="Relazione tra Fertilità, Povertà ed Educazione nei Paesi Europei (2017)")
-fig.write_html("visualizations/viz2/viz2_grafico_parallel_coordinates.html")
+fig.write_html("visualizations/viz2_grafico_parallel_coordinates.html")
 fig.show()
