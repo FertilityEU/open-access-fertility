@@ -1393,196 +1393,171 @@
 </div>
 
 
-      <!-- Technical box -->
-      <div class="container collapse analysis-card" id="target4" data-bs-parent="#analyses">
-        <div class="align-items-stretch mb-5 mb-lg-0">
-          <div class="analysis-box">
-            <div class="analysis-box-title">
-              <i class="bi bi-wrench"></i>
-              <h2 class="analysis-title">Technical analysis</h2>
-            </div>
-            <h3 class="analysis-second-title">Source datasets</h3>
-            <p class="analysis-text">
-              All source dataset have been evaluated based on the
-              <span class="underlined--bg underlined--offset--bg">
-                <b><a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
-                    target="_blank">metadata model</a> provided by AGID</b></span> that classifies metadata quality on a
-              range of 4 levels according to two factors: <i>data-metadata bond</i> and <i>detail level</i>
-            </p>
-            <p class="analysis-text">
-              <br>
-              <b>N.B.</b> Additional information and reconstructed metadata about source datasets can be found in the <a
-                href="#metadataAnalysisTable">metadata analysis table</a> below or in our general documentation.
-            </p>
-            <!-- Tables for source datasets (as in Datasets section)-->
-            <div class="table-responsive">
-              <table class="table table-hover align-middle">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Provenience</th>
-                    <th scope="col">Format</th>
-                    <th scope="col" style="width:50%">Metadata</th>
-                    <th scope="col">URI</th>
-                    <th scope="col">License</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">D1</th>
-                    <td>demo</td>
-                    <td>.csv, .xlsx, .pdf</td>
-                    <td>Level 2: A weak data-metadata bond since an external <b>pdf</b> with additional information and
-                      methodology reports is accessible; Dataset detail level, information are shared by all dataset
-                      data</td>
-                    <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">2017Population</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D2</th>
-                    <td>demo</td>
-                    <td>.csv, .xlsx, .pdf</td>
-                    <td>Level 1: Not provided</td>
-                    <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">201819Population</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D3</th>
-                    <td>I.Stat</td>
-                    <td>.csv, .xlsx, .px, .xml</td>
-                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
-                      datum-level detail of description. They are machine readable.<br>
-                      Level 2: Additional metadata to provide transparent information about sources and methodologies
-                      are available in a separated <a href="https://siqual.istat.it/SIQual/visualizza.do?id=0058000"
-                        target="_blank"></a>>webpage</a>, accessible through a sidebar menu</td>
-                    <td><a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">ReligiousObservance</a>
-                    </td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D4</th>
-                    <td>IstatData</td>
-                    <td>.csv, .xlsx, .json, .xml</td>
-                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
-                      datum-level detail of description. They are machine readable.</td>
-                    <td><a
-                        href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
-                        target="_blank">LiveBirths</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D5</th>
-                    <td>I.Stat</td>
-                    <td>.csv, .xlsx, .px, .xml</td>
-                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
-                      datum-level detail of description. They are machine readable.<br>
-                      Level 2: Additional metadata to provide transparent information about sources and methodologies
-                      are available in a separated <a
-                        href="https://siqual.istat.it/SIQual/visualizza.do?id=5000132&refresh=true&language=EN"
-                        target="_blank"></a>>webpage</a>, accessible through a sidebar menu</td>
-                    <td><a href="http://dati.istat.it/index.aspx?queryid=29218" target="_blank">SpontAbortions</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D6</th>
-                    <td>I.Stat</td>
-                    <td>.csv, .xlsx, .px, .xml</td>
-                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
-                      datum-level detail of description. They are machine readable.<br>
-                      Level 2: Additional metadata to provide transparent information about sources and methodologies
-                      are available in a separated <a
-                        href="https://siqual.istat.it/SIQual/visualizza.do?id=0038900&refresh=true&language=EN"
-                        target="_blank">webpage</a>, accessible through a sidebar menu</td>
-                    <td><a href="http://dati.istat.it/index.aspx?queryid=7098" target="_blank">InducedAbortions</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D7</th>
-                    <td>I.Stat</td>
-                    <td>.csv, .xlsx, .px, .xml</td>
-                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
-                      datum-level detail of description. They are machine readable.<br>
-                      Level 2: Additional metadata to provide transparent information about sources and methodologies
-                      are available in a separated <a href="https://siqual.istat.it/SIQual/sintesi.do?id=5000098"
-                        target="_blank"></a>>webpage</a>, accessible through a sidebar menu</td>
-                    <td><a href="http://dati.istat.it/Index.aspx?DataSetCode=DCCV_ESL_UNT2020"
-                        target="_blank">EarlyLeavers</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+    <!-- Technical box -->
+<div class="container collapse analysis-card" id="target4" data-bs-parent="#analyses">
+  <div class="align-items-stretch mb-5 mb-lg-0">
+    <div class="analysis-box">
+      <div class="analysis-box-title">
+        <i class="bi bi-wrench"></i>
+        <h2 class="analysis-title">Technical analysis</h2>
+      </div>
+      <h3 class="analysis-second-title">Source datasets</h3>
+      <p class="analysis-text">
+        All datasets have been evaluated using the 
+        <span class="underlined--bg underlined--offset--bg">
+          <b><a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html" target="_blank">
+            metadata model</a></b></span> defined by AGID, which classifies metadata quality across four levels based on two criteria: 
+        <i>Data-Metadata Bond</i> and <i>Level of Detail</i>.
+      </p>
+      <p class="analysis-text">
+        <br>
+        <b>N.B.</b> Detailed metadata evaluations and links to dataset documentation are available in the table below and within our project documentation.
+      </p>
 
-            <h3 class="analysis-second-title">
-              RDF Assertion and Metadata for the mashup datasets
-            </h3>
+      <!-- Metadata Quality Summary Table -->
+      <div class="table-responsive">
+        <table class="table table-hover align-middle">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Provenance</th>
+              <th scope="col">Format</th>
+              <th scope="col" style="width:50%">Metadata</th>
+              <th scope="col">URI</th>
+              <th scope="col">License</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">DS1</th>
+              <td>Eurostat</td>
+              <td>.csv, .tsv, .xlsx, SDMX</td>
+              <td>Level 4: Strong metadata bond via SDMX; detailed variable definitions. Machine-readable and documented.</td>
+              <td><a href="#">Eurostat TFR</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS2</th>
+              <td>Eurostat</td>
+              <td>.csv, .tsv, .xlsx, SDMX</td>
+              <td>Level 4: Complete SDMX metadata; consistent geographical/time structure.</td>
+              <td><a href="#">Population Density</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS3</th>
+              <td>EEA + EDGAR</td>
+              <td>.csv, .xlsx</td>
+              <td>Level 3: High-quality summary tables, partially structured metadata. Year, region, pollutant well documented.</td>
+              <td><a href="#">EDGAR Emissions</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS4</th>
+              <td>EEA AQER</td>
+              <td>.csv, .tsv, .json, .geojson</td>
+              <td>Level 3: Modeled air quality; partially structured metadata in web viewer and reports. Machine-readable tables.</td>
+              <td><a href="#">EEA AQ Viewer</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS5</th>
+              <td>Eurostat</td>
+              <td>.csv, .tsv, .xlsx, SDMX</td>
+              <td>Level 4: Rich metadata through Eurostat SDMX; full variable definitions; annually structured.</td>
+              <td><a href="#">Land Cover Overview</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS6</th>
+              <td>Eurostat</td>
+              <td>.csv, .tsv, .xlsx, SDMX</td>
+              <td>Level 4: Strong data-metadata bond, fully documented via SILC microdata infrastructure.</td>
+              <td><a href="#">Eurostat SILC</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS7</th>
+              <td>Eurostat</td>
+              <td>.csv, .tsv, .xlsx, SDMX</td>
+              <td>Level 4: Rich metadata and variable definitions available; machine-readable.</td>
+              <td><a href="#">Education Dataset</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS8</th>
+              <td>Eurostat</td>
+              <td>.csv, .tsv, .xlsx, SDMX</td>
+              <td>Level 3: National level only; metadata available via dataset and methodology page.</td>
+              <td><a href="#">Social Expenditure</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+            <tr>
+              <th scope="row">DS9</th>
+              <td>Eurostat</td>
+              <td>.csv, .tsv, .xlsx, SDMX</td>
+              <td>Level 4: Structured metadata via SDMX; detailed age-based breakdowns; machine-readable and well-documented.</td>
+              <td><a href="#">Live Births</a></td>
+              <td>CC BY 4.0</td>
+            </tr>
+          </tbody>
+        </table>
+    
 
-            <p class="analysis-text">
-              All produced mashup dataset have been thoroughly described with metadata, following the specification
-              of <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html"
-                target="_blank"><b>DCAT-AP_IT</b></a> standard as recommended by <span
-                class="underlined--bg underlined--offset--bg"><b>AGID's public information heritage valorization
-                  guidelines</b></span>.<br><br>
-              Since all our datasets contain data of specific national interest and are derived from Istat datasets,
-              which is an italian public research institution we decided to adopt <b>DCAT-AP_IT</b> (2016), the national
-              standard. <br>Although it is based on the first version of the european standard DCAT and has more
-              constraints, compared to the more flexible and recent european standard <a
-                href="https://www.w3.org/TR/vocab-dcat-2/" target="_blank">DCAT-AP 2.0</a>, we considered
-              DCAT-AP_IT the more suitable standard for our mashuo datasets: on the one hand, because in the italian
-              public sector <span class="underlined--bg underlined--offset--bg"><b>an increasing number of Public
-                  Administrations are adopting DCAT-AP_IT</b></span>; on the other hand,
-              because this allowed us to follow more detailed national guidelines and therfore <span
-                class="underlined--bg underlined--offset--bg"><b>ensure interoperability
-                  and harmonization with other data on a national level</b></span>.
-            </p>
+          <!-- RDF & Metadata Section -->
 
-            <p class="analysis-text">
-              Moreover:<br>
-            <ul class="analysis-text">
-              <li>To describe in full transparency the sources and the activities underlying the creation of our mashup
-                datasets we adopted <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O - the provenance
-                    ontology</b></a> as strongly recommended on a european level and also allowed by DCAT-AP_IT <a
-                  href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
-                  target="_blank">metadata model</a></li>
-              <li>Since all our mashup datasets are series containing individual datasets for each year (2017, 2018,
-                2019) and only DCAT-AP 3.0 currently provides a <code>dcat:DatasetSeries</code> with related properties,
-                again, we followed AGID's <a
-                  href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
-                  target="_blank">metadata model</a> instruction about how to handle relationships between datasets.<br>
-                We emphasized individual elements of the serie and created, inside each mashup dataset RDF assertion, a
-                triple with a Serie Dataset subject, connected through the Dublin Core property <code>dct:type</code> to
-                the value &lt;http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series&gt; .<br> Then we
-                specified which dataset belonged to the Serie by means of <code>dct:hasPart</code> property.<br>
-                Finally, every individual yearly Mashup dataset, it's connected in its turn with the related Serie by
-                means of <code>dct:isPartOf</code></li>
-            </ul>
-            </p>
+      <h3 class="analysis-second-title">RDF Assertion and Metadata for the mashup datasets</h3>
+      <p class="analysis-text">
+        All produced mashup datasets have been thoroughly described with metadata, following the specification of
+        <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html" target="_blank"><b>DCAT-AP_IT</b></a>,
+        as recommended by <span class="underlined--bg underlined--offset--bg"><b>AGID's public information heritage valorization guidelines</b></span>.
+        <br><br>
+        Since all our datasets are of national interest and derived from ISTAT sources, we chose the Italian DCAT-AP_IT (2016) standard
+        over the more flexible European <a href="https://www.w3.org/TR/vocab-dcat-2/" target="_blank">DCAT-AP 2.0</a>.
+        This guarantees <span class="underlined--bg underlined--offset--bg"><b>interoperability with Italian public sector data</b></span> and ensures
+        semantic coherence through <span class="underlined--bg underlined--offset--bg"><b>national-level alignment</b></span>.
+      </p>
 
-            <h3 class="analysis-second-title" id="metadataAnalysisTable">
-              Additional Metadata for <b>source datasets</b>
-            </h3>
+      <p class="analysis-text">
+        Moreover:
+        <ul class="analysis-text">
+          <li>We adopted <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O</b></a> to fully document the provenance and processing steps of each mashup dataset.</li>
+          <li>Given their multi-year structure, we applied the concept of <code>dcat:DatasetSeries</code> from DCAT-AP 3.0 using <code>dct:type</code> with
+            <code>&lt;http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series&gt;</code>, and connected yearly datasets via
+            <code>dct:hasPart</code> and <code>dct:isPartOf</code> properties.</li>
+        </ul>
+      </p>
 
-            <p class="analysis-text">
-              In providing the metadata for the source datasets, information have been retreived from original sources.
-              When missing, they have been induced and integrated according to the same guidelines adopted for mashup
-              datasets (ex. assignining a theme to source dataset has been done according to the same european
-              authority).
-            </p>
+      <h3 class="analysis-second-title" id="metadataAnalysisTable">
+        Additional Metadata for <b>source datasets</b>
+      </h3>
+      <p class="analysis-text">
+        Metadata for source datasets was gathered from original portals. When missing or unstructured, especially in D1 and D2 from the
+        <a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">demo database</a>, it was inferred and completed using the
+        <a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html" target="_blank">DCAT-AP_IT guidelines</a>.
+        Where available, we linked to more robust metadata on
+        <a href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_INTCENSPOP/DCIS_RICPOPRES2011/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0" target="_blank">IstatDati</a>
+        using <a href="https://sdmx.org/" target="_blank">SDMX</a> protocols.
+      </p>
 
-            <p class="analysis-text">It should be mentioned that, in case of D1 and D2, our source datasets were
-              downloaded from <a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank"> demo database
-                Endpoint</a> where very few
-              and non structured metadata were available.
-              Nonetheless, the same datasets are also published in the <a
-                href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_INTCENSPOP/DCIS_RICPOPRES2011/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0"
-                target="_blank"> IstatDati database Endpoint</a> where the Standard protocol <a href="https://sdmx.org/"
-                target="_blank">Statistical Data and Metadata eXchange (SDMX)</a> is adopted.
-              For more information about Istat Data and SDMX metadata incorporation carried out by Istat see <span
-                class="underlined--bg underlined--offset--bg"><a
-                  href="https://www.istat.it/en/methods-and-tools/sdmx-web-service" target="_blank"><b>SDMX web service
-                    for Istat data</b></a></span>.
-            </p>
+      <h3 class="analysis-second-title">Optional Metadata Evaluation Summary</h3>
+      <p class="analysis-text">
+        Most datasets from Eurostat present <b>Level 4</b> metadata thanks to SDMX adoption: they are machine-readable, fully documented, and semantically structured.<br>
+        EEA datasets (DS3, DS4) present <b>Level 3</b> quality: some metadata are partial or embedded in external documents.<br>
+        All datasets are under <b>CC BY 4.0</b> license, ensuring reuse and redistribution compatibility.
+      </p>
 
+      <h3 class="analysis-second-title">RDF Metadata Assertion and Semantic Enrichment</h3>
+      <p class="analysis-text">
+        RDF metadata were built using <b>DCAT-AP 2.0</b> core classes:
+        <ul class="analysis-text">
+          <li><b>Catalog</b>: <i>"Generation Zero Project - Datasets Catalog"</i> (ID: GenerationZeroCatalog), issued on 01/05/2025, last modified on 10/05/2025, covering Europe, in English, published by "FertilityEU".</li>
+          <li><b>Dataset</b>: MS1 to MS4 datasets described using Dublin Core terms, themed with SKOS vocabularies (Demography, Environment, Public Health).</li>
+          <li><b>Distribution</b>: links to file downloads or API endpoints, format types, and licensing metadata using <code>cc:license</code>.</li>
+        </ul>
+        Where source metadata was incomplete, it was supplemented and semantically enriched per DCAT-AP_IT and AGID instructions.
+      </p>
+    
             <!-- Metadata analysis -->
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
