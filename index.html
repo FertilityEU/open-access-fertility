@@ -1403,12 +1403,51 @@
       </div>
       <h3 class="analysis-second-title">Source datasets</h3>
       <p class="analysis-text">
-        All datasets have been evaluated using the 
+        All datasets have been evaluated using the metadata model defined by
         <span class="underlined--bg underlined--offset--bg">
           <b><a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html" target="_blank">
-            metadata model</a></b></span> defined by AGID, which classifies metadata quality across four levels based on two criteria: 
+            AGID</a></b></span>, which classifies metadata quality across four levels based on two criteria: 
         <i>Data-Metadata Bond</i> and <i>Level of Detail</i>.
       </p>
+      <p>
+        AGID Terminology in English:
+      </p>      
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; margin: auto;">
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Data-Metadata Bond</th>
+      <th>Detail Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Level 1</td>
+      <td>Weak or missing</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Level 2</td>
+      <td>Metadata exists, but is separated or minimal</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Level 3</td>
+      <td>Structured metadata, partial linkage</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <td>Level 4</td>
+      <td>SDMX or similar structured, machine-readable metadata tightly linked to data</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+      <img src="imgs/MetadatiAgid.png" alt="Modello a 4 livelli per i Metadati" style="display: block; margin: auto; width: 500px;">
+
+
+
       <p class="analysis-text">
         <br>
         <b>N.B.</b> Detailed metadata evaluations and links to dataset documentation are available in the table below and within our project documentation.
@@ -1502,60 +1541,45 @@
             </tr>
           </tbody>
         </table>
+
+        <h3 class="analysis-second-title">Metadata Evaluation Summary</h3>
+      <p class="analysis-text">
+        Most datasets originate from Eurostat, where metadata quality is generally high (Level 4) due to SDMX standards. They feature consistent formatting, full variable documentation, and are machine-readable.
+
+        The EEA datasets (DS3, DS4) provide adequate documentation, though some metadata is external (e.g., PDFs or websites) and not embedded, lowering the data-metadata bond to Level 3.
+
+      All datasets are open under CC BY 4.0, ensuring legal compatibility for reuse and redistribution.
+      </p>
+      </div>
     
 
           <!-- RDF & Metadata Section -->
 
-      <h3 class="analysis-second-title">RDF Assertion and Metadata for the mashup datasets</h3>
+      <h3 class="analysis-second-title">RDF Metadata Assertion and Semantic Enrichment of Source Datasets</h3>
       <p class="analysis-text">
-        All produced mashup datasets have been thoroughly described with metadata, following the specification of
-        <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html" target="_blank"><b>DCAT-AP_IT</b></a>,
-        as recommended by <span class="underlined--bg underlined--offset--bg"><b>AGID's public information heritage valorization guidelines</b></span>.
+        All mashup datasets produced in our project were semantically enriched and described using RDF metadata following the<a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html" target="_blank"><b>DCAT-AP 2.0 (2019)</b></a>, specification, the current European standard for public sector dataset publication.
         <br><br>
-        Since all our datasets are of national interest and derived from ISTAT sources, we chose the Italian DCAT-AP_IT (2016) standard
-        over the more flexible European <a href="https://www.w3.org/TR/vocab-dcat-2/" target="_blank">DCAT-AP 2.0</a>.
-        This guarantees <span class="underlined--bg underlined--offset--bg"><b>interoperability with Italian public sector data</b></span> and ensures
-        semantic coherence through <span class="underlined--bg underlined--offset--bg"><b>national-level alignment</b></span>.
-      </p>
-
-      <p class="analysis-text">
-        Moreover:
+        Given that the source datasets (e.g., Eurostat, EEA, EDGAR) are primarily published at the  <span class="underlined--bg underlined--offset--bg"><b>European level</b></span> and harmonized for cross-country comparison, DCAT-AP provides the most suitable framework for ensuring semantic interoperability and metadata quality.
+      <br><br>
+        In addition, we used:
         <ul class="analysis-text">
-          <li>We adopted <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O</b></a> to fully document the provenance and processing steps of each mashup dataset.</li>
-          <li>Given their multi-year structure, we applied the concept of <code>dcat:DatasetSeries</code> from DCAT-AP 3.0 using <code>dct:type</code> with
-            <code>&lt;http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series&gt;</code>, and connected yearly datasets via
-            <code>dct:hasPart</code> and <code>dct:isPartOf</code> properties.</li>
+          <li><a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>Dublin Core Terms</b></a> for standard metadata fields (title, description, date, etc.).</li>
+          <li> <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O</b></a>to describe the provenance and transformation process behind each mashup.</li>
+          <li><a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>SKOS</b></a>to tag themes and keywords (e.g., "Demography", "Environment", "Public Health").</li>
+          <li><a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>Creative Commons</b></a>to document dataset licensing.</li>
         </ul>
       </p>
+      
 
-      <h3 class="analysis-second-title" id="metadataAnalysisTable">
-        Additional Metadata for <b>source datasets</b>
-      </h3>
       <p class="analysis-text">
-        Metadata for source datasets was gathered from original portals. When missing or unstructured, especially in D1 and D2 from the
-        <a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">demo database</a>, it was inferred and completed using the
-        <a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html" target="_blank">DCAT-AP_IT guidelines</a>.
-        Where available, we linked to more robust metadata on
-        <a href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_INTCENSPOP/DCIS_RICPOPRES2011/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0" target="_blank">IstatDati</a>
-        using <a href="https://sdmx.org/" target="_blank">SDMX</a> protocols.
-      </p>
-
-      <h3 class="analysis-second-title">Optional Metadata Evaluation Summary</h3>
-      <p class="analysis-text">
-        Most datasets from Eurostat present <b>Level 4</b> metadata thanks to SDMX adoption: they are machine-readable, fully documented, and semantically structured.<br>
-        EEA datasets (DS3, DS4) present <b>Level 3</b> quality: some metadata are partial or embedded in external documents.<br>
-        All datasets are under <b>CC BY 4.0</b> license, ensuring reuse and redistribution compatibility.
-      </p>
-
-      <h3 class="analysis-second-title">RDF Metadata Assertion and Semantic Enrichment</h3>
-      <p class="analysis-text">
-        RDF metadata were built using <b>DCAT-AP 2.0</b> core classes:
+        Where source metadata was incomplete or absent, we supplemented it following DCAT-AP_IT guidelines and inferred missing properties based on dataset content and publisher documentation (e.g., EDGAR air pollution methodology page, Eurostat SDMX definitions).
+        <br><br>
+        DCAT includes main concepts/classes for describing this data in catalogs:
         <ul class="analysis-text">
-          <li><b>Catalog</b>: <i>"Generation Zero Project - Datasets Catalog"</i> (ID: GenerationZeroCatalog), issued on 01/05/2025, last modified on 10/05/2025, covering Europe, in English, published by "FertilityEU".</li>
-          <li><b>Dataset</b>: MS1 to MS4 datasets described using Dublin Core terms, themed with SKOS vocabularies (Demography, Environment, Public Health).</li>
-          <li><b>Distribution</b>: links to file downloads or API endpoints, format types, and licensing metadata using <code>cc:license</code>.</li>
+          <li><strong>Catalog:</strong> a collection of metadata about datasets.</li>
+          <li><strong>Data set:</strong> a collection of data, published or curated by a single agent, and available for access or download in one or more serialisations or formats.</li>
+          <li><strong>Distribution:</strong> it is the file to be downloaded when the user wants to use some kind of datasets, it represent different formats of the dataset or different endpoints.</li>
         </ul>
-        Where source metadata was incomplete, it was supplemented and semantically enriched per DCAT-AP_IT and AGID instructions.
       </p>
     
             <!-- Metadata analysis -->
