@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: #557c70;
+  color: #a48808;
   /* 557c70 */
   text-decoration: none;
 }
@@ -485,7 +485,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #557c70;;
+  background: #f4d339;;
 }
 
 #hero .animated {
