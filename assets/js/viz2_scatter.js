@@ -1,6 +1,6 @@
 
 function renderScatterByYear(year, containerId = "viz2_scatter_container") {
-  const CSV_FILE = "/datasets/mashup/mashup2.csv";
+  const CSV_FILE = "datasets/mashup/mashup2.csv";
 
   const container = document.getElementById(containerId);
   container.innerHTML = `<div id="scatter-${year}" style="width:100%;height:600px;"></div>`;
