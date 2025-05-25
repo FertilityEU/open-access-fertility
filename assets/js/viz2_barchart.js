@@ -1,5 +1,5 @@
 function renderCountryBarChart(year, containerId = "viz2_country_container") {
-  const CSV_FILE = "/datasets/mashup/mashup2.csv";
+  const CSV_FILE = "datasets/mashup/mashup2.csv";
   const container = document.getElementById(containerId);
   container.innerHTML = `<div id="bar-chart-${year}" style="width:100%;height:600px;"></div>`;
 
