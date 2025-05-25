@@ -304,6 +304,29 @@ function revealBG(delay) {
   }
 }
 
+function showMashupViz(containerIdToShow) {
+  // Hide all mashup containers
+  document.querySelectorAll('.mashup-viz-container').forEach(div => div.style.display = 'none');
+  // Show the selected one
+  const targetDiv = document.getElementById(containerIdToShow);
+  if (targetDiv) {
+    targetDiv.style.display = 'block';
+    // Optional: Only render if not already rendered
+    if (!targetDiv.dataset.rendered) {
+      if (containerIdToShow === 'viz-mashup1-container') {
+        window.renderMashup1('viz-mashup1-container');
+      } else if (containerIdToShow === 'viz-mashup2-container') {
+        window.renderMashup2('viz-mashup2-container');
+      } else if (containerIdToShow === 'viz3_1-container') {
+        window.renderViz3_1('viz3_1-container');
+      }
+      // Mark as rendered
+      targetDiv.dataset.rendered = "true";
+    }
+  }
+}
+
+
 function revealBG_gray(delay) {
   var reveals = document.querySelectorAll('.underlined--bg-g');
   let position = window.scrollY;
