@@ -2184,40 +2184,128 @@
     </div>
 </section>
 
+<!-- ======= Research Questions Section ======= -->
+<section id="research-questions" class="about section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Results</h2>
+      <p>Click on each button to read the explanation related to the corresponding research question.</p>
+    </div>
+
+    <!-- Row of RQ Buttons -->
+    <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq1-container', this)">RQ1</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq2-container', this)">RQ2</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq3-container', this)">RQ3</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq4-container', this)">RQ4</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq5-container', this)">RQ5</button>
+      </div>
+    </div>
+
+    <!-- RQ Text Containers (hidden by default) -->
+    <div id="rq1-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+
+        <h3>RQ1 – 🌫️ Pollution and Fertility: Are They Connected?</h3>
+        <p class="lead">Yes. All statistical and spatial analyses point to a consistent negative relationship between air pollution and fertility rates in Europe.</p>
+      
+        <div class="row">
+          <div class="col-md-4">
+            <div class="analysis-box">
+              <div class="analysis-box-title">
+                <span class="material-symbols-outlined">bar_chart</span>
+                <h4 class="analysis-title">Correlation</h4>
+              </div>
+              <p class="analysis-text">O₃: –0.301<br>NO₂: –0.166<br>PM2.5: –0.137</p>
+              <p class="analysis-text"><b>All negative → higher pollution = lower fertility</b></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="analysis-box">
+              <div class="analysis-box-title">
+                <span class="material-symbols-outlined">functions</span>
+                <h4 class="analysis-title">Regression</h4>
+              </div>
+              <p class="analysis-text">NO₂: –0.0067 (p &lt; 0.05)</p>
+              <p class="analysis-text"><b>Only NO₂ has an independent, significant effect</b></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="analysis-box">
+              <div class="analysis-box-title">
+                <span class="material-symbols-outlined">map</span>
+                <h4 class="analysis-title">Mapping</h4>
+              </div>
+              <p class="analysis-text">Low fertility + High NO₂:<br>🌍 Lombardy, Île-de-France, Eastern Europe</p>
+              <p class="analysis-text"><b>Clear spatial overlap across 3 years</b></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row mt-4 bg-warning-subtle p-4 rounded">
+          <div class="col-md-4 text-center">
+            <p class="factor-text">Statistical evidence</p>
+            <p>✅ Strong correlation and regression significance</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p class="factor-text">Geographic patterns</p>
+            <p>✅ Visual overlap of pollution and low fertility</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p class="factor-text">Temporal stability</p>
+            <p>✅ Same pattern repeated 2017–2019</p>
+          </div>
+        </div>
+      
+        <p class="mt-4">Air pollution—especially NO₂—emerges as a potential environmental constraint to reproduction. Public health and fertility policy should be linked more tightly in high-risk regions.</p>
+      </div>
+
+
+      <div id="rq2-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 2 goes here.</p>
+    </div>
+    <div id="rq3-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 3 goes here.</p>
+    </div>
+    <div id="rq4-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 4 goes here.</p>
+    </div>
+    <div id="rq5-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 5 goes here.</p>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- ======= Sustainability Section ======= -->
-    <section id="sustain" class="about">
-      <div class="container">
+<section id="sustain" class="about">
+  <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Sustainability of the project</h2>
-        </div>
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              The <b>source datasets</b> developed for "Blessed be the fruit" are provided exclusively by the <b>
-                Italian National
-                Institute of Statistics
-              </b> (Istat), which maintains them in its various databases. Given the current
-              situation of I.Stat, which content will be soon moved to IstatData, <span
-                class="underlined underlined--offset"><b>
-                  the URIs provided in this project for
-                  the source datasets D3, D5, D6, and D7 will eventually become obsolete
-                </b></span>.
-            </p>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              However, <b>"Blessed be the fruit"</b> is the <span class="underlined underlined--offset"><b>final
-                  project</b></span> developed for the "Open Access and Digital
-              Ethics" course (a.a. 2022/2023) within the Digital Humanities and Digital Knowledge Masters Degree
-              (University of Bologna), and, as such is <span class="underlined underlined--offset"><b>not actively
-                  maintained</b></span> and <span class="underlined underlined--offset"><b>will not be
-                  updated</b></span> in the future.
-            </p>
-          </div>
-        </div>
-    </section><!-- End Sustainability Section -->
+    <div class="section-title" data-aos="fade-up">
+      <h2>Sustainability of the project</h2>
+    </div>
+    <div class="row content">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+        <p>
+          The <b>source datasets</b> used in <b>"Generation Zero"</b> are released by official European providers such as <b>Eurostat</b>, <b>WHO</b>, and <b>the European Environment Agency</b>. These institutions ensure high data quality and long-term availability through stable repositories and APIs. However, some <span class="underlined underlined--offset"><b>URIs or access routes may evolve</b></span> due to changes in platform architecture (e.g., transition to SDMX or new portals).
+        </p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <p>
+          <b>"Generation Zero"</b> is the <span class="underlined underlined--offset"><b>final project</b></span> developed for the "Open Access and Digital Ethics" course (a.y. 2024/2025) within the Digital Humanities and Digital Knowledge Master’s Degree at the University of Bologna. As such, it is <span class="underlined underlined--offset"><b>no longer actively maintained</b></span> and <span class="underlined underlined--offset"><b>will not be updated</b></span> in the future.
+        </p>
+      </div>
+    </div>
+</section><!-- End Sustainability Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
