@@ -99,5 +99,5 @@ fig.update_layout(
 )
 
 # Salva e mostra
-fig.write_html("visualizations/viz1_map_NO2_2019.html")
+fig.write_html("visualizations/viz1_map.html", full_html=False, include_plotlyjs='cdn')
 fig.show()

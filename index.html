@@ -547,24 +547,7 @@
           </div>
         </div>
         
-        <div class="row content">
-          <div class="" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              <a href="documentation/CLEAN.ipynb" target="_blank" style="vertical-align: middle;">
-                <span class="material-symbols-outlined">download</span>
-              </a>
-              Download the Jupyter Notebook on the clean up phase<br>
-              <a href="documentation/MASHUP.ipynb" target="_blank" style="vertical-align: middle;">
-                <span class="material-symbols-outlined">download</span>
-              </a>
-              Download the Jupyter Notebook on the mashup phase<br>
-              <a href="documentation/KNIME_WORKFLOWS.zip" target="_blank" style="vertical-align: middle;">
-                <span class="material-symbols-outlined">download</span>
-              </a>
-              Download KNIME workflows for dataset integration
-            </p>
-          </div>
-        </div>
+        
     </section><!-- End Datasets Section -->
 
 
@@ -588,7 +571,9 @@
               <img src="assets/img/knime.png" alt="Workflow KNIME" width="100%" />
             </p><br>
             <p>
-              Additionally, the full KNIME workflow can be downloaded <a href="KNIME_project.knwf" download>here</a>, allowing users to access the cleaned and integrated data for their own analysis or research purposes.
+              <a href="KNIME_project.knwf"
+                style="vertical-align: middle;" download><span class="material-symbols-outlined">download</span></a>
+              <b>The full KNIME workflow</b> can be downloaded <a href="KNIME_project.knwf" download>here</a>, allowing users to access the cleaned and integrated data for their own analysis or research purposes.<br>
             </p>
           </div>
         </div>    
@@ -2469,6 +2454,87 @@
     </div>
 </section>
 
+<!-- ======= Research Questions Section ======= -->
+<section id="research-questions" class="about section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Research Questions</h2>
+      <p>Click on each button to read the explanation related to the corresponding research question.</p>
+    </div>
+
+    <!-- Row of RQ Buttons -->
+    <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq1-container', this)">RQ1</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq2-container', this)">RQ2</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq3-container', this)">RQ3</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq4-container', this)">RQ4</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('rq5-container', this)">RQ5</button>
+      </div>
+    </div>
+
+    <!-- RQ Text Containers (hidden by default) -->
+    <div id="rq1-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+          <h3>RQ1: Is there a relationship between regional exposure to environmental pollutants and fertility rates?</h3>
+          <p><b>Hypothesis — supported.</b></p>
+          <p>To answer this question, we created three interconnected visualizations using Mashup 1, which merges fertility rate data (DS1) with air pollution indicators (NO₂, O₃, PM2.5 from DS5) and population density (DS2), across 157 NUTS2 European regions (2017–2019).</p>
+          <p><b>Summary:</b> Pollution and fertility show a consistent negative statistical relationship across three years and multiple models.</p>
+    
+          <h4>Viz 1: Linear Correlation Analysis</h4>
+          <p><b>Purpose:</b> Do fertility rates and pollution move together? Pearson correlations were used:</p>
+          <ul>
+            <li>O₃: r = –0.301</li>
+            <li>NO₂: r = –0.166</li>
+            <li>PM2.5: r = –0.137</li>
+          </ul>
+          <p>All three pollutants are negatively correlated with fertility, with O₃ showing the strongest trend.</p>
+    
+          <h4>Viz 2: Multiple Linear Regression</h4>
+          <p><b>Purpose:</b> Which pollutant has the most robust effect?</p>
+          <p>Only NO₂ was statistically significant (–0.0067, p &lt; 0.05), suggesting it has an independent negative effect when controlling for others.</p>
+    
+          <h4>Viz 3: Spatial Mapping (2017–2019)</h4>
+          <p>Mapped NO₂ and fertility at regional level over 3 years:</p>
+          <ul>
+            <li>High NO₂ + low fertility in Lombardy, Île-de-France, and Eastern Europe</li>
+            <li>Lower NO₂ + higher fertility in Scandinavia, Baltics, rural Spain</li>
+          </ul>
+    
+          <h4>Conclusion</h4>
+          <p>The hypothesis is supported both statistically and geographically:</p>
+          <ul>
+            <li>Statistical: consistent negative association (especially NO₂)</li>
+            <li>Geographic: pollution and low fertility coincide in key regions</li>
+            <li>Temporal: stable across 2017–2019, not a short-term fluctuation</li>
+          </ul>
+          <p>Pollution, particularly NO₂, may act as a hidden environmental barrier to reproduction — especially in urbanized, densely populated areas. Policies to reduce pollution may thus have positive effects on reproductive health and demographic sustainability.</p>
+    
+    </div>
+    <div id="rq2-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 2 goes here.</p>
+    </div>
+    <div id="rq3-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 3 goes here.</p>
+    </div>
+    <div id="rq4-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 4 goes here.</p>
+    </div>
+    <div id="rq5-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <p>Content for Research Question 5 goes here.</p>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- ======= Sustainability Section ======= -->
     <section id="sustain" class="about">
@@ -2517,18 +2583,15 @@
           <div class="col-lg-3 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/team/madda_1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/virginia.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href="mailto:maddalena.ghiotto@studio.unibo.it"><i class="bi bi-envelope"></i></a>
-                  <a href="https://www.linkedin.com/in/maddalena-ghiotto-612412253/" target="_blank"><i
-                      class="bi bi-linkedin"></i></a>
+                  <a href="mailto:virginia.dantonio@studio.unibo.it"><i class="bi bi-envelope"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Maddalena Ghiotto</h4>
-                <span>(holding herself)</span>
-                <p>Project ideation — Data retrieval — Mashup datasets — Technical analysis — RDF assertion of the
-                  metadata</p>
+                <h4>Virginia D'Antonio</h4>
+                <span>(hi)</span>
+                <p>Project ideation — Data retrieval — Mashup datasets — Quality and legal analyses — Ethical analysis — Technical analysis — RDF assertion of the metadata — Sustainability of the update — Visualizations — Website development</p>
               </div>
             </div>
           </div>
@@ -2536,17 +2599,15 @@
           <div class="col-lg-3 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="" class="img-fluid" alt="">
+                <img src="assets/img/team/elena.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href="mailto:chloi.papadopoulou@studio.unibo.it"><i class="bi bi-envelope"></i></a>
-                  <a href="" target="_blank"><i
-                      class="bi bi-linkedin"></i></a>
+                  <a href="mailto:elena.binotti2@studio.unibo.it"><i class="bi bi-envelope"></i></a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>Elena Binotti</h4>
-                <span>(holding a coffee machine)</span>
-                <p>Project ideation — Data retrieval — Ethical analysis — Visualizations
+                <span>(hi)</span>
+                <p>Project ideation — Data retrieval — Mashup datasets — Quality and legal analyses — Ethical analysis — Technical analysis — RDF assertion of the metadata — Sustainability of the update — Visualizations — Website development
                 </p>
               </div>
             </div>
@@ -2555,19 +2616,15 @@
           <div class="col-lg-3 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/team/orsola.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/elvira.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href="mailto:orsolamaria.borrini@studio.unibo.it"><i class="bi bi-envelope"></i></a>
-                  <a href="https://www.linkedin.com/in/orsola-maria-borrini-362142253/" target="_blank"><i
-                      class="bi bi-linkedin"></i></a>
+                  <a href="mailto:elvira.kushlak@studio.unibo.it"><i class="bi bi-envelope"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Orsola Maria Borrini</h4>
-                <span>(holding tzatziki)</span>
-                <p>Project ideation — Data retrieval — Mashup datasets — Quality and legal analyses — Sustainability of
-                  the update — Website
-                  development</p>
+                <h4>Elvira Kushlak</h4>
+                <span>(hi)</span>
+                <p>Project ideation — Data retrieval — Mashup datasets — Quality and legal analyses — Ethical analysis — Technical analysis — RDF assertion of the metadata — Sustainability of the update — Visualizations — Website development</p>
               </div>
             </div>
           </div>
