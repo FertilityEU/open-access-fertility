@@ -305,13 +305,10 @@ function revealBG(delay) {
 }
 
 function showMashupViz(containerIdToShow) {
-  // Hide all mashup containers
   document.querySelectorAll('.mashup-viz-container').forEach(div => div.style.display = 'none');
-  // Show the selected one
   const targetDiv = document.getElementById(containerIdToShow);
   if (targetDiv) {
     targetDiv.style.display = 'block';
-    // Optional: Only render if not already rendered
     if (!targetDiv.dataset.rendered) {
       if (containerIdToShow === 'viz-mashup1-container') {
         window.renderMashup1('viz-mashup1-container');
@@ -327,7 +324,6 @@ function showMashupViz(containerIdToShow) {
     }
   }
 }
-
 
 
 function revealBG_gray(delay) {
@@ -362,8 +358,9 @@ function showMashupViz(id, btn) {
   btn.classList.add('btn-mashup-active', 'active');
 
   // RENDER the appropriate visuals
-  if (id === 'viz-mashup2-container') {
-    // Default: show 2017, or you can store/restore last used year
+  if (id === 'viz-mashup1-container') {
+    showMashup1Tab('map', document.querySelector('.btn-mashup1-viz'));
+  } else if (id === 'viz-mashup2-container') {
     showMashup2Year(2017, document.querySelector('#viz2-year-buttons .btn-mashup-year'));
   } else if (id === 'viz3_1-container') {
     if (window.renderViz3_1) window.renderViz3_1("viz3_1-container");
@@ -371,6 +368,36 @@ function showMashupViz(id, btn) {
     if (window.renderViz4_map) window.renderViz4_map("viz4_map-container");
   }
 }
+
+function showMashup1Tab(tab, btn) {
+  // Tab highlight
+  document.querySelectorAll('.btn-mashup1-tab').forEach(b => b.classList.remove('btn-mashup-active', 'active'));
+  if (btn) btn.classList.add('btn-mashup-active', 'active');
+
+  // Hide all
+  document.getElementById('mashup1-map-pane').style.display = 'none';
+  document.getElementById('mashup1-correlation-img').style.display = 'none';
+  document.getElementById('mashup1-regression-img').style.display = 'none';
+
+  // Show selected
+  if (tab === 'map') {
+    document.getElementById('mashup1-map-pane').style.display = 'block';
+  } else if (tab === 'correlation') {
+    document.getElementById('mashup1-correlation-img').style.display = 'block';
+  } else if (tab === 'regression') {
+    document.getElementById('mashup1-regression-img').style.display = 'block';
+  }
+}
+
+function setMashup1MapYear(year, btn) {
+  // Year button highlight (only in map pane)
+  document.querySelectorAll('#viz1-year-buttons .btn-mashup-year').forEach(b => b.classList.remove('btn-mashup-active', 'active'));
+  if (btn) btn.classList.add('btn-mashup-active', 'active');
+  // Set iframe src
+  document.getElementById('mashup1iframe').src = 'visualizations/viz1_map_NO2_' + year + '.html';
+}
+
+
 
 
 

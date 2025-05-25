@@ -2204,7 +2204,6 @@ h3.analysis-second-title {
       border-color: #ffd600;
     }
 
-    /* Active (clicked) mashup button: bright yellow, black text */
     .btn-mashup-active,
     .btn-mashup.active {
       background: #ffd600 !important;
@@ -2212,6 +2211,19 @@ h3.analysis-second-title {
       border-color: #e2c200 !important;
       box-shadow: none !important;
     }
+
+    .btn-mashup1-tab.btn-mashup-active,
+    .btn-mashup1-tab.active,
+    .btn-mashup-year.btn-mashup-active,
+    .btn-mashup-year.active {
+      background: #ffd600 !important;
+      color: #111 !important;
+      border-color: #e2c200 !important;
+    }
+
+
+
+
 
 
 
@@ -2241,3 +2253,24 @@ h3.analysis-second-title {
 }#rel17_8{
 
 } */
+
+.analysis-box {
+  min-height: 280px; /* oppure height: 280px se vuoi che siano esattamente uguali */
+}
+
+.mashup-viz-container {
+  padding-top: 2rem; /* Spazio tra top del container e il titolo */
+}
+
+.mashup-viz-container .lead {
+  margin-bottom: 2rem; /* Spazio tra sottotitolo e i box bianchi */
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* questo spinge tutto in basso */
+  align-items: center;
+  height: 100%;
+  padding: 1.5em;
+}
