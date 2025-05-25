@@ -2253,3 +2253,24 @@ h3.analysis-second-title {
 }#rel17_8{
 
 } */
+
+.analysis-box {
+  min-height: 280px; /* oppure height: 280px se vuoi che siano esattamente uguali */
+}
+
+.mashup-viz-container {
+  padding-top: 2rem; /* Spazio tra top del container e il titolo */
+}
+
+.mashup-viz-container .lead {
+  margin-bottom: 2rem; /* Spazio tra sottotitolo e i box bianchi */
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* questo spinge tutto in basso */
+  align-items: center;
+  height: 100%;
+  padding: 1.5em;
+}
