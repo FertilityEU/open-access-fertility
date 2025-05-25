@@ -15,9 +15,9 @@ country_avg = df.groupby("country_code")[["fertility", "poverty", "tertiary_educ
 
 # Rinomina per leggibilità
 country_avg = country_avg.rename(columns={
-    "fertility": "Fertilità",
-    "poverty": "Povertà (%)",
-    "tertiary_educ": "Educazione terziaria (%)"
+    "fertility": "Fertility",
+    "poverty": "Poverty (%)",
+    "tertiary_educ": "Tertiary Education (%)"
 })
 
 # Trasforma per visualizzazione
