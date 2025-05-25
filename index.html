@@ -48,6 +48,7 @@
   <script src ="assets/js/viz4_map.js"></script>
   <script src="assets/js/viz2_barchart.js"></script>
   <script src="assets/js/viz2_scatter.js"></script>
+  <script src="assets/js/viz1_loaders.js"></script>
 
 
   <!-- Plotly -->
@@ -2162,6 +2163,27 @@
           <button class="btn btn-mashup" onclick="showMashupViz('viz4_map-container', this)">Mashup 4</button>
         </div>
       </div>
+
+      <div id="viz-mashup1-container" class="mashup-viz-container" style="display:none">
+      <div class="mb-2" style="text-align:center;">
+        <button class="btn btn-mashup1-tab" onclick="showMashup1Tab('map', this)">NO₂ Map</button>
+        <button class="btn btn-mashup1-tab" onclick="showMashup1Tab('correlation', this)">Correlation</button>
+        <button class="btn btn-mashup1-tab" onclick="showMashup1Tab('regression', this)">Regression</button>
+      </div>
+
+      <div id="mashup1-map-pane" style="display:block;">
+        <div id="viz1-year-buttons" class="mb-2" style="text-align:center;">
+          <button class="btn btn-mashup-year" onclick="setMashup1MapYear(2017, this)">2017</button>
+          <button class="btn btn-mashup-year" onclick="setMashup1MapYear(2018, this)">2018</button>
+          <button class="btn btn-mashup-year" onclick="setMashup1MapYear(2019, this)">2019</button>
+        </div>
+        <iframe id="mashup1iframe" src="visualizations/viz1_map_NO2_2017.html" width="100%" height="600" frameborder="0" style="display:block"></iframe>
+      </div>
+
+      <img id="mashup1-correlation-img" src="assets/img/correlation.jpg" style="display:none; width:100%; max-width: width 1200px;; margin:auto;">
+
+      <img id="mashup1-regression-img" src="assets/img/regression.jpg" style="display:none; width:100%; max-width:1200px; margin:auto;">
+    </div>
 
 
       <!-- Mashup 2: year switch and dual chart -->
