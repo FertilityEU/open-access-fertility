@@ -304,6 +304,31 @@ function revealBG(delay) {
   }
 }
 
+function showMashupViz(containerIdToShow) {
+  // Hide all mashup containers
+  document.querySelectorAll('.mashup-viz-container').forEach(div => div.style.display = 'none');
+  // Show the selected one
+  const targetDiv = document.getElementById(containerIdToShow);
+  if (targetDiv) {
+    targetDiv.style.display = 'block';
+    // Optional: Only render if not already rendered
+    if (!targetDiv.dataset.rendered) {
+      if (containerIdToShow === 'viz-mashup1-container') {
+        window.renderMashup1('viz-mashup1-container');
+      } else if (containerIdToShow === 'viz-mashup2-container') {
+        window.renderMashup2('viz-mashup2-container');
+      } else if (containerIdToShow === 'viz3_1-container') {
+        window.renderViz3_1('viz3_1-container');
+      } else if (containerIdToShow === 'viz4_map-container') {
+        window.renderViz4_map('viz4_map-container');
+      }
+      // Mark as rendered
+      targetDiv.dataset.rendered = "true";
+    }
+  }
+}
+
+
 function revealBG_gray(delay) {
   var reveals = document.querySelectorAll('.underlined--bg-g');
   let position = window.scrollY;
@@ -320,5 +345,18 @@ function revealBG_gray(delay) {
     }
   }
 }
+
+function showMashupViz(id, btn) {
+  // Hide all containers (optional, if you have container switching)
+  document.querySelectorAll('.mashup-viz-container').forEach(el => el.style.display = 'none');
+  // Show the selected one
+  document.getElementById(id).style.display = 'block';
+  // Remove active from all mashup buttons
+  document.querySelectorAll('.btn-mashup').forEach(b => b.classList.remove('btn-mashup-active', 'active'));
+  // Add active to the clicked button
+  btn.classList.add('btn-mashup-active', 'active');
+}
+
+
 
 
