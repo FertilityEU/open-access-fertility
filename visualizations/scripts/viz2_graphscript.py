@@ -1,39 +1,56 @@
 import pandas as pd
 import plotly.express as px
 
-# Carica i dati
-data = pd.read_csv("datasets/mashup/mashup2.csv")  # Usa il tuo percorso locale
+# Load the data
+data = pd.read_csv("datasets/mashup/mashup2.csv")
 
-# Filtra solo l'anno 2017
-df = data[data["year"] == 2017].copy()
+# Filter for year 2017
+df = data[data["year"] == 2019].copy()
 
-# Estrai codice paese (es. IT, DE, FR...)
+# Extract country code (e.g. IT, DE, FR...)
 df["country_code"] = df["nuts2_code"].str[:2]
 
-# Calcola media per paese
+# Compute average values per country
 country_avg = df.groupby("country_code")[["fertility", "poverty", "tertiary_educ"]].mean().reset_index()
 
-# Rinomina per leggibilità
+# Rename for clarity
 country_avg = country_avg.rename(columns={
     "fertility": "Fertility",
     "poverty": "Poverty (%)",
     "tertiary_educ": "Tertiary Education (%)"
 })
 
-# Trasforma per visualizzazione
-long_df = country_avg.melt(id_vars="country_code", var_name="Indicatore", value_name="Valore")
+# Sort countries alphabetically
+country_avg = country_avg.sort_values("country_code")
 
-# Crea il grafico
+# Reshape for visualization
+long_df = country_avg.melt(
+    id_vars="country_code",
+    var_name="Indicator",
+    value_name="Value"
+)
+
 fig = px.bar(
     long_df,
     x="country_code",
-    y="Valore",
-    color="Indicatore",
+    y="Value",
+    color="Indicator",
     barmode="group",
-    title="Media Fertilità, Povertà ed Educazione per Paese (2017)",
-    labels={"country_code": "Paese"},
+    title="<b>Average Fertility, Poverty and Education by Country (2019" \
+    ")</b>",
+    labels={"country_code": "Country", "Value": "Value"},
     height=600
 )
 
-fig.write_html("visualizations/viz2_grafico_media_per_paese_2017.html")
+# Style adjustments
+fig.update_layout(
+    font=dict(size=14),
+    title_font_size=20,
+    legend_title_text="Indicator",
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+    plot_bgcolor="#f9f9f9",
+    paper_bgcolor="#ffffff"
+)
+
+fig.write_html("visualizations/viz2_bar_chart_country_2019.html")
 fig.show()

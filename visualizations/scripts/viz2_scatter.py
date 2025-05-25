@@ -140,7 +140,7 @@ data['country_name'] = data['country_code'].map(iso_country_mapping)
 data['region_name'] = data['nuts2_code'].map(nuts2_mapping)
 
 # Filtra per anno 2018
-df = data[data["year"] == 2019].copy()
+df = data[data["year"] == 2017].copy()
 df["country"] = df["nuts2_code"].str[:2]
 df["region_label"] = df["region_name"] + " (" + df["nuts2_code"] + ")"
 
@@ -164,7 +164,7 @@ fig = px.scatter(
         "country_name": "Country",
         "region_name": "NUTS2 Region"
     },
-    title="Fertility vs Poverty (dimension = education) – NUTS2 (2018)",
+    title="Fertility vs Poverty (dimension = education) – NUTS2 (2017)",
     height=600
 )
 
@@ -175,6 +175,6 @@ for trace in fig.data:
     if trace.name == 'Italy':
         trace.visible = True  # Mostra solo l'Italia
 
-fig.write_html("visualizations/viz2_scatter2019.html")
+fig.write_html("visualizations/viz2_scatter2017.html")
 fig.show()
 

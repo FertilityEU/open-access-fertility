@@ -23,16 +23,16 @@ country_avg_scaled[["fertility", "poverty", "tertiary_educ"]] = scaler.fit_trans
 
 # Rinomina colonne per il grafico
 country_avg_scaled = country_avg_scaled.rename(columns={
-    "fertility": "Fertilità (norm.)",
-    "poverty": "Povertà (norm.)",
-    "tertiary_educ": "Educazione terziaria (norm.)"
+    "fertility": "Fertility (norm.)",
+    "poverty": "Poverty (norm.)",
+    "tertiary_educ": "Tertiary Education (norm.)"
 })
 
 # Porta in formato long per plotly
 long_df = country_avg_scaled.melt(
     id_vars="country_code",
     var_name="Indicatore",
-    value_name="Valore normalizzato"
+    value_name="Value (norm.)"
 )
 
 # Crea grafico
