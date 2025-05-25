@@ -1472,7 +1472,7 @@
               <td>Eurostat</td>
               <td>.csv, .tsv, .xlsx, SDMX</td>
               <td>Level 4: Strong metadata bond via SDMX; detailed variable definitions. Machine-readable and documented.</td>
-              <td><a href="#">Eurostat TFR</a></td>
+              <td><a href="https://ec.europa.eu/eurostat/databrowser/view/tgs00100/default/table">Eurostat TFR</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1480,7 +1480,7 @@
               <td>Eurostat</td>
               <td>.csv, .tsv, .xlsx, SDMX</td>
               <td>Level 4: Complete SDMX metadata; consistent geographical/time structure.</td>
-              <td><a href="#">Population Density</a></td>
+              <td><a href="https://ec.europa.eu/eurostat/databrowser/view/tgs00024/default/table">Population Density</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1488,7 +1488,7 @@
               <td>EEA + EDGAR</td>
               <td>.csv, .xlsx</td>
               <td>Level 3: High-quality summary tables, partially structured metadata. Year, region, pollutant well documented.</td>
-              <td><a href="#">EDGAR Emissions</a></td>
+              <td><a href="https://edgar.jrc.ec.europa.eu/dataset_ghg2024_nuts2">EDGAR Emissions</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1496,7 +1496,7 @@
               <td>EEA AQER</td>
               <td>.csv, .tsv, .json, .geojson</td>
               <td>Level 3: Modeled air quality; partially structured metadata in web viewer and reports. Machine-readable tables.</td>
-              <td><a href="#">EEA AQ Viewer</a></td>
+              <td><a href="https://discomap.eea.europa.eu/App/AQViewer/index.html?fqn=Airquality_Dissem.ebd.countries_and_nuts&ScenarioDescription=Baseline%20from%20WHO%202021%20AQG&UrbanisationDegree=All%20Areas%20(incl.unclassified)&Year=2022&Sex=Total">EEA AQ Viewer</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1504,7 +1504,7 @@
               <td>Eurostat</td>
               <td>.csv, .tsv, .xlsx, SDMX</td>
               <td>Level 4: Rich metadata through Eurostat SDMX; full variable definitions; annually structured.</td>
-              <td><a href="#">Land Cover Overview</a></td>
+              <td><a href="https://ec.europa.eu/eurostat/databrowser/view/lan_lcv_ovw/default/table">Land Cover Overview</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1512,7 +1512,7 @@
               <td>Eurostat</td>
               <td>.csv, .tsv, .xlsx, SDMX</td>
               <td>Level 4: Strong data-metadata bond, fully documented via SILC microdata infrastructure.</td>
-              <td><a href="#">Eurostat SILC</a></td>
+              <td><a href="https://ec.europa.eu/eurostat/databrowser/view/ilc_di03/default/table">Eurostat SILC</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1520,7 +1520,7 @@
               <td>Eurostat</td>
               <td>.csv, .tsv, .xlsx, SDMX</td>
               <td>Level 4: Rich metadata and variable definitions available; machine-readable.</td>
-              <td><a href="#">Education Dataset</a></td>
+              <td><a href="https://ec.europa.eu/eurostat/databrowser/view/educ_uoe_grad02/default/table">Education Dataset</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1528,7 +1528,7 @@
               <td>Eurostat</td>
               <td>.csv, .tsv, .xlsx, SDMX</td>
               <td>Level 3: National level only; metadata available via dataset and methodology page.</td>
-              <td><a href="#">Social Expenditure</a></td>
+              <td><a href="https://ec.europa.eu/eurostat/databrowser/view/spr_exp_ffa/default/table">Social Expenditure</a></td>
               <td>CC BY 4.0</td>
             </tr>
             <tr>
@@ -1536,7 +1536,7 @@
               <td>Eurostat</td>
               <td>.csv, .tsv, .xlsx, SDMX</td>
               <td>Level 4: Structured metadata via SDMX; detailed age-based breakdowns; machine-readable and well-documented.</td>
-              <td><a href="#">Live Births</a></td>
+              <td><a href="https://ec.europa.eu/eurostat/databrowser/view/demo_r_frate2/default/table">Live Births</a></td>
               <td>CC BY 4.0</td>
             </tr>
           </tbody>
@@ -1551,22 +1551,23 @@
       All datasets are open under CC BY 4.0, ensuring legal compatibility for reuse and redistribution.
       </p>
       </div>
+      <br>
     
 
           <!-- RDF & Metadata Section -->
 
       <h3 class="analysis-second-title">RDF Metadata Assertion and Semantic Enrichment of Source Datasets</h3>
       <p class="analysis-text">
-        All mashup datasets produced in our project were semantically enriched and described using RDF metadata following the<a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html" target="_blank"><b>DCAT-AP 2.0 (2019)</b></a>, specification, the current European standard for public sector dataset publication.
+        All mashup datasets produced in our project were semantically enriched and described using RDF metadata following the<a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html" target="_blank"><b> DCAT-AP 2.0 (2019)</b></a>, specification, the current European standard for public sector dataset publication.
         <br><br>
         Given that the source datasets (e.g., Eurostat, EEA, EDGAR) are primarily published at the  <span class="underlined--bg underlined--offset--bg"><b>European level</b></span> and harmonized for cross-country comparison, DCAT-AP provides the most suitable framework for ensuring semantic interoperability and metadata quality.
       <br><br>
         In addition, we used:
         <ul class="analysis-text">
-          <li><a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>Dublin Core Terms</b></a> for standard metadata fields (title, description, date, etc.).</li>
-          <li> <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O</b></a>to describe the provenance and transformation process behind each mashup.</li>
-          <li><a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>SKOS</b></a>to tag themes and keywords (e.g., "Demography", "Environment", "Public Health").</li>
-          <li><a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>Creative Commons</b></a>to document dataset licensing.</li>
+          <li><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank"><b>Dublin Core Terms</b></a> for standard metadata fields (title, description, date, etc.).</li>
+          <li> <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O</b></a> to describe the provenance and transformation process behind each mashup.</li>
+          <li><a href="https://www.w3.org/TR/skos-reference/" target="_blank"><b>SKOS</b></a> to tag themes and keywords (e.g., "Demography", "Environment", "Public Health").</li>
+          <li><a href="https://creativecommons.org/ns#" target="_blank"><b>Creative Commons</b></a> to document dataset licensing.</li>
         </ul>
       </p>
       
@@ -1677,227 +1678,173 @@
                         <th scope="col">Identifier</th>
                         <th scope="col">Description</th>
                         <th scope="col">Theme</th>
-                        <th scope="col">Subject</th>
                         <th scope="col">Issued</th>
                         <th scope="col">Modified</th>
-                        <th scope="col">Accrual periodicity</th>
                         <th scope="col">Rights holder</th>
                         <th scope="col">Creator</th>
                         <th scope="col">Publisher</th>
                         <th scope="col">Distribution</th>
                         <th scope="col">Language</th>
-                        <th scope="col">Derived from</th>
                         <th scope="col">License</th>
                         <th scope="col">RDF assertion of the metadata</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">D1</th>
-                        <td>Population estimates 2002-2019</td>
+                        <th scope="row">DS1</th>
+                        <td>Total fertility rate by NUTS 2 region</td>
+                        <td>demo_r_frate2</td>
+                        <td>Mean number of children that a woman could have during her childbearing age, taking into consideration the current average number of children born alive for different age groups.</td>
+                        <td>Population and social conditions ; General and regional statistics</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Intercensal population estimates by age, sex and citizenship on 1st January</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/SOCI"
-                            target="_blank">Population and society</a></td>
-                        <td>2816 demografia e popolazione</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Never</td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank"> demo database
-                            Endpoint</a><br><br><a
-                            href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_INTCENSPOP/DCIS_RICPOPRES2011/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0"
-                            target="_blank"> IstatDati database Endpoint</a></td>
-                        <td>Italian, English</td>
-                        <td>
-                          <ul>
-                            <li>Censimento della popolazione (31.12.2018)</li>
-                            <li>Censimenti della popolazione 2001 e 2011</li>
-                            <li>flussi demografici (nascite, decessi, migrazioni, acquisizioni della cittadinanza)
-                              registrati tra i censimenti 2001 e 2018</li>
-                          </ul>
-                        </td>
-                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
-                        <td>
-                          <ul>
-                            <li><a
-                                href="https://demo.istat.it/data/ricostruzione/Ricostruzione-popolazione_2002_2018.pdf"
-                                target="_blank">Download Informative note on population reconstruction 2002-2018
-                                (IT)</a></li>
-                            <li><a
-                                href="https://demo.istat.it/data/ricostruzione/Nota_metodologica_Ricostruzione2002_2018.pdf"
-                                target="_blank">Download methodological note on population reconstruction 2002-2018
-                                (IT)</a></li>
-                            <li><a
-                                href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_INTCENSPOP/DCIS_RICPOPRES2011/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0"
-                                target="_blank">Download SDMX structured data from IstatData endpoint</a></li>
-                          </ul>
-                        </td>
+                        <td>01/04/2025</td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td>.csv, .tsv, .xlsx, SDMX (.xml, .json)</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
+                        <td><a href="https://ec.europa.eu/eurostat/cache/metadata/en/demo_r_gind3_esms.htm"
+                                target="_blank">Reference metadata demo_r</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">D2</th>
-                        <td>Resident Population</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <th scope="row">DS2</th>
+                        <td>Population density by NUTS 2 region</td>
+                        <td>demo_r_d3dens</td>
                         <td>Resident population by age, sex and marital status on 1st January, years 2019-2022</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/SOCI"
-                            target="_blank">Population and society</a></td>
-                        <td>2816 demografia e popolazione</td>
+                        <td>Population and social conditions; Regional statistics</td> 
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Annual</td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">demo database
-                            Endpoint</a><br><br><a
-                            href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_POPULATION/DCIS_POPRES1/IT1,22_289_DF_DCIS_POPRES1_1,1.0"
-                            target="_blank"> IstatDati database Endpoint</a></td>
-                        <td>Italian, English</td>
-                        <td><a href="http://siqual.istat.it/SIQual/visualizza.do?id=0019900&refresh=true&language=IT"
-                            target="_blank">Popolazione residente comunale per sesso anno di nascita e stato civile</a>
-                        </td>
-                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
+                        <td>02/04/2025</td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td>.csv, .tsv, .xlsx, SDMX (.xml, .json)</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
                         <td><a
-                            href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_POPULATION/DCIS_POPRES1/IT1,22_289_DF_DCIS_POPRES1_1,1.0"
-                            target="_blank">Download SDMX structured data from IstatData endpoint</a></td>
+                            href="https://ec.europa.eu/eurostat/cache/metadata/en/demo_pop_esms.htm"
+                            target="_blank">Reference metadata demo_pop</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">D3</th>
-                        <td>Aspects of daily life: Religious observances - regions and type of municipality</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Values of persons aged 6 and over by frequency of a place of worship in the last 12 months
-                        </td>
+                        <th scope="row">DS3</th>
+                        <td>Greenhouse Gas Emissions at sub-national level</td>
+                        <td>edgar_2024_GHG NUTS2</td>
+                        <td>The EDGAR GHG emission gridmaps represents a source of information to support the analysis of territorial policies at sub-national level in the field of climate action.</td>
                         <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank">Education, culture and sport</a></td>
-                        <td>2831 cultura e religione</td>
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/ENVI"
+                            target="_blank">Environment</a></td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>02/04/2025</td>
+                        <td><a href="https://edgar.jrc.ec.europa.eu/" target="_blank">EDGAR (Emissions Database for Global Atmospheric Research)</a>+ <a href="https://www.eea.europa.eu/it" target="_blank">EEA (European Environment Agency)</a></td>
+                        <td><a href="https://edgar.jrc.ec.europa.eu/" target="_blank">EDGAR (Emissions Database for Global Atmospheric Research)</a>+ <a href="https://www.eea.europa.eu/it" target="_blank">EEA (European Environment Agency)</a></td>
+                        <td><a href="https://www.eea.europa.eu/it" target="_blank">EEA (European Environment Agency)</a></td>
+                        <td>.csv, .xlsx</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Annual</td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">I.Stat database Endpoint</a></td>
-                        <td>Italian, English</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
-                        <td><a href="https://siqual.istat.it/SIQual/visualizza.do?id=0058000" target="_blank">additional
-                            Metadata</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">D4</th>
-                        <td>Mother - Age and citizenship</td>
+                        <th scope="row">DS4</th>
+                        <td>Burden of disease of air pollution</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Dataset with livebirth values and mother characteristics of age and citizenship</td>
+                        <td>This dataset shows information on burden of disease of air pollution calculated for countries and NUTS regions</td>
                         <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/SOCI"
-                            target="_blank">Population and society</a></td>
-                        <td>2816 demografia e popolazione</td>
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/ENVI"
+                            target="_blank">Environment</a></td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Annual</td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">IstatData</a></td>
-                        <td>Italian, English</td>
-                        <td>
-                          <ul>
-                            <li><a
-                                href="http://siqual.istat.it/SIQual/visualizza.do?id=0019100&refresh=true&language=EN"
-                                target="_blank">Live births registered in the population register</a></li>
-                            <li><a
-                                href="http://siqual.istat.it/SIQual/visualizza.do?id=5000088&refresh=true&language=EN"
-                                target="_blank">Migration and calculation of yearly resident population</a></li>
-                            <li><a
-                                href="http://siqual.istat.it/SIQual/visualizza.do?id=0019900&refresh=true&language=EN"
-                                target="_blank">Resident municipal population by age, sex and marital status</a></li>
-                            <li><a
-                                href="http://siqual.istat.it/SIQual/visualizza.do?id=0019700&refresh=true&language=EN"
-                                target="_blank">Migration and calculation of foreign resident population and structure
-                                by citizenship</a></li>
-                            <li><a
-                                href="http://siqual.istat.it/SIQual/visualizza.do?id=7779937&refresh=true&language=EN"
-                                target="_blank">Municipal resident foreign population by sex and year of birth</a></li>
-                          </ul>
-                        </td>
-                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
+                        <td><a href="https://www.eea.europa.eu/it" target="_blank">EEA (European Environment Agency)</a></td>
+                        <td><a href="https://www.eea.europa.eu/it" target="_blank">EEA (European Environment Agency)</a></td>
+                        <td><a href="https://www.eea.europa.eu/it" target="_blank">EEA (European Environment Agency)</a></td>
+                        <td>.csv, .tsv, .json,.GEOjson</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
                         <td><a
-                            href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
-                            target="_blank">Download SDMX structured data from IstatData endpoint</a></td>
+                            href="https://sdi.eea.europa.eu/catalogue/datahub/api/records/49930245-dc33-4c47-93b8-9512f0622ebc/formatters/xsl-view?output=pdf&language=eng&approved=true"
+                            target="_blank">EEA Metadata</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">D5</th>
-                        <td>Spontaneous abortions - resignation from the place of the event : Age of women - prov.</td>
+                        <th scope="row">DS5</th>
+                        <td>Land cover overview by NUTS 2 region.</td>
+                        <td>lan_lcv_ovw</td>
+                        <td>Land cover overview data by region. Annual classification of land use patterns.</td>
+                        <td>General and regional statistics ; Cross cutting topics</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Dataset with values of discharges for miscarriage, by year and region</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/HEAL"
-                            target="_blank">Health</a></td>
-                        <td>2841 salute</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Annual</td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">I.Stat database Endpoint</a></td>
-                        <td>Italian, English</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
-                        <td><a href="https://siqual.istat.it/SIQual/sintesi.do?id=5000132" target="_blank">additional
-                            Metadata</a></td>
+                        <td>18/07/2022</td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td>.csv, .tsv, .xlsx, SDMX (.xml, .json)</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
+                        <td><a href="https://ec.europa.eu/eurostat/cache/metadata/en/lan_esms.htm" target="_blank">Reference Metadata lan_lcv</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">D6</th>
-                        <td>Voluntary interruptions of pregnancy - characteristics of the woman : Age - prov. of event
-                        </td>
+                        <th scope="row">DS6</th>
+                        <td>Mean and median income by age and sex</td>
+                        <td>ilc_di03</td>
+                        <td>Income inequality by NUTS 2 region, measured via GINI coefficient.</td>
+                        <td>Population and social conditions ; Cross cutting topics</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Dataset with induced abortions values and mother characteristics of age, per region</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/HEAL"
-                            target="_blank">Health</a></td>
-                        <td>2841 salute</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Annual</td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">I.Stat database Endpoint</a></td>
-                        <td>Italian, English</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
-                        <td><a href="https://siqual.istat.it/SIQual/sintesi.do?id=5000132" target="_blank">additional
-                            Metadata</a></td>
+                        <td>30/04/2025</td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td>.csv, .tsv, .xlsx, SDMX (.xml, .json)</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
+                        <td><a href="https://ec.europa.eu/eurostat/cache/metadata/en/ilc_sieusilc.htm" target="_blank">Reference Metadata ilc_sieusil</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">D7</th>
-                        <td>Early leavers from education and training - aged 18 to 24 - previous regulation (until 2020)
+                        <th scope="row">DS7</th>
+                        <td>Graduates by education level, programme orientation, sex and field of education
                         </td>
+                        <td>educ_uoe_grad02</td>
+                        <td>Number of graduates by educational level, age, and region.</td>
+                        <td>Population and social conditions</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Dataset with early leavers from education and training - aged 18 to 24 (percentage values),
-                          per gender and per region</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank"> Education, culture and sport</a></td>
-                        <td>3206 istruzione</td>
+                        <td>07/05/2025</td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td>.csv, .tsv, .xlsx, SDMX (.xml, .json)</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
+                        <td><a href="https://ec.europa.eu/eurostat/cache/metadata/en/edat1_esms.htm" target="_blank">Reference Metadata edat1_esms</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DS8</th>
+                        <td>Expenditure on family/children function by type of benefit and means-testing
+                        </td>
+                        <td>spr_exp_ffa</td>
+                        <td>Social protection expenditure by function (e.g., health, family, old age). National level.</td>
+                        <td>Population and social conditions</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>28/04/2025</td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td>.csv, .tsv, .xlsx, SDMX (.xml, .json)</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
+                        <td><a href="https://ec.europa.eu/eurostat/cache/metadata/en/spr_esms.htm" target="_blank">Reference Metadata spr_esms</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DS9</th>
+                        <td>Fertility rates by age and NUTS 2 region
+                        </td>
+                        <td>demo_r_frate2 / natality</td>
+                        <td>Age-specific fertility rates and number of live births per year and region.</td>
+                        <td>Population and social conditions ; General and regional statistics</td>
                         <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td>Quarterly</td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
-                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">I.Stat database Endpoint</a></td>
-                        <td>Italian, English</td>
-                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
-                        <td><a href="https://siqual.istat.it/SIQual/sintesi.do?id=5000098" target="_blank">additional
-                            Metadata</a></td>
+                        <td>01/04/2025</td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td><a href="https://ec.europa.eu/eurostat" target="_blank">Eurostat</a></td>
+                        <td>.csv, .tsv, .xlsx, SDMX (.xml, .json)</td>
+                        <td>English</td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"></a>CC BY 4.0</td>
+                        <td><a href="https://ec.europa.eu/eurostat/cache/metadata/en/demo_r_gind3_esms.htm" target="_blank">Reference Metadata demo_r_gind3</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -1910,16 +1857,12 @@
                     <thead class="table-light">
                       <tr>
                         <th scope="col">Mashup Dataset</th>
-                        <th scope="col">Serie</th>
                         <th scope="col">Title</th>
                         <th scope="col">Identifier</th>
                         <th scope="col">Description</th>
                         <th scope="col">Theme</th>
-                        <th scope="col">Subject</th>
-                        <th scope="col">Keywords</th>
                         <th scope="col">Issued</th>
                         <th scope="col">Modified</th>
-                        <th scope="col">Accrual periodicity</th>
                         <th scope="col">Rights holder</th>
                         <th scope="col">Creator</th>
                         <th scope="col">Publisher</th>
@@ -1932,307 +1875,91 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">MD1_17</th>
-                        <td>MD1</td>
-                        <td>MD1 - General religious observance in each region</td>
-                        <td>MD1_17</td>
-                        <td>Mashup dataset with percentage values of religious observance in each region, year 2017</td>
+                        <th scope="row">mashup1</th>
+                        <td>Interconnection between  Fertility  and  Environment.</td>
+                        <td>MS1</td>
+                        <td>Mashup dataset investigating whether exposure to environmental pollution—specifically industrial emissions and air quality indicators (PM₂.₅, NO₂)—is associated with lower fertility rates across EU regions. Includes population density and land cover as contextual controls.</td>
                         <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank">Education, culture and sport</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2826 vita sociale - tempo libero</a>,
-                          <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2831 cultura e religione</a>
+                            href="https://publications.europa.eu/resource/authority/data-theme/SOCI"
+                            target="_blank">Population and society; Environment</a></td>
+                        <td>5/05/2025</td>
+                        <td>10/05/2025</td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td>religion, religious observance, italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
+                        <td><a href="https://github.com/VirginiaDa00" target="_blank">Virginia D’Antonio</a></td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td><a href="https://github.com/OrsolaMBorrini" target="_blank">Orsola Maria Borrini</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">CSV distribution of
-                            blessed be the fruit MD1 for the year 2017</a> </td>
+                        <td>.csv</td>
                         <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">D1</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">D3</a>
-                        </td>
+                        <td>DS1,DS2,DS3,DS4,DS5</td>
                         <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD1_17.ttl" download="bbfMD1_17.ttl">Download RDF</a></td>
+                        <td><a href="serialization/serial_datasets.ttl" download="serial_datasets.ttl">Download RDF</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">MD1_18</th>
-                        <td>MD1</td>
-                        <td>MD1 - General religious observance in each region</td>
-                        <td>MD1_18</td>
-                        <td>Mashup dataset with percentage values of religious observance in each region, year 2018</td>
+                        <th scope="row">mashup2</th>
+                        <td>Interconnection between Fertility and Socioeconomic Conditionsn</td>
+                        <td>MS2</td>
+                        <td>Mashup dataset exploring how socioeconomic indicators such as income levels, poverty risk, and education attainment correlate with fertility across EU regions. Population density is used as a structural control.</td>
                         <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank">Education, culture and sport</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2826 vita sociale - tempo libero</a>,
-                          <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2831 cultura e religione</a>
+                            href="https://publications.europa.eu/resource/authority/data-theme/SOCI"
+                            target="_blank">Population and society; Economy and finance</a></td>
+                        <td>5/05/2025</td>
+                        <td>10/05/2025</td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td>religion, religious observance, italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
+                        <td><a href="https://github.com/elena2notti" target="_blank">Elena Binott</a></td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td><a href="https://github.com/OrsolaMBorrini" target="_blank">Orsola Maria Borrini</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">CSV distribution of
-                            blessed be the fruit MD1 for the year 2018</a> </td>
+                        <td>.csv</td>
                         <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">D3</a>
+                        <td>DS1,DS2,DS6,DS7
                         </td>
                         <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD1_18.ttl" download="bbfMD1_18.ttl">Download RDF</a></td>
+                        <td><a href="serialization/serial_datasets.ttl" download="serial_datasets.ttl">Download RDF</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">MD1_19</th>
-                        <td>MD1</td>
-                        <td>MD1 - General religious observance in each region</td>
-                        <td>MD1_19</td>
-                        <td>Mashup dataset with percentage values of religious observance in each region, year 2019</td>
+                        <th scope="row">mashup3</th>
+                        <td>Interconnection between Regional and  National Welfare Mismatch.</td>
+                        <td>MS3</td>
+                        <td>Dataset comparing regional fertility patterns and poverty levels with national-level government spending on family and child-related policies, highlighting mismatches between regional needs and national interventions.</td>
                         <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank">Education, culture and sport</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2826 vita sociale - tempo libero</a>,
-                          <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2831 cultura e religione</a>
+                            href="https://publications.europa.eu/resource/authority/data-theme/SOCI"
+                            target="_blank">Population and society; Government and public sector</a></td>
+                        <td>5/05/2025</td>
+                        <td>10/05/2025</td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td>religion, religious observance, italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
+                        <td><a href="https://github.com/elviraku" target="_blank">Elvira Kushlak</a></td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td><a href="https://github.com/OrsolaMBorrini" target="_blank">Orsola Maria Borrini</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank"> CSV distribution
-                            of blessed be the fruit MD1 for the year 2019</a> </td>
+                        <td>.csv</td>
                         <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">D3</a>
+                        <td>DS1,DS6,DS8
                         </td>
                         <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD1_19.ttl" download="bbfMD1_19.ttl">Download RDF</a></td>
+                        <td><a href="serialization/serial_datasets.ttl" download="serial_datasets.ttl">Download RDF</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">MD2_17</th>
-                        <td>MD2</td>
-                        <td>MD2 - Pregnancy rates in young women</td>
-                        <td>MD2_17</td>
-                        <td>Mashup dataset with percentage values of spontaneous abortions, induced abortions, live
-                          births and total pregnancies over a selected female population aged 15-25, year 2017</td>
+                        <th scope="row">mashup4</th>
+                        <td>Interconnection between  Regional Clusters and Equity Index</td>
+                        <td>MS4</td>
+                        <td>Mashup dataset used to create a composite regional equity index that integrates fertility rates, pollution levels, income, and education indicators. The goal is to classify and compare EU regions based on social and environmental equity.</td>
                         <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/SOCI"
-                            target="_blank">Population and society</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2806 famiglia</a>,
-                          <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2816 demografia e popolazione</a>
+                            href="https://publications.europa.eu/resource/authority/data-theme/SOCI"
+                            target="_blank">Population and society; Regions and cities</a></td>
+                        <td>5/05/2025</td>
+                        <td>10/05/2025</td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td>spontaneous abortions, induced abortions, young women, pregnancies , italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
+                        <td><a href="https://github.com/elviraku" target="_blank">Elvira Kushlak</a></td>
+                        <td><a href="https://github.com/FertilityEU" target="_blank">FertilityEU</a>
                         </td>
-                        <td><a href="https://github.com/MaddaGh" target="_blank">Maddalena Ghiotto</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank"> CSV distribution
-                            of blessed be the fruit MD2 for the year 2017</a> </td>
+                        <td>.csv</td>
                         <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">D1</a>,
-                          <a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
-                            target="_blank">D4</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=29218" target="_blank">D5</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=7098" target="_blank">D6</a>
+                        <td>DS1,DS3,DS4,DS6,DS7
                         </td>
                         <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD2_17.ttl" download="bbfMD2_17.ttl">Download RDF</a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">MD2_18</th>
-                        <td>MD2</td>
-                        <td>MD2 - Pregnancy rates in young women</td>
-                        <td>MD2_18</td>
-                        <td>Mashup dataset with percentage values of spontaneous abortions, induced abortions, live
-                          births and total pregnancies over a selected female population aged 15-25, year 2018</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/SOCI"
-                            target="_blank">Population and society</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2806 famiglia</a>,
-                          <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2816 demografia e popolazione</a>
-                        </td>
-                        <td>spontaneous abortions, induced abortions, young women, pregnancies , italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://github.com/MaddaGh" target="_blank">Maddalena Ghiotto</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank"> CSV distribution
-                            of blessed be the fruit MD2 for the year 2018</a> </td>
-                        <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
-                          <a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
-                            target="_blank">D4</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=29218" target="_blank">D5</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=7098" target="_blank">D6</a>
-                        </td>
-                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD2_18.ttl" download="bbfMD2_18.ttl">Download RDF</a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">MD2_19</th>
-                        <td>MD2</td>
-                        <td>MD2 - Pregnancy rates in young women</td>
-                        <td>MD2_19</td>
-                        <td>Mashup dataset with percentage values of spontaneous abortions, induced abortions, live
-                          births and total pregnancies over a selected female population aged 15-25, year 2019</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/SOCI"
-                            target="_blank">Population and society</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2806 famiglia</a>,
-                          <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">2816 demografia e popolazione</a>
-                        </td>
-                        <td>spontaneous abortions, induced abortions, young women, pregnancies , italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://github.com/MaddaGh" target="_blank">Maddalena Ghiotto</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank"> CSV distribution
-                            of blessed be the fruit MD2 for the year 2019</a> </td>
-                        <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
-                          <a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
-                            target="_blank">D4</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=29218" target="_blank">D5</a>,
-                          <a href="http://dati.istat.it/index.aspx?queryid=7098" target="_blank">D6</a>
-                        </td>
-                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD2_19.ttl" download="bbfMD2_19.ttl">Download RDF</a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">MD3_17</th>
-                        <td>MD3</td>
-                        <td>MD3 - Education leavers' rates in young women</td>
-                        <td>MD3_17</td>
-                        <td>Mashup dataset with absolute and percentage values of female early leavers for each region,
-                          year 2017</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank">Education, culture and sport</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">3206 istruzione</a></td>
-                        <td>young women, education level, italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://github.com/OrsolaMBorrini" target="_blank">Orsola Maria Borrini</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">CSV distribution of
-                            blessed be the fruit MD3 for the year 2017</a> </td>
-                        <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">D1</a>,
-                          <a href="http://dati.istat.it/Index.aspx?DataSetCode=DCCV_ESL_UNT2020" target="_blank">D7</a>
-                        </td>
-                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD3_17.ttl" download="bbfMD3_17.ttl">Download RDF</a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">MD3_18</th>
-                        <td>MD3</td>
-                        <td>MD3 - Education rates in young women</td>
-                        <td>MD3_18</td>
-                        <td>Mashup dataset with absolute and percentage values of female early leavers for each region,
-                          year 2018</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank">Education, culture and sport</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">3206 istruzione</a></td>
-                        <td>young women, education level, italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://github.com/OrsolaMBorrini" target="_blank">Orsola Maria Borrini</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">CSV distribution of
-                            blessed be the fruit MD3 for the year 2018</a></td>
-                        <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
-                          <a href="http://dati.istat.it/Index.aspx?DataSetCode=DCCV_ESL_UNT2020" target="_blank">D7</a>
-                        </td>
-                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD3_18.ttl" download="bbfMD3_18.ttl">Download RDF</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">MD3_19</th>
-                        <td>MD3</td>
-                        <td>MD3 - Education rates in young women</td>
-                        <td>MD3_19</td>
-                        <td>Mashup dataset with absolute and percentage values of female early leavers for each region,
-                          year 2019</td>
-                        <td><a
-                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/EDUC"
-                            target="_blank">Education, culture and sport</a></td>
-                        <td><a
-                            href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/mapping-temi-sottotemi-dei-dati.html"
-                            target="_blank">3206 istruzione</a></td>
-                        <td>young women, education level, italy</td>
-                        <td>22/01/2023</td>
-                        <td>22/01/2023</td>
-                        <td>Never</td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://github.com/OrsolaMBorrini" target="_blank">Orsola Maria Borrini</a></td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">blessedfruit</a>
-                        </td>
-                        <td><a href="https://orsolamborrini.github.io/blessedfruit/" target="_blank">CSV distribution of
-                            blessed be the fruit MD3 for the year 2019</a></td>
-                        <td>English</td>
-                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
-                          <a href="http://dati.istat.it/Index.aspx?DataSetCode=DCCV_ESL_UNT2020" target="_blank">D7</a>
-                        </td>
-                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
-                        <td><a href="metadata/bbfMD3_19.ttl" download="bbfMD3_19.ttl">Download RDF</td>
+                        <td><a href="serialization/serial_datasets.ttl" download="serial_datasets.ttl">Download RDF</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -2242,18 +1969,16 @@
             <!-- FAIR principles -->
             <h3 class="analysis-second-title">FAIR principles</h3>
             <p class="analysis-text">
-              During the development of the project, we strived to adhere to the <a
-                href="https://www.go-fair.org/fair-principles/" target="_blank"><b>FAIR principles</b></a>, as published
+              During the project development, we aimed to align our efforts with the <a
+                href="https://www.go-fair.org/fair-principles/" target="_blank"><b>FAIR principles</b></a>, established
               by the <b>GO FAIR Initiative</b>.
               <br>
-              These recommendations are a <span class="underlined--bg underlined--offset--bg"><b>set of guiding
-                  principles</b></span> proposed by a consortium of scientists and organizations to support the
+              These principles, developed by a consortium of scientists and organizations, provide <span class="underlined--bg underlined--offset--bg"><b>guidelines
+                  </b></span> to ensure digital assets are
               <b>Findability</b>, <b>Accessibility</b>, <b>Interoperability</b>, <b>Reusability</b> of digital assets,
               emphasizing, in particular, machine-actionability.
             </p>
-            <p class="analysis-text">In the following table we have employed the overview of FAIR Principles provided by
-              GO Fair as a
-              checklist to thoroughly examine our project.</p>
+            <p class="analysis-text">The table below utilizes the FAIR Principles overview from GO FAIR as a checklist to systematically evaluate our project’s adherence to these guidelines</p>
             <!-- FAIR accordion -->
             <div class="accordion" id="accordionexample">
               <div class="accordion-item">
