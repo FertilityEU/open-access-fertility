@@ -36,8 +36,8 @@ const CLUSTERS = {
 
 /* load shapes + data */
 Promise.all([
-  d3.json("assets/js/nuts2_simplified.geojson"),
-  d3.csv("datasets/mashup/mashup4.csv")
+  d3.json("/assets/js/nuts2_simplified.geojson"),
+  d3.csv("/datasets/mashup/mashup4.csv")
 ]).then(([shapes,rows])=>{
 
   /* ---------- MAP ---------- */

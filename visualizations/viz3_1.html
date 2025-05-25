@@ -27,21 +27,20 @@ Use the selector to reveal all regions or isolate one group.
 
 <script>
 /* ----------- configuration ----------- */
-const CSV_FILE = "datasets/mashup/mashup3_for_viz.csv";        
+const CSV_FILE = "/datasets/mashup/mashup3_for_viz.csv";        
 const COLORS   = {
-  "High Fertility, low investment"          : "#e41a1c",
-  "Balanced Investment"            : "#377eb8",
-  "Low fertility, low investment"            : "#4daf4a",
-  "High investment, low Fertility" : "#ff7f00"
+  "High fertility, low investment"    : "#e41a1c",
+  "Balanced investment"            : "#377eb8",
+  "Low investment, low fertility"            : "#4daf4a",
+  "High investment, low fertility" : "#ff7f00"
 };
 /* ------------------------------------- */
 
 d3.csv(CSV_FILE).then(fullRows => {
 
-  /* helper ±3 % jitter to separate identical spend values */
   const jitter = v => v + (Math.random()*2-1) * v * 0.03;
 
-  /* ---- build 10-row representative sample per category ---- */
+  /* 10-row representative sample per category */
   const reps = [];
   d3.group(fullRows, d => d.Mismatch)
     .forEach(rows => {
@@ -49,7 +48,6 @@ d3.csv(CSV_FILE).then(fullRows => {
       reps.push(...rows.slice(0,10));
     });
 
-  /* ---- utility to build traces ---- */
   function makeTraces(rows, opacity){
     return Object.keys(COLORS).map(cat=>{
       const sub = rows.filter(r=> r.Mismatch===cat);
@@ -73,11 +71,10 @@ d3.csv(CSV_FILE).then(fullRows => {
     });
   }
 
-  const repTraces  = makeTraces(reps,      0.9);   // vivid
-  const fullTraces = makeTraces(fullRows,  0.25);  // faint backdrop
+  const repTraces  = makeTraces(reps,      0.9);   
+  const fullTraces = makeTraces(fullRows,  0.25);  
   const traces     = [...repTraces, ...fullTraces];
 
-  /* hide the full layer by default */
   traces.slice(4).forEach(t => t.visible = false);
 
   /* ---- global medians for quadrant lines ---- */
@@ -90,10 +87,8 @@ d3.csv(CSV_FILE).then(fullRows => {
   };
   const medF = median(fertAll), medS = median(spendAll);
 
-  /* helper to build Boolean visibility arrays */
   const vis = fn => traces.map((_,i)=> fn(i));
 
-  /* ---- dropdown buttons ---- */
   const buttons = [
     {label:"representative", method:"restyle",
      args:[{visible: vis(i=> i<4)}], execute:true},
