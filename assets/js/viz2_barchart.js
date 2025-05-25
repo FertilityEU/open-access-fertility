@@ -1,4 +1,4 @@
-function renderCountryBarChart(year, containerId) {
+function renderCountryBarChart(year, containerId = "viz2_country_container") {
   const CSV_FILE = "/datasets/mashup/mashup2.csv";
   const container = document.getElementById(containerId);
   container.innerHTML = `<div id="bar-chart-${year}" style="width:100%;height:600px;"></div>`;
@@ -35,7 +35,7 @@ function renderCountryBarChart(year, containerId) {
       font: {size: 14},
       plot_bgcolor: "#f9f9f9",
       paper_bgcolor: "#ffffff",
-      margin: {l: 60, r: 30, t: 60, b: 60}
+      margin: {l: 60, r: 30, t: 90, b: 60}
     }, {responsive: true});
   }).catch(err => {
     container.innerHTML += `<p style='color:red'>Could not load CSV – see console.</p>`;
@@ -43,13 +43,7 @@ function renderCountryBarChart(year, containerId) {
   });
 }
 
-// Funzioni pubbliche
-window.renderViz2_country_2017 = function(containerId = "viz2_country_2017-container") {
-  renderCountryBarChart(2017, containerId);
-};
-window.renderViz2_country_2018 = function(containerId = "viz2_country_2018-container") {
-  renderCountryBarChart(2018, containerId);
-};
-window.renderViz2_country_2019 = function(containerId = "viz2_country_2019-container") {
-  renderCountryBarChart(2019, containerId);
+// Unified renderer
+window.renderViz2_country = function(year, containerId = "viz2_country_container") {
+  renderCountryBarChart(year, containerId);
 };
