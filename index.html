@@ -45,8 +45,7 @@
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="assets/js/viz3_1.js"></script>
-
-  
+  <script src ="assets/js/viz4_map.js"></script>
 
   <!-- Plotly -->
 
@@ -2439,17 +2438,21 @@
 
       <!-- Row of Mashup Buttons -->
       <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-auto">
-          <button class="btn btn-outline-primary mx-2" onclick="showMashupViz('viz-mashup1-container')">Mashup 1</button>
-        </div>
-        <div class="col-auto">
-          <button class="btn btn-outline-primary mx-2" onclick="showMashupViz('viz-mashup2-container')">Mashup 2</button>
-        </div>
-        <div class="col-auto">
-          <button class="btn btn-outline-primary mx-2" onclick="showMashupViz('viz3_1-container')">Mashup 3</button>
-        </div>
-        <!-- Add more buttons for additional mashups -->
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('viz-mashup1-container', this)">Mashup 1</button>
       </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('viz-mashup2-container', this)">Mashup 2</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('viz3_1-container', this)">Mashup 3</button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-mashup" onclick="showMashupViz('viz4_map-container', this)">Mashup 4</button>
+      </div>
+    </div>
+
+
 
       <!-- Visualization Containers (hidden by default, shown on button click) -->
       <div id="viz-mashup1-container" class="mashup-viz-container" style="display:none; min-height:600px;">
@@ -2461,7 +2464,9 @@
       <div id="viz3_1-container" class="mashup-viz-container" style="display:none; min-height:600px;">
         <!-- Mashup 3 JS will render here -->
       </div>
-      <!-- Add more containers as needed -->
+      <div id="viz4_map-container" class="mashup-viz-container" style="display:none; min-height:600px;">
+        <!-- Mashup 3 JS will render here -->
+      </div>
 
     </div>
 </section>

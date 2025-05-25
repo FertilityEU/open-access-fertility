@@ -2187,6 +2187,36 @@ h3.analysis-second-title {
    }
 
 
+    .btn-mashup {
+      background: #fff;
+      color: #222;
+      border: 2px solid #ffd600;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s, border 0.2s;
+    }
+
+    .btn-mashup:hover,
+    .btn-mashup:focus {
+      background: #f5e799;
+      color: #111;
+      border-color: #ffd600;
+    }
+
+    /* Active (clicked) mashup button: bright yellow, black text */
+    .btn-mashup-active,
+    .btn-mashup.active {
+      background: #ffd600 !important;
+      color: #111 !important;
+      border-color: #e2c200 !important;
+      box-shadow: none !important;
+    }
+
+
+
+
+
+
   /* MAP LEGEND COLORS FOR RELIGION */
 /*
 #rel17_1 span{
