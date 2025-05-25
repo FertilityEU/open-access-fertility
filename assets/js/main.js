@@ -329,6 +329,7 @@ function showMashupViz(containerIdToShow) {
 }
 
 
+
 function revealBG_gray(delay) {
   var reveals = document.querySelectorAll('.underlined--bg-g');
   let position = window.scrollY;
@@ -346,16 +347,32 @@ function revealBG_gray(delay) {
   }
 }
 
-function showMashupViz(id, btn) {
-  // Hide all containers (optional, if you have container switching)
-  document.querySelectorAll('.mashup-viz-container').forEach(el => el.style.display = 'none');
-  // Show the selected one
-  document.getElementById(id).style.display = 'block';
-  // Remove active from all mashup buttons
-  document.querySelectorAll('.btn-mashup').forEach(b => b.classList.remove('btn-mashup-active', 'active'));
-  // Add active to the clicked button
-  btn.classList.add('btn-mashup-active', 'active');
+// switching years in Mashup 2
+function showMashup2Year(year, btn) {
+  document.querySelectorAll('.btn-mashup-year').forEach(b => b.classList.remove('btn-mashup-active', 'active'));
+  if (btn) btn.classList.add('btn-mashup-active', 'active');
+  window.renderViz2_country(year, "viz2_country_container");
+  window.renderViz2_scatter(year, "viz2_scatter_container");
 }
+
+function showMashupViz(id, btn) {
+  document.querySelectorAll('.mashup-viz-container').forEach(el => el.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+  document.querySelectorAll('.btn-mashup').forEach(b => b.classList.remove('btn-mashup-active', 'active'));
+  btn.classList.add('btn-mashup-active', 'active');
+
+  // RENDER the appropriate visuals
+  if (id === 'viz-mashup2-container') {
+    // Default: show 2017, or you can store/restore last used year
+    showMashup2Year(2017, document.querySelector('#viz2-year-buttons .btn-mashup-year'));
+  } else if (id === 'viz3_1-container') {
+    if (window.renderViz3_1) window.renderViz3_1("viz3_1-container");
+  } else if (id === 'viz4_map-container') {
+    if (window.renderViz4_map) window.renderViz4_map("viz4_map-container");
+  }
+}
+
+
 
 
 

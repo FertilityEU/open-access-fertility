@@ -46,6 +46,9 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="assets/js/viz3_1.js"></script>
   <script src ="assets/js/viz4_map.js"></script>
+  <script src="assets/js/viz2_barchart.js"></script>
+  <script src="assets/js/viz2_scatter.js"></script>
+
 
   <!-- Plotly -->
 
@@ -2438,39 +2441,40 @@
 
       <!-- Row of Mashup Buttons -->
       <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
-      <div class="col-auto">
-        <button class="btn btn-mashup" onclick="showMashupViz('viz-mashup1-container', this)">Mashup 1</button>
+        <div class="col-auto">
+          <button class="btn btn-mashup" onclick="showMashupViz('viz-mashup1-container', this)">Mashup 1</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-mashup" onclick="showMashupViz('viz-mashup2-container', this)">Mashup 2</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-mashup" onclick="showMashupViz('viz3_1-container', this)">Mashup 3</button>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-mashup" onclick="showMashupViz('viz4_map-container', this)">Mashup 4</button>
+        </div>
       </div>
-      <div class="col-auto">
-        <button class="btn btn-mashup" onclick="showMashupViz('viz-mashup2-container', this)">Mashup 2</button>
+
+
+      <!-- Mashup 2: year switch and dual chart -->
+      <div id="viz-mashup2-container" class="mashup-viz-container" style="display:none">
+      <div id="viz2-year-buttons" class="mb-2" style="text-align:center;">
+        <button class="btn btn-mashup-year" onclick="showMashup2Year(2017, this)">2017</button>
+        <button class="btn btn-mashup-year" onclick="showMashup2Year(2018, this)">2018</button>
+        <button class="btn btn-mashup-year" onclick="showMashup2Year(2019, this)">2019</button>
       </div>
-      <div class="col-auto">
-        <button class="btn btn-mashup" onclick="showMashupViz('viz3_1-container', this)">Mashup 3</button>
-      </div>
-      <div class="col-auto">
-        <button class="btn btn-mashup" onclick="showMashupViz('viz4_map-container', this)">Mashup 4</button>
-      </div>
+      <div id="viz2_country_container"></div>
+      <div id="viz2_scatter_container"></div>
     </div>
 
 
-
-      <!-- Visualization Containers (hidden by default, shown on button click) -->
-      <div id="viz-mashup1-container" class="mashup-viz-container" style="display:none; min-height:600px;">
-        <!-- Mashup 1 JS will render here -->
-      </div>
-      <div id="viz-mashup2-container" class="mashup-viz-container" style="display:none; min-height:600px;">
-        <!-- Mashup 2 JS will render here -->
-      </div>
+      <!-- Mashup 3 -->
       <div id="viz3_1-container" class="mashup-viz-container" style="display:none; min-height:600px;">
-        <!-- Mashup 3 JS will render here -->
       </div>
       <div id="viz4_map-container" class="mashup-viz-container" style="display:none; min-height:600px;">
-        <!-- Mashup 3 JS will render here -->
       </div>
-
     </div>
-</section>
-
+  </section>
 
     <!-- ======= Sustainability Section ======= -->
     <section id="sustain" class="about">
