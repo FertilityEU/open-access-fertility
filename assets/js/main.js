@@ -343,13 +343,6 @@ function revealBG_gray(delay) {
   }
 }
 
-// switching years in Mashup 2
-function showMashup2Year(year, btn) {
-  document.querySelectorAll('.btn-mashup-year').forEach(b => b.classList.remove('btn-mashup-active', 'active'));
-  if (btn) btn.classList.add('btn-mashup-active', 'active');
-  window.renderViz2_country(year, "viz2_country_container");
-  window.renderViz2_scatter(year, "viz2_scatter_container");
-}
 
 function showMashupViz(id, btn) {
   document.querySelectorAll('.mashup-viz-container').forEach(el => el.style.display = 'none');
@@ -398,9 +391,18 @@ function setMashup1MapYear(year, btn) {
 }
 
 
+function setMashup2Year(year, button) {
+  document.getElementById("mashup2-scatter").src = `visualizations/viz2_scatter${year}.html`;
+  document.getElementById("mashup2-bar").src = `visualizations/viz2_bar_chart_country_${year}.html`;
 
+  const buttons = document.querySelectorAll("#viz2-year-buttons .btn-mashup-year");
+  buttons.forEach(btn => {
+    btn.classList.remove("active");
+    btn.classList.remove("btn-mashup-active");
+  });
 
+  button.classList.add("active");
+  button.classList.add("btn-mashup-active");
 
-
-
-
+  button.blur(); // opzionale, aiuta con :focus
+}
