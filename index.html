@@ -1891,19 +1891,20 @@
       <img id="mashup1-regression-img" src="assets/img/regression.jpg" style="display:none; width:100%; max-width:1200px; margin:auto;">
     </div>
 
-
-      <!-- Mashup 2: year switch and dual chart -->
-      <div id="viz-mashup2-container" class="mashup-viz-container" style="display:none">
+    <div id="viz-mashup2-container" class="mashup-viz-container" style="display:none">
       <div id="viz2-year-buttons" class="mb-2" style="text-align:center;">
-        <button class="btn btn-mashup-year" onclick="showMashup2Year(2017, this)">2017</button>
-        <button class="btn btn-mashup-year" onclick="showMashup2Year(2018, this)">2018</button>
-        <button class="btn btn-mashup-year" onclick="showMashup2Year(2019, this)">2019</button>
+        <button class="btn btn-mashup-year" onclick="setMashup2Year(2017, this)">2017</button>
+        <button class="btn btn-mashup-year" onclick="setMashup2Year(2018, this)">2018</button>
+        <button class="btn btn-mashup-year" onclick="setMashup2Year(2019, this)">2019</button>
       </div>
-      <div id="viz2_scatter_container"></div>
-      <div id="viz2_country_container"></div>
+    
+      <div id="mashup2-iframes" style="display:block;">
+        <iframe id="mashup2-scatter" src="visualizations/viz2_scatter2017.html" width="100%" height="600" frameborder="0" style="margin-bottom:20px;"></iframe>
+        <iframe id="mashup2-bar" src="visualizations/viz2_bar_chart_country_2017.html" width="100%" height="600" frameborder="0"></iframe>
+      </div>
     </div>
-
-
+    
+  
       <!-- Mashup 3 -->
       <div id="viz3_1-container" class="mashup-viz-container" style="display:none; min-height:600px;">
       </div>

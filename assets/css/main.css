@@ -2307,3 +2307,61 @@ ul li i {
   font-size: 1.2em;
   color: #3c5950; /* cambia colore se vuoi */
 }
+
+.btn-mashup-year {
+  background: transparent;
+  color: #222;
+  border: 2px solid #f4d339; /* contorno giallo sempre visibile */
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 6px 16px;
+  margin: 4px;
+  transition: all 0.2s ease-in-out;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Quando ci passi sopra */
+.btn-mashup-year:hover,
+.btn-mashup-year:focus {
+  background: #f4d339;
+  color: #111;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Quando è attivo (cioè selezionato) */
+.btn-mashup-year.active,
+.btn-mashup-year.btn-mashup-active {
+  background: #fff8c2;
+  color: #111;
+  border: 2px solid #f4d339;
+}
+
+
+
+.btn-mashup1-tab {
+  background-color: transparent;
+  color: #222;
+  border: 2px solid #f4d339;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 6px 16px;
+  margin: 4px;
+  transition: all 0.2s ease-in-out;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-mashup1-tab:hover,
+.btn-mashup1-tab:focus {
+  background-color: #f4d339;
+  color: #111;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-mashup1-tab.active,
+.btn-mashup1-tab.btn-mashup-active {
+  background-color: #fff9d1;
+  color: #111;
+  border-color: #f4d339;
+}
