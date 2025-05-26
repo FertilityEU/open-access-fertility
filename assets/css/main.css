@@ -1682,6 +1682,21 @@ h3.analysis-second-title {
   opacity: 1;
 }
 
+.team .member .member-img img {
+  width: 100%;
+  height: 250px; /* Puoi regolare a 220px o 200px se preferisci */
+  object-fit: cover;
+  object-position: center;
+}
+
+.team .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
