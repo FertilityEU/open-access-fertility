@@ -996,7 +996,7 @@ blockquote {
 .services .icon-box::before {
   content: "";
   position: absolute;
-  background: #b5d0c7;
+  background: #f4d339;
   right: -60px;
   top: -40px;
   width: 100px;
@@ -2273,4 +2273,22 @@ h3.analysis-second-title {
   align-items: center;
   height: 100%;
   padding: 1.5em;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75em;
+}
+
+ul li i {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #3c5950; /* cambia colore se vuoi */
 }
