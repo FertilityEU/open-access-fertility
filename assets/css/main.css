@@ -2365,3 +2365,10 @@ ul li i {
   color: #111;
   border-color: #f4d339;
 }
+
+.team .member .member-img img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain; /* oppure 'scale-down' */
+}
