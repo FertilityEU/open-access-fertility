@@ -100,6 +100,7 @@
             <ul>
               <li><a class="nav-link scrollto" href="#pre">Data Processing</a></li>
               <li><a class="nav-link scrollto" href="#analyses">Analyses</a></li>
+              <li><a class="nav-link scrollto" href="#rdf">RDF Serialization</a></li>
             </ul>
           </li>
       
@@ -1203,7 +1204,6 @@
           </tbody>
         </table>
 
-        <h3 class="analysis-second-title">Metadata Evaluation Summary</h3>
       <p class="analysis-text">
         Most datasets originate from Eurostat, where metadata quality is generally high (Level 4) due to SDMX standards. They feature consistent formatting, full variable documentation, and are machine-readable.
 
@@ -1223,12 +1223,13 @@
         <br><br>
         Given that the source datasets (e.g., Eurostat, EEA, EDGAR) are primarily published at the  <span class="underlined--bg underlined--offset--bg"><b>European level</b></span> and harmonized for cross-country comparison, DCAT-AP provides the most suitable framework for ensuring semantic interoperability and metadata quality.
       <br><br>
-        In addition, we used:
+        In addition, we used:             
+
         <ul class="analysis-text">
-          <li><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank"><b>Dublin Core Terms</b></a> for standard metadata fields (title, description, date, etc.).</li>
-          <li> <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O</b></a> to describe the provenance and transformation process behind each mashup.</li>
-          <li><a href="https://www.w3.org/TR/skos-reference/" target="_blank"><b>SKOS</b></a> to tag themes and keywords (e.g., "Demography", "Environment", "Public Health").</li>
-          <li><a href="https://creativecommons.org/ns#" target="_blank"><b>Creative Commons</b></a> to document dataset licensing.</li>
+          <li><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank"><b>Dublin Core Terms</b>&nbsp;</a> for standard metadata fields (title, description, date, etc.).</li>
+          <li> <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O</b>&nbsp;</a> to describe the provenance and transformation process behind each mashup.</li>
+          <li><a href="https://www.w3.org/TR/skos-reference/" target="_blank"><b>SKOS</b>&nbsp;</a> to tag themes and keywords (e.g., "Demography", "Environment", "Public Health").</li>
+          <li><a href="https://creativecommons.org/ns#" target="_blank"><b>Creative Commons</b>&nbsp;</a> to document dataset licensing.</li>
         </ul>
       </p>
       
@@ -1238,9 +1239,9 @@
         <br><br>
         DCAT includes main concepts/classes for describing this data in catalogs:
         <ul class="analysis-text">
-          <li><strong>Catalog:</strong> a collection of metadata about datasets.</li>
-          <li><strong>Data set:</strong> a collection of data, published or curated by a single agent, and available for access or download in one or more serialisations or formats.</li>
-          <li><strong>Distribution:</strong> it is the file to be downloaded when the user wants to use some kind of datasets, it represent different formats of the dataset or different endpoints.</li>
+          <li><strong>Catalogue:</strong>&nbsp;a collection of metadata about datasets.</li>
+          <li><strong>Data set:</strong>&nbsp;a collection of data, published or curated by a single agent, and available for access or download in one or more serialisations or formats.</li>
+          <li><strong>Distribution:</strong>&nbsp;it is the file to be downloaded when the user wants to use some kind of datasets, it represent different formats of the dataset or different endpoints.</li>
         </ul>
       </p>
     
@@ -1811,6 +1812,50 @@
         </div>
 
     </section><!-- End Analyses Section -->
+
+
+  <section id="rdf" class="about">
+    <div class="container">
+  
+    <div class="section-title" data-aos="fade-up">
+      <h2>RDF Serialization</h2>
+    </div>
+    <div class="row content">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+        <p>
+          Below is an overview of the datasets used and produced within this project, presented in <b>RDF/Turtle format</b>. The serialization adheres to <b>DCAT-AP</b> principles and includes both the general <span class="underlined underlined--offset"><b>catalogue of resources</b></span> and the specific metadata of the <b>datasets</b> reused or created by the project.
+        </p>
+        <p>
+          These serializations ensure semantic interoperability and are <b>fully compliant</b> with European standards for open data catalogues. For detailed insight into our modelling choices, vocabularies, and compliance with FAIR principles, please refer to the <b>Technical Analysis</b> section of the website.
+        </p>
+      </div>
+    
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <p>
+          You can access the RDF files directly from the project’s GitHub repository:
+        </p>
+        <p>
+          <a href="https://raw.githubusercontent.com/FertilityEU/open-access-fertility/main/serialization/serial_catalog.ttl" style="vertical-align: middle;" download>
+            <span class="material-symbols-outlined">download</span>
+          </a>
+          <b>Catalogue serialization</b> is available for direct download or consultation via
+          <a href="https://github.com/FertilityEU/open-access-fertility/blob/main/serialization/serial_catalog.ttl" target="_blank">GitHub</a>.
+        </p>
+        
+        <p>
+          <a href="https://raw.githubusercontent.com/FertilityEU/open-access-fertility/main/serialization/serial_datasets.ttl" style="vertical-align: middle;" download>
+            <span class="material-symbols-outlined">download</span>
+          </a>
+          <b>Datasets serialization</b> is available for direct download or consultation via
+          <a href="https://github.com/FertilityEU/open-access-fertility/blob/main/serialization/serial_datasets.ttl" target="_blank">GitHub</a>.
+        </p>
+      
+        <p>
+          These RDF resources are intended for research, validation, and reuse. They reflect the effort to provide transparent and checkable metadata, aligned with the open science values promoted throughout <b>"Generation Zero"</b>.
+        </p>
+      </div>
+    </div>
+  </section>
 
     <!-- ======= Mashup Visualizations Section ======= -->
 <section id="mashup-viz" class="about section-bg">
