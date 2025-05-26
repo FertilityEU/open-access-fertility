@@ -1,4 +1,3 @@
-
 function renderScatterByYear(year, containerId = "viz2_scatter_container") {
   const CSV_FILE = "datasets/mashup/mashup2.csv";
 
