@@ -1,6 +1,6 @@
 
 window.renderViz3_1 = function(containerId = "viz3_1-container") {
-  const CSV_FILE = "/datasets/mashup/mashup3_for_viz.csv";
+  const CSV_FILE = "datasets/mashup/mashup3_for_viz.csv";
   const COLORS = {
     "High fertility, low investment" : "#FFCF00",
     "Balanced investment"            : "#00916E",
@@ -30,28 +30,28 @@ window.renderViz3_1 = function(containerId = "viz3_1-container") {
     });
 
     function makeTraces(rows, opacity, showLegend=true){
-  return Object.keys(COLORS).map(cat=>{
-    const sub = rows.filter(r=>r.Mismatch===cat);
-    return {
-      x: sub.map(r=> jitter(+r.family_exp)),
-      y: sub.map(r=> +r.fertility),
-      text: sub.map(r=> r.nuts2_code),
-      name: cat,
-      showlegend: showLegend,
-      marker:{
-        size : sub.map(r=> 6 + (+r.poverty)*0.35),
-        color: COLORS[cat],
-        opacity,
-        line : {width:0.6,color:"#222"}
-      },
-      type:"scatter",
-      mode:"markers",
-      hovertemplate:
-        "%{text}<br>fertility %{y:.2f}<br>spend %{x:.0f}% GDP"+
-        "<br>poverty %{marker.size:.1f}%<extra>"+cat+"</extra>"
-    };
-  });
-}
+      return Object.keys(COLORS).map(cat=>{
+        const sub = rows.filter(r=>r.Mismatch===cat);
+        return {
+          x: sub.map(r=> jitter(+r.family_exp)),
+          y: sub.map(r=> +r.fertility),
+          text: sub.map(r=> r.nuts2_code),
+          name: cat,
+          showlegend: showLegend,
+          marker:{
+            size : sub.map(r=> 6 + (+r.poverty)*0.35),
+            color: COLORS[cat],
+            opacity,
+            line : {width:0.6,color:"#222"}
+          },
+          type:"scatter",
+          mode:"markers",
+          hovertemplate:
+            "%{text}<br>fertility %{y:.2f}<br>spend %{x:.0f}% GDP"+
+            "<br>poverty %{marker.size:.1f}%<extra>"+cat+"</extra>"
+        };
+      });
+    }
 
 const repTr = makeTraces(reps, 0.9, true);
 const fullTr = makeTraces(fullRows, 0.25, false);
