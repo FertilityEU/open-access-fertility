@@ -36,12 +36,12 @@ a {
 }
 
 a:hover {
-  color: #b5d0c7;
+  color: #f4d339;
   text-decoration: none;
 }
 
 body a:hover {
-  color: #23463b;
+  color: #f4d339;
   /* 23463b */
   text-decoration: none;
 }
@@ -156,7 +156,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #92aba2;
+  background: #f4d339;
   color: #fff;
 }
 
@@ -1202,7 +1202,7 @@ h3.analysis-second-title {
 }
 
 .nav-link:hover {
-  color: #3c5950;
+  color: #f4d339;
 }
 
 /*--------------------------------------------------------------
@@ -1520,7 +1520,7 @@ h3.analysis-second-title {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #85a59b;
+  color: #f4d339;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -2305,7 +2305,7 @@ ul li {
 ul li i {
   margin-right: 10px;
   font-size: 1.2em;
-  color: #3c5950; /* cambia colore se vuoi */
+  color: #f4d339; /* cambia colore se vuoi */
 }
 
 .btn-mashup-year {
