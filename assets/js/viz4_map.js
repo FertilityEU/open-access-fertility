@@ -3,7 +3,6 @@ window.renderViz4_map = function(containerId = "viz4_map-container") {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  // Insert HTML layout for the map+scatter
   container.innerHTML = `
     <h2>Zones of compromised reproduction</h2>
     <div id="frame-viz4" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 12px 12px;">
@@ -20,11 +19,11 @@ window.renderViz4_map = function(containerId = "viz4_map-container") {
     D: { label: "D — Clean × Rich", color: "#D6F7A3" }
   };
 
-  // Load shapes + data
   Promise.all([
     d3.json("assets/js/nuts2_simplified.geojson"),
     d3.csv("datasets/mashup/mashup4.csv")
   ]).then(([shapes, rows]) => {
+    
     // ---------- MAP ----------
     const clusterByID = new Map(rows.map(r => [r.nuts2_code, r.Clusters]));
     const map = L.map("map-viz4").setView([53, 10], 4);

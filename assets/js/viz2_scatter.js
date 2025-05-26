@@ -1,4 +1,3 @@
-
 function renderScatterByYear(year, containerId = "viz2_scatter_container") {
   const CSV_FILE = "datasets/mashup/mashup2.csv";
 
@@ -8,7 +7,6 @@ function renderScatterByYear(year, containerId = "viz2_scatter_container") {
   d3.csv(CSV_FILE).then(data => {
     const filtered = data.filter(d => d.year === String(year));
 
-    // NUTS and ISO mappings would ideally be stored externally or preprocessed
     const countryNames = {
   'AT': 'Austria','BE': 'Belgium','BG': 'Bulgaria','CY': 'Cyprus','CZ': 'Czech Republic','DE': 'Germany','DK': 'Denmark','EE': 'Estonia','EL': 'Greece','ES': 'Spain','FI': 'Finland','FR': 'France','HR': 'Croatia','HU': 'Hungary','IE': 'Ireland','IT': 'Italy','LT': 'Lithuania','LU': 'Luxembourg','LV': 'Latvia','MT': 'Malta','NL': 'Netherlands','PL': 'Poland','PT': 'Portugal','RO': 'Romania','SE': 'Sweden','SI': 'Slovenia','SK': 'Slovakia','CH': 'Switzerland','NO': 'Norway'
 };
@@ -30,7 +28,7 @@ const regionNames = {
   "ES53": "Illes Balears", "ES61": "Andalucía", "ES62": "Región de Murcia", "ES63": "Ciudad Autónoma de Ceuta", "ES64": "Ciudad Autónoma de Melilla", "ES70": "Canarias"
 };
 
-    // Extract country code and region label
+    //  country code and region label
     filtered.forEach(d => {
       d.country = d.nuts2_code.slice(0, 2);
       d.country_name = countryNames[d.country] || d.country;
@@ -40,7 +38,7 @@ const regionNames = {
       d.tertiary_educ = +d.tertiary_educ;
     });
 
-    // Normalize education for bubble size
+    //  education for bubble size
     const minEduc = d3.min(filtered, d => d.tertiary_educ);
     const maxEduc = d3.max(filtered, d => d.tertiary_educ);
     filtered.forEach(d => {

@@ -94,9 +94,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-      
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>      
           <li class="dropdown">
             <a href="#datasets"><span>Datasets</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -108,7 +106,7 @@
           <li><a class="nav-link scrollto" href="#mashup-viz">Visualizations</a></li>
       
           <li class="dropdown">
-            <a href="#results"><span>Results</span> <i class="bi bi-chevron-down"></i></a>
+            <a href="#research-questions"><span>Results</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" href="#sustain">Sustainability</a></li>
             </ul>
@@ -182,20 +180,21 @@
               Using open datasets from Eurostat, WHO, and global development repositories, we focus on:
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> <b>Fertility rates</b> (total and age-specific)</li>
-              <li><i class="ri-check-double-line"></i> <b>Household income</b> & GINI index</li>
-              <li><i class="ri-check-double-line"></i> <b>Air quality</b> (PM2.5 exposure)</li>
-              <li><i class="ri-check-double-line"></i> <b>Government health expenditure</b></li>
+              <li><i class="bi bi-check2-circle"></i> <b>Fertility rates</b>&nbsp;(total and age-specific)</li>
+              <li><i class="bi bi-check2-circle"></i> <b>Household income</b>&nbsp;&amp; GINI index</li>
+              <li><i class="bi bi-check2-circle"></i> <b>Air quality</b>&nbsp;(PM2.5 exposure)</li>
+              <li><i class="bi bi-check2-circle"></i> <b>Government health expenditure</b></li>
             </ul>
+            
             <p>
               The selected timespan <span class="underlined underlined--offset"><b>(2017–2019)</b></span> captures recent pre-pandemic trends with consistent, harmonised data. The analysis spans EU member states where data is complete and comparable. This project combines statistical analysis with ethical reflection to explore the deeper reasons behind Europe’s so-called <span class="underlined underlined--offset"><b>“baby bust.”</b></span>
             </p>
             <p>
-              <a href="documentation.pdf" style="vertical-align: middle;" download>
+              <a href="https://raw.githubusercontent.com/FertilityEU/open-access-fertility/main/Documentation%20Generation%20Zero.pdf" style="vertical-align: middle;" download>
                 <span class="material-symbols-outlined">download</span>
               </a>
               <b>Full detailed documentation</b> is freely downloadable by the user.
-            </p>
+            </p>            
           </div>
         </div>
     
@@ -225,64 +224,63 @@
       <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
         <p><span class="underlined underlined--offset"><b>RESEARCH QUESTIONS</b></span></p>
         <ul>
-          <li><i class="ri-check-double-line"></i> Where in Europe is reproduction environmentally discouraged?</li>
-          <li><i class="ri-check-double-line"></i> Is fertility still a privilege of poverty?</li>
-          <li><i class="ri-check-double-line"></i> How does urbanisation shape fertility in Europe?</li>
-          <li><i class="ri-check-double-line"></i> Is there a mismatch between where fertility is highest and where public family investment is focused?</li>
-          <li><i class="ri-check-double-line"></i> Are reproductive choices equally supported across European regions?</li>
+          <li><i class="bi bi-check2-circle"></i> Where in Europe is reproduction environmentally discouraged?</li>
+          <li><i class="bi bi-check2-circle"></i> Is fertility still a privilege of poverty?</li>
+          <li><i class="bi bi-check2-circle"></i> How does urbanisation shape fertility in Europe?</li>
+          <li><i class="bi bi-check2-circle"></i> Is there a mismatch between where fertility is highest and where public family investment is focused?</li>
+          <li><i class="bi bi-check2-circle"></i> Are reproductive choices equally supported across European regions?</li>
         </ul>
       </div>
     </div>
   </div>
 </section><!-- End Generation Zero Scenario Section -->
 
+<!-- ======= Datasets Section ======= -->
+<section id="datasets" class="portfolio datasets">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Source and mashup datasets</h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+        <p>
+          This project uses a comparative, multi-variable approach to investigate the structural conditions shaping fertility across Europe between 2017 and 2019. Drawing exclusively from open access datasets, the study combines demographic indicators with environmental, economic, and healthcare-related variables to map potential correlations and disparities.
+        </p>
+        <p>
+          The analysis is conducted at the <span class="underlined underlined--offset"><b>NUTS2 regional level</b></span>, allowing for detailed spatial comparison within and across EU member states. All datasets were selected based on their <b>completeness</b>, <b>open licensing</b>, and <b>temporal consistency</b>.
+        </p>
+        <p>
+          Once collected, all datasets were:
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> Cleaned and filtered to ensure reliability</li>
+          <li><i class="bi bi-check2-circle"></i> Harmonised by year to match the selected temporal window (2017–2019)</li>
+          <li><i class="bi bi-check2-circle"></i> Joined using standard geographic codes (NUTS2 for regional data, NUTS0 when aggregating with national-level indicators)</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+        <p>
+          The variables were then grouped into thematic mashup datasets, each addressing a specific research question. These mashups were created through structured join operations and further processed with <b>KNIME workflows</b> and <b>Python notebooks</b>.
+        </p>
+        <p>
+          The goal was not only to observe correlations, but also to highlight disparities and patterns of structural vulnerability that may affect reproductive behaviour.
+        </p>
+        <p>
+          This integrative and reproducible method allows us to combine demographic, environmental, socioeconomic, and policy-related variables into a unified analytical framework — turning fragmented open data into interpretable insight.
+        </p>
+        <p>
+          Each mashup dataset is directly aligned with a specific research question, serving as the analytical foundation for both statistical modelling and visual storytelling. By structuring the data around thematic hypotheses, we enable targeted, multidimensional insights into the drivers of fertility decline.
+        </p>
+        <p>
+          Full processing documentation and reproducible workflows — including data cleaning, integration, and transformation steps — are available in the project’s
+          <a href="https://github.com/FertilityEU/open-access-fertility" target="_blank">GitHub repository</a>, ensuring transparency and methodological traceability.
+        </p>
+      </div>
+    </div>
   
-
-    <!-- ======= Datasets Section ======= -->
-    <section id="datasets" class="portfolio datasets">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Source and mashup datasets</h2>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              This project uses a <b>comparative, multi-variable approach</b> to investigate the structural conditions shaping fertility across Europe between 2017 and 2019. Drawing exclusively from <b>open access datasets</b>, the study combines demographic indicators with environmental, economic, and healthcare-related variables to map potential correlations and disparities.
-            </p>
-            <p>
-              The analysis is conducted at the <b>NUTS2 regional level</b>, allowing for detailed spatial comparison within and across EU member states. All datasets were selected based on their <b>completeness, open licensing, and temporal consistency</b>. 
-            </p>
-            <p>
-              Once collected, all datasets were:
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Cleaned and filtered to ensure reliability</li>
-              <li><i class="ri-check-double-line"></i> Harmonised by year to match the selected temporal window (2017–2019)</li>
-              <li><i class="ri-check-double-line"></i> Joined using standard geographic codes (NUTS2 for regional data, NUTS0 when aggregating with national-level indicators)</li>
-            </ul>
-          </div>
-    
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              The variables were then grouped into <b>thematic mashup datasets</b>, each addressing a specific research question. These mashups were created through <b>structured join operations</b> and further processed with <b>KNIME workflows</b> and <b>Python notebooks</b>. 
-            </p>
-            <p>
-              The goal was not only to observe correlations, but also to highlight <b>disparities</b> and patterns of <b>structural vulnerability</b> that may affect reproductive behaviour.
-            </p>
-            <p>
-              This <b>integrative and reproducible method</b> allows us to combine demographic, environmental, socioeconomic, and policy-related variables into a unified analytical framework — turning fragmented open data into <b>interpretable insight</b>.
-            </p>
-            <p>
-              Each mashup dataset is directly aligned with a specific research question, serving as the analytical foundation for both <b>statistical modelling</b> and <b>visual storytelling</b>. By structuring the data around thematic hypotheses, we enable <b>targeted, multidimensional insights</b> into the drivers of fertility decline.
-            </p>
-            <p>
-              Full processing documentation and reproducible workflows — including data cleaning, integration, and transformation steps — are available in the project’s
-              <a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">GitHub repository</a>, ensuring transparency and methodological traceability.
-            </p>
-          </div>
-        </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
@@ -540,7 +538,7 @@
             <p>
               <a href="KNIME_project.knwf"
                 style="vertical-align: middle;" download><span class="material-symbols-outlined">download</span></a>
-              <b>The full KNIME workflow</b> can be downloaded <a href="KNIME_project.knwf" download>here</a>, allowing users to access the cleaned and integrated data for their own analysis or research purposes.<br>
+              <b>The full KNIME workflow</b> can be downloaded <a href="https://raw.githubusercontent.com/FertilityEU/open-access-fertility/main/datasets/knime.knwf" download>here</a>, allowing users to access the cleaned and integrated data for their own analysis or research purposes.<br>
             </p>
           </div>
         </div>    
@@ -1811,12 +1809,51 @@
     </section><!-- End Analyses Section -->
 
     <!-- ======= Mashup Visualizations Section ======= -->
-  <section id="mashup-viz" class="about section-bg">
-    <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Mashup Visualizations</h2>
-        <p>Explore the key visualizations for each mashup dataset. Click a button to display the corresponding chart below.</p>
+<section id="mashup-viz" class="about section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Mashup Visualizations</h2>
+      <p>Explore how each mashup dataset contributes to the investigation of our five core research questions. The table below provides a quick overview linking mashups to the specific questions they address.</p>
+
+      <div class="table-responsive mt-4">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>Research Question</th>
+              <th>Mashup Dataset</th>
+              <th>Topic</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>RQ1</b><br>Is reproduction environmentally discouraged?</td>
+              <td><b>MD1</b></td>
+              <td>Fertility × Pollution</td>
+            </tr>
+            <tr>
+              <td><b>RQ2</b><br>Is fertility still a privilege of poverty?</td>
+              <td><b>MD2</b></td>
+              <td>Fertility × Income & Education</td>
+            </tr>
+            <tr>
+              <td><b>RQ3</b><br>How does urbanisation shape fertility in Europe?</td>
+              <td><b>MD4</b></td>
+              <td>Regional Equity Index</td>
+            </tr>
+            <tr>
+              <td><b>RQ4</b><br>Is there a mismatch between fertility and public family investment?</td>
+              <td><b>MD3</b></td>
+              <td>Fertility × National Welfare</td>
+            </tr>
+            <tr>
+              <td><b>RQ5</b><br>Are reproductive choices equally supported?</td>
+              <td><b>MD4</b></td>
+              <td>Composite Cluster Analysis</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </div>
 
       <!-- Row of Mashup Buttons -->
       <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
@@ -1862,8 +1899,8 @@
         <button class="btn btn-mashup-year" onclick="showMashup2Year(2018, this)">2018</button>
         <button class="btn btn-mashup-year" onclick="showMashup2Year(2019, this)">2019</button>
       </div>
-      <div id="viz2_country_container"></div>
       <div id="viz2_scatter_container"></div>
+      <div id="viz2_country_container"></div>
     </div>
 
 
@@ -1880,8 +1917,12 @@
   <div class="container">
     <div class="section-title" data-aos="fade-up">
       <h2>Results</h2>
-      <p>Click on each button to read the explanation related to the corresponding research question.</p>
-    </div>
+      <p>
+        Each research question explores a different structural factor shaping fertility across Europe. 
+        By combining quantitative models with visual storytelling, we aim to uncover how pollution, income, education, and public policy interact to support—or constrain—reproductive choices. 
+        Use the buttons below to navigate the main findings.
+        </p>
+            </div>
 
     <!-- Row of RQ Buttons -->
     <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
@@ -1904,313 +1945,370 @@
 
     <!-- RQ Text Containers (hidden by default) -->
     <div id="rq1-container" class="mashup-viz-container" style="display:block; min-height:200px;">
-
-        <h3>Pollution and Fertility: Are They Connected?</h3>
-        <p class="lead">Yes. All statistical and spatial analyses point to a consistent negative relationship between air pollution and fertility rates in Europe.</p>
-      
-        <div class="row">
-          <div class="col-md-4">
-            <div class="analysis-box">
-              <div class="analysis-box-title">
-                <span class="material-symbols-outlined">bar_chart</span>
-                <h4 class="analysis-title">Correlation</h4>
-              </div>
-              <p class="analysis-text">O₃: –0.301<br>NO₂: –0.166<br>PM2.5: –0.137</p>
-              <p class="analysis-text"><b>All negative → higher pollution = lower fertility</b></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="analysis-box">
-              <div class="analysis-box-title">
-                <span class="material-symbols-outlined">functions</span>
-                <h4 class="analysis-title">Regression</h4>
-              </div>
-              <p class="analysis-text">NO₂: –0.0067 (p &lt; 0.05)</p>
-              <p class="analysis-text"><b>Only NO₂ has an independent, significant effect</b></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="analysis-box">
-              <div class="analysis-box-title">
-                <span class="material-symbols-outlined">map</span>
-                <h4 class="analysis-title">Mapping</h4>
-              </div>
-              <p class="analysis-text">Low fertility + High NO₂:<br>🌍 Lombardy, Île-de-France, Eastern Europe</p>
-              <p class="analysis-text"><b>Clear spatial overlap across 3 years</b></p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="row mt-4 bg-warning-subtle p-4 rounded">
-          <div class="col-md-4 text-center">
-            <p class="factor-text">Statistical evidence</p>
-            <p>✅ Strong correlation and regression significance</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="factor-text">Geographic patterns</p>
-            <p>✅ Visual overlap of pollution and low fertility</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="factor-text">Temporal stability</p>
-            <p>✅ Same pattern repeated 2017–2019</p>
-          </div>
-        </div>
-
-              <div class="mt-5">
-                <p>
-                  The evidence from statistical and spatial analyses clearly indicates that <span class="underlined underlined--offset"><b>fertility in Europe is negatively affected by air pollution</b></span>. While not all correlation coefficients are strong, <span class="underlined underlined--offset"><b>higher concentrations of O₃, NO₂, and PM2.5</b></span> consistently align with lower birth rates. This trend holds steady over three consecutive years, reinforcing the reliability of the finding. Notably, <span class="underlined underlined--offset"><b>nitrogen dioxide (NO₂)</b></span> stands out with both a significant negative correlation and an independent, statistically relevant impact on fertility in the regression model.
-                </p>
-                <p>
-                  The <span class="underlined underlined--offset"><b>geographic dimension</b></span> further supports this interpretation. Regions such as <span class="underlined underlined--offset"><b>Lombardy</b></span>, <span class="underlined underlined--offset"><b>Île-de-France</b></span>, and parts of <span class="underlined underlined--offset"><b>Eastern Europe</b></span> show a clear overlap between high NO₂ levels and low fertility rates. These are not isolated cases: the pattern repeats consistently from <span class="underlined underlined--offset"><b>(2017–2019)</b></span>, pointing to a <span class="underlined underlined--offset"><b>structural relationship</b></span> rather than a temporary or coincidental one.
-                </p>
-                <p>
-                  These results suggest that fertility is not only shaped by socioeconomic or cultural factors, but also by <span class="underlined underlined--offset"><b>environmental conditions</b></span>. <span class="underlined underlined--offset"><b>Air pollution—especially NO₂—emerges as a tangible constraint on reproductive potential</b></span>. The implications go beyond individual health and call for a <span class="underlined underlined--offset"><b>stronger integration of environmental and reproductive policies</b></span>. In high-risk regions, <span class="underlined underlined--offset"><b>public health strategies and fertility policies</b></span> must be more closely aligned to address this hidden but impactful barrier to demographic stability.
-                </p>
-              </div>
-              
-  </div>
-
-  <div id="rq2-container" class="mashup-viz-container" style="display:none; min-height:200px;">
-
-    <h3>Fertility and Socioeconomics: Still a Privilege of Poverty?</h3>
-    <p class="lead">Partially. The relationship between poverty and fertility persists in some regions, but education and policy have reshaped the landscape.</p>
-  
-    <div class="row">
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">bar_chart</span>
-            <h4 class="analysis-title">Eastern Resilience</h4>
-          </div>
-          <p class="analysis-text">
-            Severozapaden (BG31), Nord-Est (RO21):<br>
-            TFR ≈ 1.9–2.1<br>
-            Poverty > 40%, Education < 25%
-          </p>
-          <p class="analysis-text"><b>High fertility despite low income and schooling</b></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">functions</span>
-            <h4 class="analysis-title">Southern Suppression</h4>
-          </div>
-          <p class="analysis-text">
-            Campania (ITF4), Attiki (GR30):<br>
-            TFR ≈ 1.2<br>
-            Poverty high, Education low
-          </p>
-          <p class="analysis-text"><b>Economic insecurity reduces birth rates</b></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">map</span>
-            <h4 class="analysis-title">Affluent Exceptions</h4>
-          </div>
-          <p class="analysis-text">
-            Île-de-France, Stockholm:<br>
-            Fertility ≥ 1.7, Education > 50%<br>
-            Poverty < 15%
-          </p>
-          <p class="analysis-text"><b>Policy buffers modern fertility decline</b></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="row mt-4 bg-warning-subtle p-4 rounded">
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Regional contrasts</p>
-        <p>✅ East vs South vs West/North patterns</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Strong predictors</p>
-        <p>✅ <span class="underlined underlined--offset"><b>Education levels outperform poverty</b></span></p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Policy effects</p>
-        <p>✅ Fertility supported by <span class="underlined underlined--offset"><b>infrastructure</b></span> and <span class="underlined underlined--offset"><b>welfare</b></span></p>
-      </div>
-    </div>
-  
-    <div class="mt-5">
-      <p>
-        Fertility in Europe is no longer a simple mirror of poverty. While in some Eastern regions like <span class="underlined underlined--offset"><b>Severozapaden</b></span> and <span class="underlined underlined--offset"><b>Nord-Est Romania</b></span>, <span class="underlined underlined--offset"><b>high poverty and low education</b></span> still coincide with relatively <span class="underlined underlined--offset"><b>high fertility rates</b></span> (TFR ≈ 2.0), this is not the general rule. In Southern Europe, notably <span class="underlined underlined--offset"><b>Campania</b></span> and <span class="underlined underlined--offset"><b>Attiki</b></span>, similar socioeconomic conditions are paired with <span class="underlined underlined--offset"><b>very low fertility</b></span>, around 1.2 children per woman. These areas highlight how <span class="underlined underlined--offset"><b>economic precarity</b></span> can delay or discourage childbearing, especially when social services are weak.
-      </p>
-      <p>
-        Meanwhile, <span class="underlined underlined--offset"><b>affluent and well-educated regions</b></span> like <span class="underlined underlined--offset"><b>Île-de-France</b></span> and <span class="underlined underlined--offset"><b>Stockholm</b></span> maintain fertility levels ≥ 1.7, defying the classic trend that links wealth and education to demographic decline. These cases suggest that where <span class="underlined underlined--offset"><b>family-friendly policies</b></span> are in place—childcare access, housing support, and parental leave—individuals do not have to choose between <span class="underlined underlined--offset"><b>stability</b></span> and <span class="underlined underlined--offset"><b>parenthood</b></span>.
-      </p>
-      <p>
-        Overall, <span class="underlined underlined--offset"><b>education emerges as a stronger predictor than poverty</b></span>. In regions with the highest tertiary attainment (e.g., Cataluña, Noord-Holland), fertility tends to fall below 1.4, regardless of income. This reflects the persistent influence of <span class="underlined underlined--offset"><b>delayed parenthood</b></span> and <span class="underlined underlined--offset"><b>higher opportunity costs</b></span>. The initial hypothesis—that fertility is still a privilege of poverty—only holds in <span class="underlined underlined--offset"><b>under-supported Eastern contexts</b></span>. Elsewhere, the real driver appears to be access: to services, stability, and choices. Fertility is not tied to deprivation or affluence alone, but to whether people can imagine and afford a future with children.
-      </p>
-    </div>
-  
-  </div>
-
-  <div id="rq4-container" class="mashup-viz-container" style="display:none; min-height:200px;">
-
-    <h3>Fertility vs. Family Investment: Are They Aligned?</h3>
-    <p class="lead">No. Most regions with high fertility receive below-average public support for families.</p>
-  
-    <div class="row">
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">bar_chart</span>
-            <h4 class="analysis-title">Mismatch (High / Low)</h4>
-          </div>
-          <p class="analysis-text">
-            TFR ≥ median<br>
-            Spending < median<br>
-            Share: 31% of regions
-          </p>
-          <p class="analysis-text"><b>Young, fertile, but underfunded</b></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">functions</span>
-            <h4 class="analysis-title">Balance (High / High)</h4>
-          </div>
-          <p class="analysis-text">
-            TFR ≥ median<br>
-            Spending ≥ median<br>
-            Share: 17% of regions
-          </p>
-          <p class="analysis-text"><b>Policy matches fertility</b></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">map</span>
-            <h4 class="analysis-title">Reverse Mismatch (Low / High)</h4>
-          </div>
-          <p class="analysis-text">
-            TFR < median<br>
-            Spending ≥ median<br>
-            Share: 17% of regions
-          </p>
-          <p class="analysis-text"><b>High investment, low return</b></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="row mt-4 bg-warning-subtle p-4 rounded">
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Mismatch is common</p>
-        <p>✅ <span class="underlined underlined--offset"><b>Nearly half of regions</b></span> are mismatched</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Policy inefficiency</p>
-        <p>✅ <span class="underlined underlined--offset"><b>Spending ≠ fertility</b></span> in many wealthy areas</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Rare balance</p>
-        <p>✅ <span class="underlined underlined--offset"><b>Only 17%</b></span> show alignment</p>
-      </div>
-    </div>
-  
-    <div class="mt-5">
-      <p>
-        The data reveal a clear <span class="underlined underlined--offset"><b>misalignment between demographic need and family-policy investment</b></span> across Europe. A full <span class="underlined underlined--offset"><b>31% of EU regions</b></span> exhibit <span class="underlined underlined--offset"><b>high fertility despite low spending</b></span>, especially in parts of <span class="underlined underlined--offset"><b>Eastern Slovakia</b></span>, <span class="underlined underlined--offset"><b>Northern Portugal</b></span>, and <span class="underlined underlined--offset"><b>Southern Poland</b></span>. These areas remain demographically young and relatively fertile, yet receive <span class="underlined underlined--offset"><b>far below the EU average in family support</b></span>. In Eastern Slovakia, for instance, fertility nears 1.7 while investment lags at just 1.3% of GDP.
-      </p>
-      <p>
-        On the opposite end, <span class="underlined underlined--offset"><b>only 17% of regions</b></span> show <span class="underlined underlined--offset"><b>high spending but low fertility</b></span>. These are concentrated in <span class="underlined underlined--offset"><b>affluent countries</b></span> such as Sweden, Denmark, and southern Germany. Despite national outlays reaching or exceeding 3.5% of GDP in France or Denmark, birth rates remain modest, typically at or below 1.6. These cases question the effectiveness—or the targeting—of public investment.
-      </p>
-      <p>
-        The quadrant that combines <span class="underlined underlined--offset"><b>high fertility and high spending</b></span> is also rare—just 17% of EU regions fall into this category, mostly in France, Ireland, and Denmark. This suggests that <span class="underlined underlined--offset"><b>alignment is the exception, not the norm</b></span>. Public money does not follow babies. Instead, it follows political, economic, or historical trajectories. The data confirm a systematic <span class="underlined underlined--offset"><b>demographic mismatch</b></span> in policy allocation: <span class="underlined underlined--offset"><b>those who have more children often get less support</b></span>, and those who receive more support often have fewer children.
-      </p>
-    </div>
-  
-  </div>
-  <div id="rq5-container" class="mashup-viz-container" style="display:none; min-height:200px;">
-
-    <h3>Are reproductive conditions equal across Europe?</h3>
-    <p class="lead">Partly. Fertility is highest where both environmental and economic conditions support reproductive choices.</p>
-  
-    <div class="row">
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">bar_chart</span>
-            <h4 class="analysis-title">Cluster A – Toxic × Poor</h4>
-          </div>
-          <p class="analysis-text">
-            Pollution ↑, Precarity ↑<br>
-            Upper Silesia, Po Valley<br>
-            TFR < 1.4
-          </p>
-          <p class="analysis-text"><b>Lowest fertility under double stress</b></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">functions</span>
-            <h4 class="analysis-title">Cluster B – Toxic × Affluent</h4>
-          </div>
-          <p class="analysis-text">
-            Pollution ↑, Income ↑<br>
-            Ruhr, Île-de-France<br>
-            TFR 1.5–1.7
-          </p>
-          <p class="analysis-text"><b>Income buffers pollution stress</b></p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="analysis-box" style="min-height: 280px;">
-          <div class="analysis-box-title">
-            <span class="material-symbols-outlined">map</span>
-            <h4 class="analysis-title">Cluster D – Clean × Affluent</h4>
-          </div>
-          <p class="analysis-text">
-            Pollution ↓, Income ↑<br>
-            South Germany, Nordics<br>
-            TFR ≥ 1.7
-          </p>
-          <p class="analysis-text"><b>Closest to reproductive freedom</b></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="row mt-4 bg-warning-subtle p-4 rounded">
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Spatial inequality</p>
-        <p>✅ <span class="underlined underlined--offset"><b>Freedom is concentrated</b></span> in NW Europe</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Double burden</p>
-        <p>✅ <span class="underlined underlined--offset"><b>Pollution + poverty</b></span> drives fertility down</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="factor-text">Key driver</p>
-        <p>✅ <span class="underlined underlined--offset"><b>Income matters more than air</b></span></p>
-      </div>
-    </div>
-  
-    <div class="mt-5">
-      <p>
-        Across Europe, <span class="underlined underlined--offset"><b>reproductive freedom is spatially concentrated</b></span>. Cluster D regions—those with <span class="underlined underlined--offset"><b>low pollution and high income</b></span>—cover just one-fifth of the continent, mainly in <span class="underlined underlined--offset"><b>Northwest Europe</b></span>. These areas, such as <span class="underlined underlined--offset"><b>Southern Germany</b></span> and <span class="underlined underlined--offset"><b>the Nordic countries</b></span>, combine <span class="underlined underlined--offset"><b>clean air, stable income, and social services</b></span>, producing the most resilient and consistent fertility trends (TFR ≥ 1.7).
-      </p>
-      <p>
-        In contrast, Cluster A regions—including <span class="underlined underlined--offset"><b>Upper Silesia</b></span>, <span class="underlined underlined--offset"><b>the Po Valley</b></span>, and <span class="underlined underlined--offset"><b>coal basins in Bulgaria</b></span>—face a <span class="underlined underlined--offset"><b>double burden</b></span>: above-median pollution and precarity. These regions show the lowest fertility, often below 1.4, suggesting that <span class="underlined underlined--offset"><b>cumulative environmental and economic stress</b></span> directly constrain reproductive choices.
-      </p>
-      <p>
-        Interestingly, <span class="underlined underlined--offset"><b>income appears more decisive than air quality</b></span>. Cluster B (toxic but affluent) maintains TFR levels around 1.5–1.7, while Cluster C (clean but poor) often drops below 1.4. This points to <span class="underlined underlined--offset"><b>household security and opportunity</b></span> as more immediate drivers of fertility than ambient pollution, though the <span class="underlined underlined--offset"><b>long-term health risks of pollution</b></span> remain serious and should not be ignored.
-      </p>
-      <p>
-        The policy takeaway is clear: tackling <span class="underlined underlined--offset"><b>reproductive inequity</b></span> requires <span class="underlined underlined--offset"><b>layered, spatially aware action</b></span>. In Cluster A, the focus must be on both <span class="underlined underlined--offset"><b>green transition</b></span> and <span class="underlined underlined--offset"><b>poverty alleviation</b></span>. In Cluster C, <span class="underlined underlined--offset"><b>education and income support</b></span> are more urgent than air quality remediation. Only where both axes—environmental and economic—are strong, can fertility thrive without structural constraints.
-      </p>
-    </div>
-  
-  </div>
+      <h3>Pollution and Fertility: Are They Connected?</h3>
+      <p class="lead">Yes. All statistical and spatial analyses point to a consistent negative relationship between air pollution and fertility rates in Europe.</p>
     
-</section>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">bar_chart</span>
+              <h4 class="analysis-title">Correlation</h4>
+            </div>
+            <p class="analysis-text">O₃: –0.301<br>NO₂: –0.166<br>PM2.5: –0.137</p>
+            <p class="analysis-text"><b>All negative → higher pollution = lower fertility</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">functions</span>
+              <h4 class="analysis-title">Regression</h4>
+            </div>
+            <p class="analysis-text">NO₂: –0.0067 (p &lt; 0.05)</p>
+            <p class="analysis-text"><b>Only NO₂ has an independent, significant effect</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">map</span>
+              <h4 class="analysis-title">Mapping</h4>
+            </div>
+            <p class="analysis-text">Low fertility + High NO₂:<br>🌍 Lombardy, Île-de-France, Eastern Europe</p>
+            <p class="analysis-text"><b>Clear spatial overlap across 3 years</b></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-4 bg-warning-subtle p-4 rounded">
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Statistical evidence</p>
+          <p>Strong correlation and regression significance</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Geographic patterns</p>
+          <p>Visual overlap of pollution and low fertility</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Temporal stability</p>
+          <p>Same pattern repeated 2017–2019</p>
+        </div>
+      </div>
+    
+      <div class="mt-5">
+        <p>
+          The evidence from statistical and spatial analyses clearly indicates that <span class="underlined underlined--offset">air pollution</span> negatively affects fertility in Europe. While not all correlation coefficients are strong, higher concentrations of O₃, NO₂, and PM2.5 consistently align with lower birth rates. This trend holds steady over three consecutive years, reinforcing the reliability of the finding. Notably, <span class="underlined underlined--offset">nitrogen dioxide (NO₂)</span> stands out with both a significant negative correlation and an independent, statistically relevant impact on fertility in the regression model.
+        </p>
+        <p>
+          The <span class="underlined underlined--offset">geographic dimension</span> further supports this interpretation. Regions such as Lombardy, Île-de-France, and parts of Eastern Europe show a clear overlap between high NO₂ levels and low fertility rates. These are not isolated cases: the pattern repeats consistently from 2017–2019, pointing to a <span class="underlined underlined--offset">structural relationship</span> rather than a temporary or coincidental one.
+        </p>
+        <p>
+          These results suggest that fertility is not only shaped by socioeconomic or cultural factors, but also by <span class="underlined underlined--offset">environmental conditions</span>. <span class="underlined underlined--offset">Air pollution</span>—especially NO₂—emerges as a tangible constraint on reproductive potential. The implications go beyond individual health and call for a stronger integration of <span class="underlined underlined--offset">environmental</span> and <span class="underlined underlined--offset">reproductive policies</span>. In high-risk regions, public health strategies and fertility policies must be more closely aligned to address this hidden but impactful barrier to demographic stability.
+        </p>
+      </div>
+    </div>
+    
+    <div id="rq2-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <h3>Fertility and Socioeconomics: Still a Privilege of Poverty?</h3>
+      <p class="lead">Partially. The relationship between poverty and fertility persists in some regions, but education and policy have reshaped the landscape.</p>
+    
+      <div class="row">
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">bar_chart</span>
+              <h4 class="analysis-title">Eastern Resilience</h4>
+            </div>
+            <p class="analysis-text">
+              Severozapaden (BG31), Nord-Est (RO21):<br>
+              TFR ≈ 1.9–2.1<br>
+              Poverty > 40%, Education < 25%
+            </p>
+            <p class="analysis-text"><b>High fertility despite low income and schooling</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">functions</span>
+              <h4 class="analysis-title">Southern Suppression</h4>
+            </div>
+            <p class="analysis-text">
+              Campania (ITF4), Attiki (GR30):<br>
+              TFR ≈ 1.2<br>
+              Poverty high, Education low
+            </p>
+            <p class="analysis-text"><b>Economic insecurity reduces birth rates</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">map</span>
+              <h4 class="analysis-title">Affluent Exceptions</h4>
+            </div>
+            <p class="analysis-text">
+              Île-de-France, Stockholm:<br>
+              Fertility ≥ 1.7, Education > 50%<br>
+              Poverty < 15%
+            </p>
+            <p class="analysis-text"><b>Policy buffers modern fertility decline</b></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-4 bg-warning-subtle p-4 rounded">
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Regional contrasts</p>
+          <p>East vs South vs West/North patterns</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Strong predictors</p>
+          <p>Education levels outperform poverty</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Policy effects</p>
+          <p>Fertility supported by infrastructure and welfare</p>
+        </div>
+      </div>
+    
+      <div class="mt-5">
+        <p>
+          Fertility in Europe is no longer a simple mirror of poverty. While in some Eastern regions like Severozapaden and Nord-Est Romania, <span class="underlined underlined--offset">high poverty</span> and <span class="underlined underlined--offset">low education</span> still coincide with relatively <span class="underlined underlined--offset">high fertility rates</span> (TFR ≈ 2.0), this is not the general rule. In Southern Europe, notably Campania and Attiki, similar socioeconomic conditions are paired with <span class="underlined underlined--offset">very low fertility</span>. These areas highlight how <span class="underlined underlined--offset">economic precarity</span> can delay or discourage childbearing, especially when social services are weak.
+        </p>
+        <p>
+          Meanwhile, <span class="underlined underlined--offset">affluent and well-educated regions</span> like Île-de-France and Stockholm maintain fertility levels ≥ 1.7, defying the classic trend that links wealth and education to demographic decline. These cases suggest that where <span class="underlined underlined--offset">family-friendly policies</span> are in place—childcare access, housing support, and parental leave—individuals do not have to choose between <span class="underlined underlined--offset">stability</span> and <span class="underlined underlined--offset">parenthood</span>.
+        </p>
+        <p>
+          Overall, <span class="underlined underlined--offset">education</span> emerges as a stronger predictor than <span class="underlined underlined--offset">poverty</span>. In regions with the highest tertiary attainment (e.g., Cataluña, Noord-Holland), fertility tends to fall below 1.4, regardless of income. This reflects the persistent influence of <span class="underlined underlined--offset">delayed parenthood</span> and <span class="underlined underlined--offset">higher opportunity costs</span>. The initial hypothesis—that fertility is still a privilege of poverty—only holds in <span class="underlined underlined--offset">under-supported Eastern contexts</span>. Elsewhere, the real driver appears to be access: to services, stability, and choices.
+        </p>
+      </div>
+    </div>
+    
+    <div id="rq3-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <h3>Does Public Investment Align with Fertility?</h3>
+      <p class="lead">Partially. Most European regions show a mismatch between where people are having children and where governments invest the most in family and childcare support.</p>
+    
+      <div class="row">
+        <div class="col-md-4">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">bar_chart</span>
+              <h4 class="analysis-title">Mismatch Typology</h4>
+            </div>
+            <p class="analysis-text">Regions were grouped into four profiles based on fertility and family spending above/below the EU median.</p>
+            <p class="analysis-text"><b>Most regions are mismatched in one direction or the other.</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">location_on</span>
+              <h4 class="analysis-title">High Fertility, Low Spending</h4>
+            </div>
+            <p class="analysis-text">Świętokrzyskie (PL33), Sud-Vest Oltenia (RO41), Severozapaden (BG31)</p>
+            <p class="analysis-text"><b>Fertility > 1.8, Spending < 1.5% GDP, Poverty > 30%</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">euro</span>
+              <h4 class="analysis-title">High Spending, Low Fertility</h4>
+            </div>
+            <p class="analysis-text">Sweden, Belgium, Finland — urban regions like Stockholm (SE11), Helsinki (FI1B)</p>
+            <p class="analysis-text"><b>Spending > 3% GDP, Fertility < 1.5</b></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-4 bg-warning-subtle p-4 rounded">
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Structural Mismatch</p>
+          <p>Fertility and investment often don’t align</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Inequality Exposed</p>
+          <p>High fertility regions also show high poverty</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Policy Implications</p>
+          <p>Realign investment with demographic need</p>
+        </div>
+      </div>
+    
+      <div class="mt-5">
+        <p>
+          The analysis conducted with <span class="underlined underlined--offset">Mash-up 3</span> confirms the hypothesis: in many parts of Europe, there is a structural disconnect between national family policy investment and regional fertility levels. Regions with the highest total fertility rates often belong to countries that invest the least in family and childcare support. In contrast, highly funded countries do not always experience higher fertility — particularly in their urban areas.
+        </p>
+        <p>
+          The <span class="underlined underlined--offset">typological classification</span> revealed that only a minority of EU regions fall into the ideal HighFertility_HighSpending quadrant. Cases of LowFertility_LowSpending are also rare. Most regions lie in a grey zone of mismatch — either fertility outpaces investment, or vice versa.
+        </p>
+        <p>
+          The <span class="underlined underlined--offset">intersection with poverty</span> adds another layer: where investment is low and fertility is high, poverty rates are also elevated. These regions bear the demographic weight without receiving proportional public support. Addressing this mismatch requires a coordinated effort to align policy resources with the lived realities of families.
+        </p>
+      </div>
+    </div>
+    
+    <div id="rq4-container" class="mashup-viz-container" style="display:none; min-height:200px;">
 
+      <h3>Fertility vs. Family Investment: Are They Aligned?</h3>
+      <p class="lead">No. Most regions with high fertility receive below-average public support for families.</p>
+    
+      <div class="row">
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">bar_chart</span>
+              <h4 class="analysis-title">Mismatch (High / Low)</h4>
+            </div>
+            <p class="analysis-text">
+              TFR ≥ median<br>
+              Spending < median<br>
+              Share: 31% of regions
+            </p>
+            <p class="analysis-text"><b>Young, fertile, but underfunded</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">functions</span>
+              <h4 class="analysis-title">Balance (High / High)</h4>
+            </div>
+            <p class="analysis-text">
+              TFR ≥ median<br>
+              Spending ≥ median<br>
+              Share: 17% of regions
+            </p>
+            <p class="analysis-text"><b>Policy matches fertility</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">map</span>
+              <h4 class="analysis-title">Reverse Mismatch (Low / High)</h4>
+            </div>
+            <p class="analysis-text">
+              TFR < median<br>
+              Spending ≥ median<br>
+              Share: 17% of regions
+            </p>
+            <p class="analysis-text"><b>High investment, low return</b></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-4 bg-warning-subtle p-4 rounded">
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Mismatch is common</p>
+          <p>Nearly half of regions are mismatched</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Policy inefficiency</p>
+          <p>Spending ≠ fertility in many wealthy areas</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Rare balance</p>
+          <p>Only 17% show alignment</p>
+        </div>
+      </div>
+    
+      <div class="mt-5">
+        <p>
+          The data reveal a clear <span class="underlined underlined--offset">misalignment</span> between demographic need and <span class="underlined underlined--offset">family-policy investment</span> across Europe. A full <span class="underlined underlined--offset">31% of EU regions</span> exhibit <span class="underlined underlined--offset">high fertility</span> despite <span class="underlined underlined--offset">low spending</span>, especially in parts of Eastern Slovakia, Northern Portugal, and Southern Poland. These areas remain demographically young and relatively fertile, yet receive far below the EU average in family support. In Eastern Slovakia, for instance, fertility nears 1.7 while investment lags at just 1.3% of GDP.
+        </p>
+        <p>
+          On the opposite end, <span class="underlined underlined--offset">only 17% of regions</span> show <span class="underlined underlined--offset">high spending</span> but <span class="underlined underlined--offset">low fertility</span>. These are concentrated in affluent countries such as Sweden, Denmark, and southern Germany. Despite national outlays reaching or exceeding 3.5% of GDP in France or Denmark, birth rates remain modest, typically at or below 1.6. These cases question the effectiveness—or the targeting—of public investment.
+        </p>
+        <p>
+          The quadrant that combines <span class="underlined underlined--offset">high fertility</span> and <span class="underlined underlined--offset">high spending</span> is also rare—just 17% of EU regions fall into this category, mostly in France, Ireland, and Denmark. This suggests that <span class="underlined underlined--offset">alignment</span> is the exception, not the norm. Public money does not follow babies. Instead, it follows political, economic, or historical trajectories. The data confirm a systematic <span class="underlined underlined--offset">demographic mismatch</span> in policy allocation: those who have more children often get less support, and those who receive more support often have fewer children.
+        </p>
+      </div>
+    </div>
+  
+    <div id="rq5-container" class="mashup-viz-container" style="display:none; min-height:200px;">
+      <h3>Are reproductive conditions equal across Europe?</h3>
+      <p class="lead">Partly. Fertility is highest where both environmental and economic conditions support reproductive choices.</p>
+    
+      <div class="row">
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">bar_chart</span>
+              <h4 class="analysis-title">Cluster A – Toxic × Poor</h4>
+            </div>
+            <p class="analysis-text">
+              Pollution ↑, Precarity ↑<br>
+              Upper Silesia, Po Valley<br>
+              TFR < 1.4
+            </p>
+            <p class="analysis-text"><b>Lowest fertility under double stress</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">functions</span>
+              <h4 class="analysis-title">Cluster B – Toxic × Affluent</h4>
+            </div>
+            <p class="analysis-text">
+              Pollution ↑, Income ↑<br>
+              Ruhr, Île-de-France<br>
+              TFR 1.5–1.7
+            </p>
+            <p class="analysis-text"><b>Income buffers pollution stress</b></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="analysis-box" style="min-height: 280px;">
+            <div class="analysis-box-title">
+              <span class="material-symbols-outlined">map</span>
+              <h4 class="analysis-title">Cluster D – Clean × Affluent</h4>
+            </div>
+            <p class="analysis-text">
+              Pollution ↓, Income ↑<br>
+              South Germany, Nordics<br>
+              TFR ≥ 1.7
+            </p>
+            <p class="analysis-text"><b>Closest to reproductive freedom</b></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-4 bg-warning-subtle p-4 rounded">
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Spatial inequality</p>
+          <p>Freedom is concentrated in NW Europe</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Double burden</p>
+          <p>Pollution + poverty drives fertility down</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="factor-text">Key driver</p>
+          <p>Income matters more than air</p>
+        </div>
+      </div>
+    
+      <div class="mt-5">
+        <p>
+          Across Europe, <span class="underlined underlined--offset">reproductive freedom</span> is spatially concentrated. Cluster D regions—those with <span class="underlined underlined--offset">low pollution</span> and <span class="underlined underlined--offset">high income</span>—cover just one-fifth of the continent, mainly in Northwest Europe. These areas, such as Southern Germany and the Nordic countries, combine <span class="underlined underlined--offset">clean air</span>, <span class="underlined underlined--offset">stable income</span>, and <span class="underlined underlined--offset">social services</span>, producing the most resilient and consistent fertility trends (TFR ≥ 1.7).
+        </p>
+        <p>
+          In contrast, Cluster A regions—including Upper Silesia, the Po Valley, and coal basins in Bulgaria—face a <span class="underlined underlined--offset">double burden</span>: above-median pollution and precarity. These regions show the lowest fertility, often below 1.4, suggesting that <span class="underlined underlined--offset">cumulative environmental and economic stress</span> directly constrain reproductive choices.
+        </p>
+        <p>
+          Interestingly, <span class="underlined underlined--offset">income</span> appears more decisive than <span class="underlined underlined--offset">air quality</span>. Cluster B (toxic but affluent) maintains TFR levels around 1.5–1.7, while Cluster C (clean but poor) often drops below 1.4. This points to <span class="underlined underlined--offset">household security</span> and <span class="underlined underlined--offset">opportunity</span> as more immediate drivers of fertility than ambient pollution, though the <span class="underlined underlined--offset">long-term health risks of pollution</span> remain serious and should not be ignored.
+        </p>
+        <p>
+          The policy takeaway is clear: tackling <span class="underlined underlined--offset">reproductive inequity</span> requires <span class="underlined underlined--offset">layered, spatially aware action</span>. In Cluster A, the focus must be on both <span class="underlined underlined--offset">green transition</span> and <span class="underlined underlined--offset">poverty alleviation</span>. In Cluster C, <span class="underlined underlined--offset">education</span> and <span class="underlined underlined--offset">income support</span> are more urgent than air quality remediation. Only where both axes—<span class="underlined underlined--offset">environmental</span> and <span class="underlined underlined--offset">economic</span>—are strong, can fertility thrive without structural constraints.
+        </p>
+      </div>
+    </div>
+    </section>
 
 
     <!-- ======= Sustainability Section ======= -->
