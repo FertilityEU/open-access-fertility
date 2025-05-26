@@ -8,7 +8,6 @@ window.renderViz3_1 = function(containerId = "viz3_1-container") {
     "High investment, low fertility" : "#ED7D3A"
   };
 
-  // Clear the container before rendering (if reloading)
   const container = document.getElementById(containerId);
   container.innerHTML = `
     <h2>Fertility vs. National Family-Spending</h2>
@@ -18,7 +17,6 @@ window.renderViz3_1 = function(containerId = "viz3_1-container") {
     </div>
   `;
 
-  // Use d3 to load the CSV and Plotly to draw the charts (as in original code)
   d3.csv(CSV_FILE).then(fullRows => {
 
     const jitter = v => v + (Math.random()*2 - 1) * v * 0.03;
